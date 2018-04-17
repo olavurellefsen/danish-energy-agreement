@@ -1,7 +1,7 @@
-IPAT(D) online browser
-======
+Danish Energy Agreement 2018
+============================
 
-This project initially developed by Tokni on a request from DTU Management Engineering.
+This tool is developed by Tokni based on DTU Management Engineering research.
 
 ## Installation
 
