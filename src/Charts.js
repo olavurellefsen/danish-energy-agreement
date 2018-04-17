@@ -4,12 +4,13 @@ import MultiLineChart from './charts/MultiLineChart'
 import MainArea from './components/MainArea'
 import Flex from './components/Flex'
 import Welcome from './alert/Welcome'
+import LineChart from './VictorySample'
 
 const Charts = (props) => (
   <MainArea>
     {(props.scenarioSelection.showWelcome===true) && <Welcome closeWelcome={props.closeWelcome} />}
     <Flex>
-      <MultiLineChart type="3" scenarioSelection={props.scenarioSelection} UpdateWorldView={props.UpdateWorldView} />
+      <LineChart/>
     </Flex>
   </MainArea>
 )
