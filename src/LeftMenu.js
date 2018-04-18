@@ -65,7 +65,7 @@ const MenuTitle  = styled(Link)`
 `
 
 const MenuSeparatorLine  = styled.hr`
-  margin: 1em 12px 0.25em 15px;
+  margin: 0.25em 12px 0.25em 15px;
   border-color: #555;
   border-width: 1px;
   width: 100hh;
@@ -133,17 +133,21 @@ class ScenarioSelectionMenu extends React.Component {
       <MenuLayout showMobileMenu={this.props.showMobileMenu}>
         <MenuHeader>
           <MenuHeaderLeft>
-            <MenuTitle to='/'>
-              Energi-
-              aftalen
-            </MenuTitle>
+            {(this.props.showMobileMenu===false) &&            
+              <MenuTitle to='/'>
+                Energi-
+                aftalen
+              </MenuTitle>
+            }
             <MenuRoutes>
               <MenuItem to='/about'>Om værktøjet</MenuItem>
             </MenuRoutes>
           </MenuHeaderLeft>
-          <MenuHeaderRight>
-            <AppLogo src='./images/dtulogo_white.png' alt='logo'/>
-          </MenuHeaderRight>
+          {(this.props.showMobileMenu===false) &&
+            <MenuHeaderRight>
+              <AppLogo src='./images/dtulogo_white.png' alt='logo'/>
+            </MenuHeaderRight>
+          }
         </MenuHeader>
         <MenuSeparatorLine />        
         <ScenarioSelection>
