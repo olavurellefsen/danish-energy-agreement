@@ -1,19 +1,130 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import breakpoint from 'styled-components-breakpoint'
+import { Link } from 'react-router-dom'
 import ScenarioSelectionList from './scenarioSelection/ScenarioSelectionList'
-import MenuLayout from './components/MenuLayout'
-import MenuHeader from './components/MenuHeader'
-import MenuHeaderLeft from './components/MenuHeaderLeft'
-import MenuHeaderRight from './components/MenuHeaderRight'
-import AppLogo from './components/AppLogo'
-import MenuTitle from './components/MenuTitle'
-import MenuSeparatorLine from './components/MenuSeparatorLine'
-import MenuRoutes from './components/MenuRoutes'
-import MenuItem from './components/MenuItem'
-import ScenarioSelection from './components/ScenarioSelection'
-import MenuFooter from './components/MenuFooter'
-import CopyrightNotice from './components/CopyrightNotice'
-import ExternalLink from './components/ExternalLink'
+
+const MenuLayout = styled.div`
+  display: flex;
+  ${breakpoint('mobile','tablet')`
+    display: ${props => props.showMobileMenu ? 'flex' : 'none'};
+  `}
+  min-height: 100vh;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-width: 220px;
+  max-width: 220px;
+  color: white;
+  background: rgb(50, 50, 50);
+  visibility: visible;
+`
+
+const MenuHeader =  styled.div`
+  padding: 10px 12px 5px 0px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+`
+const MenuHeaderLeft = styled.div`
+  padding: 0 12px 5px 0px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+`
+
+const MenuHeaderRight = styled.div`
+  padding: 0 12px 5px 0px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+`
+const AppLogo  = styled.img`
+  width: 45px;
+  height: 67px;
+  margin: 0px 0px 5px 25px;
+  border: 0;
+`
+
+const MenuTitle  = styled(Link)`
+  font-weight: bold;
+  font-size: 1.25em;
+  padding: 0px 12px 5px 15px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+`
+
+const MenuSeparatorLine  = styled.hr`
+  margin: 1em 12px 0.25em 15px;
+  border-color: #555;
+  border-width: 1px;
+  width: 100hh;
+`
+
+const MenuRoutes  = styled.div`
+  padding: 10px 12px 5px 15px;
+  margin: 0;
+  width: 100%;
+  heigth: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const MenuItem  = styled.div`
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+`
+
+const ScenarioSelection  = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+`
+
+const MenuFooter  = styled.div`
+  padding: 15px 12px 5px 15px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const CopyrightNotice = styled.div`
+  padding: 0 12px 5px 15px;
+  margin: 0;
+  width: 100%;
+  heigth: 26px;
+`
+
+const ExternalLink = styled.a`
+  color: white;
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+  }
+`
 
 class ScenarioSelectionMenu extends React.Component {
 

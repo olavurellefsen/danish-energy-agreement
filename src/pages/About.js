@@ -1,9 +1,9 @@
 import React from 'react'
-import AboutContainer from '../components/AboutContainer'
-import AboutHeader from '../components/AboutHeader'
-import AboutHeader2 from '../components/AboutHeader2'
-import AboutBody from '../components/AboutBody'
-import BodyLink from '../components/BodyLink'
+import AboutContainer from './AboutContainer'
+import AboutHeader from './AboutHeader'
+import AboutHeader2 from './AboutHeader2'
+import AboutBody from './AboutBody'
+import BodyLink from './BodyLink'
 import { Link } from 'react-router-dom'
 
 export default () => (

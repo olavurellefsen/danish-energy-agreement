@@ -1,9 +1,39 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import AlertContainer from '../components/AlertContainer'
-import AlertBody from '../components/AlertBody'
-import CloseWindowIcon from '../components/CloseWindowIcon'
+import styled from 'styled-components'
 import Octicon from 'react-octicon'
+
+const AlertContainer = styled.div`
+  padding: 10px;
+  margin-bottom: 30px;
+  border-width: 1px;
+  border-color: blue;
+  border-style: solid;
+  background-color: mintcream;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+`
+
+const AlertBody = styled.p`
+  font-size: 1em;
+  margin: 0px;
+  align-self: center;
+  flex: 1;
+`
+
+const CloseWindowIcon = styled.div`
+  margin: 0px;
+  border: 0;
+  flex-shrink: 0;
+  align-self: flex-start;
+  :hover {
+    cursor: pointer;
+  }
+`
 
 const Welcome = (props) => (
   <AlertContainer>

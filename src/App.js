@@ -1,22 +1,34 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Route, withRouter } from 'react-router-dom'
+import styled from 'styled-components'
+import breakpoint from 'styled-components-breakpoint'
+import { Route, withRouter, Switch } from 'react-router-dom'
 import ReactGA from 'react-ga'
 import LeftMenu from './LeftMenu'
-import MainSwitch from './components/MainSwitch'
 import Charts from './Charts'
 import About from './pages/About'
 import Challenges from './pages/Challenges'
 import Settings from './pages/Settings'
 import scenarioCombinations from './data/scenarioCombinations'
-import styled from 'styled-components'
-import breakpoint from 'styled-components-breakpoint'
-
-import Flex from './components/Flex'
 import HamburgerIcon from './utils/HamburgerIcon'
 
 ReactGA.initialize('UA-112171388-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
+
+const MainSwitch = styled(Switch)`
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-content: flex-start;
+`
+
+const Flex = styled.div`
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: ${props => (props.direction==='column' ? 'column' : 'row')};
+`
 
 const MobileHeaderMenu = styled.div`
   display: none;
@@ -29,8 +41,6 @@ const MobileHeaderMenu = styled.div`
     width: 100%;
   `}
 `
-// position: fixed;
-// top: 0;
 
 const HamburgerWrapper = styled.div`
   padding: 10px;
@@ -59,16 +69,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       scenarioSelection: 0,
-      populationSelection: 0,
-      affluenceSelection: 6,
-      technologySelection: 0,
-      dietSelection: 2,
-      worldLink: '12',
-      worldChartType: 'Primary Energy Consumption',
-      worldYear: 2050,
-      worldTitle: 'Primary Energy Consumption 2050',
       mobileOpen: false,
-      currentRegion: -1,
       showWelcome: true,
       showMobileMenu: false
     }
@@ -90,21 +91,6 @@ class App extends React.Component {
     })
   }
 
-  UpdateWorldView = (name, value) => {
-    this.setState({
-      [name]: value
-    })
-    this.setState({
-      worldTitle: this.state.worldChartType + ' ' +this.state.worldYear
-    })
-  }
-
-  UpdateCurrentRegion = (newCurrentRegion) => {
-    this.setState({
-      currentRegion: newCurrentRegion
-    })
-  }
-
   render() {
     return (
       <Flex direction='column'>
@@ -113,7 +99,7 @@ class App extends React.Component {
             <HamburgerIcon />
           </HamburgerWrapper>
           <MobileHeaderItem to='/'>
-            IPAT(D)
+            Energiaftalen
           </MobileHeaderItem>
           <MobileLogo src='./images/dtulogo_white.png' alt='logo'/>            
         </MobileHeaderMenu>
@@ -127,10 +113,7 @@ class App extends React.Component {
           <MainSwitch>
             <Route exact path='/' render={()=><Charts 
               scenarioSelection={this.state}
-              UpdateCurrentRegion={this.UpdateCurrentRegion} 
-              UpdateWorldView={this.UpdateWorldView} 
               closeWelcome={this.UpdateScenarioSelection}
-              onRegionItemChange={this.onRegionItemChange}
             />}/>
             <Route path='/about' component={About} />
             <Route path='/challenges' component={Challenges} />
