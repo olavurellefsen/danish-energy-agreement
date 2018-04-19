@@ -38,7 +38,7 @@ const CloseWindowIcon = styled.div`
 const Welcome = (props) => (
   <AlertContainer>
     <AlertBody>
-      Med dette værktøj kan du udforske forskellige scenarier i forbindelse med energiaftalen 2018.
+      DEMO DATA - BEMÆRK VENLIGST AT DETTE IKKE ER DEN ENDELIGE UDGAVE - Med dette værktøj kan du udforske forskellige scenarier i forbindelse med energiaftalen 2018.
       Vælg et scenarie i venstre menu og se resultatet i graferne nedenfor.
     </AlertBody>
     <CloseWindowIcon onClick={(event) => props.closeWelcome(event, 'showWelcome', false)}>
