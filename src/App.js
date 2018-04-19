@@ -12,7 +12,7 @@ import Settings from './pages/Settings'
 import scenarioCombinations from './data/scenarioCombinations'
 import HamburgerIcon from './utils/HamburgerIcon'
 
-ReactGA.initialize('UA-112171388-1');
+ReactGA.initialize('UA-117950963-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const MainSwitch = styled(Switch)`
