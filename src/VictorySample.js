@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import {VictoryChart, VictoryStack, VictoryTheme, VictoryAxis, VictoryBar} from 'victory';
-import scenario0 from './data/scenario0';
+import scenarios from './data/scenarios';
 
-const data = scenario0.scenarios;
+const data = scenarios.scenarios;
     
-export default class LineChart extends React.Component {
+class LineChart extends React.Component {
   render() {
     return (
       <div>
@@ -18,21 +19,27 @@ export default class LineChart extends React.Component {
           />
           <VictoryAxis
             dependentAxis
-            tickFormat={(x) => (`${x / 1}`)}
+            tickFormat={(x) => (x)}
           />
           <VictoryStack>
-            <VictoryBar data={data[0].CO2emissions["Affald CO2"]} x="Period" y="Total" />
-            <VictoryBar data={data[0].CO2emissions["Bio CO2"]} x="Period" y="Total" />
-            <VictoryBar data={data[0].CO2emissions["El og varme sektorens CO2"]} x="Period" y="Total" />
-            <VictoryBar data={data[0].CO2emissions["Husholdningers CO2"]} x="Period" y="Total" />
-            <VictoryBar data={data[0].CO2emissions["Industriel CO2"]} x="Period" y="Total" />
-            <VictoryBar data={data[0].CO2emissions["Konveteringssektorens CO2"]} x="Period" y="Total" />
-            <VictoryBar data={data[0].CO2emissions["Land transport CO2"]} x="Period" y="Total" />
-            <VictoryBar data={data[0].CO2emissions["Luftfart CO2"]} x="Period" y="Total" />
-            <VictoryBar data={data[0].CO2emissions["Søfart CO2"]} x="Period" y="Total" />
+            <VictoryBar data={data[this.props.selectedScenario].CO2emissions["Affald CO2"]} x="Period" y="Total" />
+            <VictoryBar data={data[this.props.selectedScenario].CO2emissions["Bio CO2"]} x="Period" y="Total" />
+            <VictoryBar data={data[this.props.selectedScenario].CO2emissions["El og varme sektorens CO2"]} x="Period" y="Total" />
+            <VictoryBar data={data[this.props.selectedScenario].CO2emissions["Husholdningers CO2"]} x="Period" y="Total" />
+            <VictoryBar data={data[this.props.selectedScenario].CO2emissions["Industriel CO2"]} x="Period" y="Total" />
+            <VictoryBar data={data[this.props.selectedScenario].CO2emissions["Konveteringssektorens CO2"]} x="Period" y="Total" />
+            <VictoryBar data={data[this.props.selectedScenario].CO2emissions["Land transport CO2"]} x="Period" y="Total" />
+            <VictoryBar data={data[this.props.selectedScenario].CO2emissions["Luftfart CO2"]} x="Period" y="Total" />
+            <VictoryBar data={data[this.props.selectedScenario].CO2emissions["Søfart CO2"]} x="Period" y="Total" />
           </VictoryStack>
         </VictoryChart>
       </div>
     )
   }
 }
+
+LineChart.propTypes = {
+  selectedScenario: PropTypes.number.isRequired,
+}
+
+export default LineChart;

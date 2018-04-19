@@ -21,7 +21,7 @@ const Charts = (props) => (
   <MainArea>
     {(props.scenarioSelection.showWelcome===true) && <Welcome closeWelcome={props.closeWelcome} />}
     <Flex>
-      <LineChart/>
+      <LineChart selectedScenario={props.scenarioSelection.scenarioSelection} />
     </Flex>
   </MainArea>
 )

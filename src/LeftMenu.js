@@ -19,7 +19,6 @@ const MenuLayout = styled.div`
   background: rgb(50, 50, 50);
   visibility: visible;
 `
-
 const MenuHeader =  styled.div`
   padding: 10px 12px 5px 0px;
   margin: 0;
@@ -36,7 +35,6 @@ const MenuHeaderLeft = styled.div`
   flex-direction: column;
   align-items: left;
 `
-
 const MenuHeaderRight = styled.div`
   padding: 0 12px 5px 0px;
   margin: 0;
@@ -51,7 +49,6 @@ const AppLogo  = styled.img`
   margin: 0px 0px 5px 25px;
   border: 0;
 `
-
 const MenuTitle  = styled(Link)`
   font-weight: bold;
   font-size: 1.25em;
@@ -63,14 +60,12 @@ const MenuTitle  = styled(Link)`
   color: white;
   text-decoration: none;
 `
-
 const MenuSeparatorLine  = styled.hr`
   margin: 0.25em 12px 0.25em 15px;
   border-color: #555;
   border-width: 1px;
   width: 100hh;
 `
-
 const MenuRoutes  = styled.div`
   padding: 10px 12px 5px 15px;
   margin: 0;
@@ -80,7 +75,6 @@ const MenuRoutes  = styled.div`
   flex-direction: column;
   align-items: center;
 `
-
 const MenuItem  = styled.div`
   font-weight: bold;
   font-size: 1em;
@@ -95,13 +89,11 @@ const MenuItem  = styled.div`
     cursor: pointer;
   }
 `
-
 const ScenarioSelection  = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 `
-
 const MenuFooter  = styled.div`
   padding: 15px 12px 5px 15px;
   margin: 0;
@@ -110,14 +102,12 @@ const MenuFooter  = styled.div`
   flex-direction: column;
   align-items: center;
 `
-
 const CopyrightNotice = styled.div`
   padding: 0 12px 5px 15px;
   margin: 0;
   width: 100%;
   heigth: 26px;
 `
-
 const ExternalLink = styled.a`
   color: white;
   text-decoration: none;
