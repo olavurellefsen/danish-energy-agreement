@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Welcome from './alert/Welcome'
 import StackedBarChart from './StackedBarChart'
+import StackedBarLineCombinedChart from './StackedBarLineCombinedChart'
 
 const MainArea = styled.div`
   flex: 1;
@@ -21,6 +22,7 @@ const Charts = (props) => (
   <MainArea>
     {(props.scenarioSelection.showWelcome===true) && <Welcome closeWelcome={props.closeWelcome} />}
     <Flex>
+      <StackedBarLineCombinedChart chartType='CO2 emissioner' selectedScenario={props.scenarioSelection.scenarioSelection} />
       <StackedBarChart chartType='CO2 emissioner' selectedScenario={props.scenarioSelection.scenarioSelection} />
       <StackedBarChart chartType='Biobrændsels forbrug' selectedScenario={props.scenarioSelection.scenarioSelection} />
       <StackedBarChart chartType='El produktion' selectedScenario={props.scenarioSelection.scenarioSelection} />
