@@ -4,8 +4,7 @@ import styled from 'styled-components'
 
 const ScenarioDivider = styled.div`
   height: 18px;
-`
-
+  `
 const ScenarioHeader = styled.div`
   padding: 0 12px 5px 15px;
   margin: 0;
@@ -28,34 +27,12 @@ const ScenarioOption =styled.div`
   &:hover {
     cursor: pointer;
     background-color: ${props => (props.selected ? '#b50404' : '#555')};
-    :after {
-      content: '▶';
-      position: absolute;
-      left: 217px;
-      color: ${props => (props.selected ? '#b50404' : '#555')};
-      font-size: 1.5em;
-    }
     > * {
       display: block;
       font-weight: ${props => (props.selected ? 'bold' : 'normal')};
     }
   }
-`
-
-const ScenarioDescription = styled.div`
-  display: none;
-  position: absolute;
-  left: 238px;
-  top: 0px;
-  color: white;
-  font-size: 0.8em;
-  line-height: 1.4em;
-  padding: 5px;
-  background-color: #555;
-  min-width: 300px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-`
+  `
 
 class ScenarioSelectionList extends React.Component {
   state = {
@@ -81,9 +58,6 @@ class ScenarioSelectionList extends React.Component {
             onClick={(event) => this.handleChange(event, optionValue)}
           >
             {option.short_description}
-            <ScenarioDescription>
-              {option.long_description}
-            </ScenarioDescription>                 
           </ScenarioOption>
 
         )
