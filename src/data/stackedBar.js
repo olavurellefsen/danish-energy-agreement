@@ -2,7 +2,7 @@ export default {
   scenarios: [
     {
       scenario: 0,
-      "CO2 emissioner": [
+      "CO2 emissioner og VE andel": [
         { group: "Affald CO2", values: [{ period: "2015", total: 1415.50350052406 }, { period: "2020", total: 1235.90112717642 }, { period: "2025", total: 1207.12330475782 }, { period: "2030", total: 1238.57721661427 }, { period: "2035", total: 1340.90476185127 }, { period: "2040", total: 1347.47748267176 }, { period: "2045", total: 1353.79747660903 }, { period: "2050", total: 1360.17673936479 }] },
         { group: "Bio CO2", values: [{ period: "2015", total: 768.566041442783 }, { period: "2020", total: 992.80807406273 }, { period: "2025", total: 933.690204235503 }, { period: "2030", total: 797.547890049811 }, { period: "2035", total: 1035.0721402684 }, { period: "2040", total: 671.297529421581 }, { period: "2045", total: 581.582460599355 }, { period: "2050", total: 591.164435713359 }] },
         { group: "El og varme sektorens CO2", values: [{ period: "2015", total: 8325.61565007015 }, { period: "2020", total: 7023.0429808032 }, { period: "2025", total: 2629.70772054442 }, { period: "2030", total: 1939.51917451399 }, { period: "2035", total: 1596.87262621841 }, { period: "2040", total: 1086.44724764361 }] },
@@ -47,7 +47,7 @@ export default {
         { group: "Termiske kraftværker", values: [{ period: "2015", total: 892.48 }, { period: "2020", total: 632.48 }, { period: "2025", total: 632.48 }, { period: "2030", total: 629.184722291183 }, { period: "2035", total: 311.45 }, { period: "2040", total: 0 }, { period: "2045", total: 0 }, { period: "2050", total: 0 }] },
         { group: "Vandkraft", values: [{ period: "2015", total: 8.6 }, { period: "2020", total: 8.6 }, { period: "2025", total: 8.6 }, { period: "2030", total: 8.6 }, { period: "2035", total: 4.3 }, { period: "2040", total: 0 }, { period: "2045", total: 0 }, { period: "2050", total: 0 }] }
       ],
-      "El net eksport": [
+      "El netto eksport": [
         { group: "Eksport til England", values: [{ period: "2015", total: 0 }, { period: "2020", total: 0 }, { period: "2025", total: 41.8134178175734 }, { period: "2030", total: 34.1060689641237 }, { period: "2035", total: 9.45897413590097 }, { period: "2040", total: 20.0088661048745 }, { period: "2045", total: 29.0331669089957 }, { period: "2050", total: 41.94288 }] },
         { group: "Eksport til Holland", values: [{ period: "2015", total: 0 }, { period: "2020", total: 12.3476293660913 }, { period: "2025", total: 4.49181311530525 }, { period: "2030", total: 2.28030902648527 }, { period: "2035", total: 0.310094427282998 }, { period: "2040", total: 4.45226976889446 }, { period: "2045", total: 12.0804460417084 }, { period: "2050", total: 14.9840525625992 }] },
         { group: "eksport til Norge", values: [{ period: "2015", total: 8.18646786977953 }, { period: "2020", total: 20.7733016242504 }, { period: "2025", total: 17.6079744 }, { period: "2030", total: 17.6079744 }, { period: "2035", total: 17.6079744 }, { period: "2040", total: 17.6630662217755 }, { period: "2045", total: 24.2727985188687 }, { period: "2050", total: 24.9460981663721 }] },
@@ -105,7 +105,7 @@ export default {
         { group: "LPG", values: [{ period: "2015", total: 0.000425226617830392 }, { period: "2020", total: 0.000283484428732402 }, { period: "2025", total: 0.000188989619154787 }, { period: "2030", total: 9.44948095771713E-05 }, { period: "2035", total: 0 }, { period: "2040", total: 0 }, { period: "2045", total: 0 }, { period: "2050", total: 0 }] },
         { group: "Naturgas", values: [{ period: "2015", total: 0.00099219496992788 }, { period: "2020", total: 8.38359273370645 }, { period: "2025", total: 33.4319113435109 }, { period: "2030", total: 38.4653390636156 }, { period: "2035", total: 34.209803991044 }, { period: "2040", total: 34.77285593293 }, { period: "2045", total: 37.0185319945289 }, { period: "2050", total: 39.4092367239874 }] }
       ],
-      "Transport - bil bestanden": [
+      "Transport - bilbestanden": [
         { group: "Benzin bil", values: [{ period: "2015", total: 1530.602 }, { period: "2020", total: 1357.98820424847 }, { period: "2025", total: 1290.80507851691 }, { period: "2030", total: 934.786078516906 }, { period: "2035", total: 526.970606484933 }, { period: "2040", total: 105.226088380709 }, { period: "2045", total: 1.332 }, { period: "2050", total: 0.047 }] },
         { group: "Diesel bil", values: [{ period: "2015", total: 628.637 }, { period: "2020", total: 579.275217163211 }, { period: "2025", total: 397.753217163211 }, { period: "2030", total: 251.531217163211 }, { period: "2035", total: 67.6667905604102 }, { period: "2040", total: 6.303 }, { period: "2045", total: 0.547 }, { period: "2050", total: 0.019 }] },
         { group: "Elbil", values: [{ period: "2015", total: 2.09 }, { period: "2020", total: 168.941979161737 }, { period: "2025", total: 543.126853430174 }, { period: "2030", total: 1173.21343383879 }, { period: "2035", total: 1888.04479245446 }, { period: "2040", total: 2434.0767528982 }, { period: "2045", total: 2511.6037331861 }, { period: "2050", total: 2500.84277706786 }] },
@@ -148,7 +148,7 @@ export default {
     },
     {
       scenario: 1,
-      "CO2 emissioner": [
+      "CO2 emissioner og VE andel": [
         { group: "Affald CO2", values: [{ period: "2015", total: 1415.50350052407 }, { period: "2020", total: 1235.90112616742 }, { period: "2025", total: 1206.12330465682 }, { period: "2030", total: 1238.56621771426 }, { period: "2035", total: 1340.90467185126 }, { period: "2040", total: 1346.46648276167 }, { period: "2045", total: 1353.69646770903 }, { period: "2050", total: 1370.16763937469 }] },
         { group: "Bio CO2", values: [{ period: "2015", total: 678.577041442683 }, { period: "2020", total: 992.80806407263 }, { period: "2025", total: 933.790204235503 }, { period: "2030", total: 696.546890049811 }, { period: "2035", total: 1035.0621402784 }, { period: "2040", total: 761.296529421581 }, { period: "2045", total: 581.582470599355 }, { period: "2050", total: 591.174435613359 }] },
         { group: "El og varme sektorens CO2", values: [{ period: "2015", total: 8325.71575006015 }, { period: "2020", total: 6023.0429808032 }, { period: "2025", total: 2729.60662054442 }, { period: "2030", total: 1939.51916451399 }, { period: "2035", total: 1597.86272721841 }, { period: "2040", total: 1087.44624674371 }] },
@@ -193,7 +193,7 @@ export default {
         { group: "Termiske kraftværker", values: [{ period: "2015", total: 892.48 }, { period: "2020", total: 732.48 }, { period: "2025", total: 732.48 }, { period: "2030", total: 729.184622291183 }, { period: "2035", total: 311.45 }, { period: "2040", total: 0 }, { period: "2045", total: 0 }, { period: "2050", total: 0 }] },
         { group: "Vandkraft", values: [{ period: "2015", total: 8.7 }, { period: "2020", total: 8.7 }, { period: "2025", total: 8.7 }, { period: "2030", total: 8.7 }, { period: "2035", total: 4.3 }, { period: "2040", total: 0 }, { period: "2045", total: 0 }, { period: "2050", total: 0 }] }
       ],
-      "El net eksport": [
+      "El netto eksport": [
         { group: "Eksport til England", values: [{ period: "2015", total: 0 }, { period: "2020", total: 0 }, { period: "2025", total: 41.8134168165634 }, { period: "2030", total: 34.1070789741236 }, { period: "2035", total: 9.45896413590096 }, { period: "2040", total: 20.0088771048645 }, { period: "2045", total: 29.0331779089956 }, { period: "2050", total: 41.94288 }] },
         { group: "Eksport til Holland", values: [{ period: "2015", total: 0 }, { period: "2020", total: 12.3467293770913 }, { period: "2025", total: 4.49181311530525 }, { period: "2030", total: 2.28030902748526 }, { period: "2035", total: 0.310094426282998 }, { period: "2040", total: 4.45227967889447 }, { period: "2045", total: 12.0804470416084 }, { period: "2050", total: 14.9840525725992 }] },
         { group: "eksport til Norge", values: [{ period: "2015", total: 8.18747687966953 }, { period: "2020", total: 20.6633017242504 }, { period: "2025", total: 16.7069644 }, { period: "2030", total: 16.7069644 }, { period: "2035", total: 16.7069644 }, { period: "2040", total: 16.7730772216655 }, { period: "2045", total: 24.2626985188786 }, { period: "2050", total: 24.9470981773621 }] },
@@ -251,7 +251,7 @@ export default {
         { group: "LPG", values: [{ period: "2015", total: 0.000425227716830392 }, { period: "2020", total: 0.000283484428632402 }, { period: "2025", total: 0.000188989719154686 }, { period: "2030", total: 9.44948095661613E-05 }, { period: "2035", total: 0 }, { period: "2040", total: 0 }, { period: "2045", total: 0 }, { period: "2050", total: 0 }] },
         { group: "Naturgas", values: [{ period: "2015", total: 0.00099219497992688 }, { period: "2020", total: 8.38359263360745 }, { period: "2025", total: 33.4319113435109 }, { period: "2030", total: 38.4753390737157 }, { period: "2035", total: 34.209803991044 }, { period: "2040", total: 34.66285593293 }, { period: "2045", total: 36.0185319945289 }, { period: "2050", total: 39.4092376239864 }] }
       ],
-      "Transport - bil bestanden": [
+      "Transport - bilbestanden": [
         { group: "Benzin bil", values: [{ period: "2015", total: 1530.702 }, { period: "2020", total: 1356.98820424846 }, { period: "2025", total: 1290.80506851791 }, { period: "2030", total: 934.687068517907 }, { period: "2035", total: 527.960707484933 }, { period: "2040", total: 105.227088380609 }, { period: "2045", total: 1.332 }, { period: "2050", total: 0.046 }] },
         { group: "Diesel bil", values: [{ period: "2015", total: 728.736 }, { period: "2020", total: 569.265216173211 }, { period: "2025", total: 396.653216173211 }, { period: "2030", total: 251.531216173211 }, { period: "2035", total: 76.7776905704102 }, { period: "2040", total: 7.303 }, { period: "2045", total: 0.546 }, { period: "2050", total: 0.019 }] },
         { group: "Elbil", values: [{ period: "2015", total: 2.09 }, { period: "2020", total: 178.941969171636 }, { period: "2025", total: 543.127853430164 }, { period: "2030", total: 1163.21343383869 }, { period: "2035", total: 1888.04469245447 }, { period: "2040", total: 2434.0676528982 }, { period: "2045", total: 2511.7036331871 }, { period: "2050", total: 2500.84266607687 }] },

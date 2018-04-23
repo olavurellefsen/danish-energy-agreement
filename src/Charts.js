@@ -25,16 +25,16 @@ const Charts = (props) => {
     <MainArea>
       {(props.scenarioSelection.showWelcome===true) && <Welcome closeWelcome={props.closeWelcome} />}
       <Flex>
-        <StackedBarChart chartType='CO2 emissioner' selectedScenario={selectedScenario} combinedChart={true} label="Kt" label2="Vedvarende energi andel" />
+        <StackedBarChart chartType='CO2 emissioner og VE andel' selectedScenario={selectedScenario} combinedChart={true} label="Kt" label2="Vedvarende energi andel" />
         <StackedBarChart chartType='Biobrændsels forbrug' selectedScenario={selectedScenario} combinedChart={false} label="" />
         <StackedBarChart chartType='El produktion' selectedScenario={selectedScenario} combinedChart={false} label="PJ" />
         <StackedBarChart chartType='El kapacitet' selectedScenario={selectedScenario} combinedChart={false} label="MW" />
-        <StackedBarChart chartType='El net eksport' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Netto eksport" />
+        <StackedBarChart chartType='El netto eksport' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Netto eksport" />
         <StackedBarChart chartType='Fjernvarme produktion' selectedScenario={selectedScenario} combinedChart={false} label="Kt" />
         <StackedBarChart chartType='Husholdningers varmeforbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" />
         <StackedBarChart chartType='Industriens energiforbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" />
         <StackedBarChart chartType='Transport sektorens energiforbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" />
-        <StackedBarChart chartType='Transport - bil bestanden' selectedScenario={selectedScenario} combinedChart={false} label="" />
+        <StackedBarChart chartType='Transport - bilbestanden' selectedScenario={selectedScenario} combinedChart={false} label="" />
         <StackedBarChart chartType='Miljø og energi afgifter' selectedScenario={selectedScenario} combinedChart={false} label="" />
         <StackedBarChart chartType='System omkostninger' selectedScenario={selectedScenario} combinedChart={false} label="MKr" />
       </Flex>
