@@ -1,9 +1,9 @@
-import React from 'react'
-import AboutContainer from './AboutContainer'
-import AboutHeader from './AboutHeader'
-import AboutBody from './AboutBody'
-import BodyLink from './BodyLink'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import AboutContainer from './styledComponents/AboutContainer';
+import AboutHeader from './styledComponents/AboutHeader';
+import AboutBody from './styledComponents/AboutBody';
+import BodyLink from './styledComponents/BodyLink';
+import { Link } from 'react-router-dom';
 
 export default () => (
   <AboutContainer>
