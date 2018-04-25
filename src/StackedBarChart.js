@@ -80,6 +80,13 @@ class StackedBarChart extends React.Component {
       yDomain = stackedRatio<lineRatio ? [stackedRatio,1] : [lineRatio,1];
     }
 
+    const colors = [
+      "#330808", "#46cc0c", "#3ca2e6", "#796e99", "#f2cf07", "#2ef29a", "#3f6d8c",
+      "#400039", "#7f050b", "#8c790e", "#209963", "#bfe6ff", "#99238d", "#f26f76", "#665e31",
+      "#41594e", "#5a27f2", "#ff52ee", "#734e50", "#d9d09c", "#ace6cc", "#4d3499", "#cc8bc5",
+      "#144001", "#0a2233", "#997cf2", "#402f3e"
+    ];
+
     return (
       <div>
         <VictoryChart
@@ -127,7 +134,7 @@ class StackedBarChart extends React.Component {
           <VictoryStack>
             {              
               dataStackedBar.map(
-                chartGroup => (
+                (chartGroup, i) => (
                   <VictoryBar 
                     key={chartGroup.group}
                     data={chartGroup.values.map(
@@ -138,6 +145,9 @@ class StackedBarChart extends React.Component {
                     x='period'
                     y={(datum) => datum['total'] / maxYaxisValueStacked}
                     labelComponent={<VictoryTooltip/>}
+                    style={{
+                      data: {fill: colors[i]}
+                    }}
                   />
                 )
               )
