@@ -1,0 +1,158 @@
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'react-router-dom';
+
+const AboutContainer = styled.div`
+  padding: 0px 20px 20px 40px;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: column;
+  `
+const AboutHeader = styled.h1`
+  font-size: 2em;
+  font-weight: bold;
+  `
+const AboutHeader2 = styled.h2`
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 20px 0px 10px 0px;
+  `
+const AboutBody = styled.div`
+  font-size: 1em;
+  padding: 0px 0px 10px 0px;
+  `
+
+export default () => (
+  <AboutContainer>
+    <AboutHeader>Scenariebeskrivelser</AboutHeader>
+    <AboutHeader2>DTU Frozen policy</AboutHeader2>
+    <AboutBody>
+      Frozen policy scenariet er lignende Energistyrelsens basisfremskrivning et energi scenarie med fastlåst politik frem
+      til 2050. Det antages at der stilles lokationer til udbygning af havvindmøller i både øst og vest Danmark, samt
+      udbuddet af EL og Hybrid biler i 2025 et tæt sammenligneligt med i dags udbud af benzin biler. Desuden er der i
+      modellen taget højde for omkostninger til udbygning af infrastruktur til el- og gasbiler.
+    </AboutBody>
+    <AboutBody>
+      Der er i modellen antaget en maximal udbygning af 4400 MW landvind, 50000 MW havvind, 3000 MW bølgeenergi, 12000 MW
+      tag solceller og 3000 MW mark solcelle anlæg svarende til et areal på ca. halvdelen af Langeland.
+    </AboutBody>
+    <AboutHeader2>DTU International skibsfart</AboutHeader2>
+    <AboutBody>
+      Scenariet inkluderer international bunkering fra shipping industrien, foruden de samme antagelser som i Base scenariet.
+    </AboutBody>
+    <AboutHeader2>Regeringens forslag til en energiaftale</AboutHeader2>
+    <AboutBody>
+      Målsætninger:
+      <ul>
+      <li>-	Mindst 50 % VE andel i 2030</li>
+      </ul>
+      </AboutBody>
+      <AboutBody>
+      Politikker:
+      <ul>
+      <li>Ingen kul i elforsyningen fra 2030</li> 
+      <li>800 MW vindmøllepark implementeret i 2025</li> 
+      <li>Reduktion af elvarme afgiften med 25 øre/kWh</li> 
+      <li>Reduktion af elafgiften med 30 øre/kWh</li> 
+      <li>0.5 mia. kr i årlig reserve efter 2025 for at nå målsætningen (vist som 1400 MW havvindmøller)</li> 
+      <li>10 øre/kWh støtte til sol og landvind til 2025</li> 
+      <li>Forlængelse af biomasse støtten for eksisterende anlæg til 2030.</li>
+      </ul>
+    </AboutBody>
+    <AboutBody>
+      Ikke implementeret politikker 
+      <ul>
+      <li>Støtte ordning til industrielle og husholdningers energibesparelse</li>
+      <li>Reduktion af elafgift til liberale erhverv</li>
+      </ul>
+    </AboutBody>
+    <AboutHeader2>Radikale Venstres forslag til en energiaftale</AboutHeader2>
+    <AboutBody>
+      Målsætninger:
+      <ul>
+      <li>Mindst 50 % VE andel i 2030</li>
+      <li>60 % VE i 2030</li>
+      <li>16 % effektivisering i 2030</li>
+      <li>80 % varmepumper i decentrale fjernvarme områder og væsentlig dele af centrale områder</li>
+      <li>Fossilfri el og varme sektor</li>
+      </ul>
+      </AboutBody>
+      <AboutBody>
+      Politikker:
+      <ul>
+      <li>Fossilt forbud i el og varme sektoren</li>
+      <li>6000 MW VE</li>
+      <ul> 
+        <li>3000 MW havvind bygget i 2024, 2026 og 2028</li>
+        <li>300 MW årlig udbygning af sol og landvind</li>
+      </ul>
+      <li>Elafgift til opvarmning sænkes med 25 øre/kWh</li>
+      </ul>
+    </AboutBody>
+    <AboutBody>
+      Ikke implementeret politikker
+      <ul>
+      <li>10 øre/kWh minimums pris på el</li>
+      <li>Afgift på biomasse til varmeanlæg med over 700 fuldlasttimer</li>
+      <li>Støtte til biogas</li>
+      </ul>
+    </AboutBody>
+    <AboutHeader2>Alternativets forslag til en energiaftale</AboutHeader2>
+    <AboutBody>
+      Målsætninger:
+      <ul>
+        <li>Fossilfrit Danmark i 2035</li>
+        <li>Reduktion af drivhusgasudledninger</li>
+        <ul>
+          <li>Mindst 60 % i 2025</li>
+          <li>Mindst 80 % i 2030</li>
+          <li>Mindst 95 % i 2035</li>
+          <li>Mindst 100 % i 2040</li>
+        </ul>
+      </ul>
+      </AboutBody>
+      <AboutBody>
+      Politikker:
+      <ul>
+        <li>10.000 MW VE udbygning mod 2030</li>
+        <ul> 
+          <li>5000 MW havvindmøller</li>
+          <li>5000 MW landvind og solceller</li>
+        </ul>
+        <li>1 generations biobrændsler udfases fra 2025</li>
+        <li>Minimum CO2 kvote pris på 40 Euro og 100 Euro i henholdsvis 2025 og 2030</li>
+        <li>Elafgift til opvarmning sænkes med 20 øre/kWh</li>
+        <li>Elafgift til varmepumper med brug af overskudsvarme sænkes til proces afgiften på 4 kr./GJ</li>
+        <li>Udfasning af kul i 2028</li>
+        <li>Genindføring af PSO afgiften</li>
+        <li>Nul afgift på el og brint biler</li>
+        <li>Nul salg af benzin og diesel fra 2025</li>
+        <li>Ingen elafgift til transport indtil 2023</li>
+        <li>Hævning af fradragsgrænsen for registreringsafgifts reduktion til 25.2 og 28.1 km/l for henholdsvis benzin og diesel biler.</li>
+        <li>Afgiftsstigning for biler under fradragsgrænsen til 6000 kr.</li>
+        <li>Offentlig transport fossilfri i 2025</li>
+        <li>Stigning af benzin og diesel afgifter til 6 og 4.32 kr/l</li>
+      </ul>
+    </AboutBody>
+    <AboutBody>
+      Ikke implementeret politikker 
+      <ul>
+        <li>Støtte på 50 mio. kr til bølgeenergi</li>
+        <li>Netto måleordning til solceller med net ydelse på 12 øre/kWh</li>
+        <li>Energieffektivisering af bygningen på 40 procent i 2030</li>
+        <li>Den faste biomasse (til el og varme) skal Maks fylde 10-20 procent i 2030</li>
+        <li>Afgift på fast biomasse i fjernvarmeanlæg og private ovne</li>
+        <li>En milliard til implementering af varmepumper</li>
+        <li>Ingen parkeringsafgifter og pris for at køre over Storebælt for elbiler</li>
+        <li>Støtte til cykelstier på 200 mio. kr årligt</li>
+        <li>Tillempelse af den tysk miljø ordning for lastbiler, men med dækning af alle veje</li>
+        <li>Klimaafgift på flyrejser 80 kr/flyvning</li>
+        <li>El-indenrigsfly i 2040</li>
+        <li>Minimum 1.5 mia. til forskning</li>
+      </ul>
+    </AboutBody>    
+    <AboutBody><Link to='/'>Tilbage til forsiden</Link></AboutBody>
+  </AboutContainer>
+)

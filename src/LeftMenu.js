@@ -67,7 +67,7 @@ const MenuSeparatorLine  = styled.hr`
   width: 100hh;
 `
 const MenuRoutes  = styled.div`
-  padding: 10px 12px 5px 15px;
+  padding: 10px 12px 15px 15px;
   margin: 0;
   width: 100%;
   height: 26px;
@@ -79,6 +79,8 @@ const MenuItem  = styled(Link)`
   font-weight: bold;
   font-size: 1em;
   margin: 0;
+  padding-top: 10px;
+  padding-bottom: 15px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -131,6 +133,7 @@ class ScenarioSelectionMenu extends React.Component {
             }
             <MenuRoutes>
               <MenuItem to='/about'>Om værktøjet</MenuItem>
+              <MenuItem to='/beskrivelser'>Beskrivelser</MenuItem>
             </MenuRoutes>
           </MenuHeaderLeft>
           {(this.props.showMobileMenu===false) &&
