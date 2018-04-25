@@ -31,8 +31,8 @@ const Charts = (props) => {
         <StackedBarChart chartType='El kapacitet' selectedScenario={selectedScenario} combinedChart={false} label="MW" minY={0} maxY={40000} />
         <StackedBarChart chartType='El netto eksport' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Netto eksport (PJ)" minY={-160} maxY={160}  minY2={-160} maxY2={160} Y2Percentage={false} />
         <StackedBarChart chartType='Fjernvarme produktion' selectedScenario={selectedScenario} combinedChart={false} label="PJ" minY={0} maxY={200} />
-        <StackedBarChart chartType='Husholdningers varmeforbrug' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Energibesparelser" minY={0} maxY={160} minY2={0} maxY2={20} Y2Percentage={false} />
-        <StackedBarChart chartType='Industriens energiforbrug' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Energibesparelser" minY={0} maxY={400} minY2={0} maxY2={60} Y2Percentage={false} />
+        <StackedBarChart chartType='Husholdningers varmeforbrug' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Energibesparelser (PJ)" minY={0} maxY={160} minY2={0} maxY2={20} Y2Percentage={false} />
+        <StackedBarChart chartType='Industriens energiforbrug' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Energibesparelser (PJ)" minY={0} maxY={400} minY2={0} maxY2={60} Y2Percentage={false} />
         <StackedBarChart chartType='Transportsektorens energiforbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" minY={0} maxY={350} />
         <StackedBarChart chartType='Transport - bil-bestand' selectedScenario={selectedScenario} combinedChart={false} label="1000 stk" minY={0} maxY={3000} />
         <StackedBarChart chartType='Miljø og energi afgifter' selectedScenario={selectedScenario} combinedChart={false} label="Mkr" minY={-10000} maxY={80000} />

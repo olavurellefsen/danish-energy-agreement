@@ -13,42 +13,6 @@ const ChartHeader = styled(VictoryLabel)`
   font-weight: bold;
 `;
 
-const getStackedValues = (dataSet, periods) => {
-  let periodSums = periods.map((year) => ({period: year, total: 0}));
-  dataSet.reduce((res1, chartGroup) => {
-    chartGroup.values.reduce((res, value) => {
-      let foundIndex = periodSums.findIndex(x => x.period === value.period);
-      periodSums[foundIndex].total += value.total;
-      return res;
-    }, periodSums);
-    return periodSums;
-  });
-  return periodSums;
-}
-
-const getNegativeStackedValues = (dataSet, periods) => {
-  let negativeDataStackedBar = dataSet.map((chartGroup) => {
-    let negativeValues = chartGroup.values.filter((value) => {
-      return value.total<0;
-    });
-    return {group: chartGroup.group, values: negativeValues};
-  });
-  return getStackedValues(negativeDataStackedBar, periods);
-}
-
-const getMaxYaxisValue = (dataSet) => {
-  let maxValue = Object.keys(dataSet).reduce(function(m, k){ return dataSet[k].total > m ? dataSet[k].total : m }, -Infinity);
-  let order = Math.floor(Math.log(Math.abs(maxValue)) / Math.LN10 + 0.000000001);
-  if(order<0) {order++;}
-  return Math.pow(10, order) * (parseInt(maxValue.toPrecision(1),0)+1);
-}
-
-const getMinYaxisValue = (dataSet) => {
-  let minValue = Object.keys(dataSet).reduce(function(m, k){ return dataSet[k].total < m ? dataSet[k].total : m }, Infinity);
-  let order = Math.floor(Math.log(Math.abs(minValue)) / Math.LN10 + 0.000000001);
-  return Math.pow(10, order) * (parseInt(minValue.toPrecision(1),0));
-}
-
 class StackedBarChart extends React.Component {
   render() {
     const scenario = this.props.selectedScenario;
@@ -58,12 +22,6 @@ class StackedBarChart extends React.Component {
     const dataLine = line.scenarios;
 
     const periods = ["2015", "2020", "2025", "2030", "2035", "2040", "2045", "2050"];
-    //let periodSums = getStackedValues(dataStackedBar, periods);
-    //let maxYaxisValueStacked = getMaxYaxisValue(periodSums);
-    //let minYaxisValueStacked = 0;
-
-    //periodSums = getNegativeStackedValues(dataStackedBar, periods);
-    //minYaxisValueStacked = getMinYaxisValue(periodSums);
 
     let minYaxisValueStacked = this.props.minY;
     let maxYaxisValueStacked = this.props.maxY;
@@ -71,9 +29,6 @@ class StackedBarChart extends React.Component {
     let maxYaxisValueLine = 1;
     let minYaxisValueLine = 0;
     if(combinedChart===true) {
-    //  let lineValues = dataLine[scenario][chartType][0].values;
-    //  maxYaxisValueLine = getMaxYaxisValue(lineValues);
-    //  minYaxisValueLine = getMinYaxisValue(lineValues);
       maxYaxisValueLine = this.props.maxY2;
       minYaxisValueLine = this.props.minY2;
     }
@@ -117,7 +72,7 @@ class StackedBarChart extends React.Component {
             tickFormat={(t) => (t*maxYaxisValueStacked)}
             label={this.props.label}
           />
-          {(combinedChart===true) &&
+          {(combinedChart===true && this.props.Y2Percentage===false) &&
             <VictoryAxis
               dependentAxis
               key={3}
@@ -125,13 +80,28 @@ class StackedBarChart extends React.Component {
               label={this.props.label2}
               style={{
                 axis: { stroke: 'red' },
-                axisLabel: { fill: 'red', padding: -45},
+                axisLabel: { fill: 'red', padding: -50},
                 ticks: { padding: -25 },
                 tickLabels: { fill: 'red', textAnchor: 'start' }
               }}              
               tickFormat={(t) => (t*maxYaxisValueLine)}
             />
           }
+          {(combinedChart===true&& this.props.Y2Percentage===true) &&
+            <VictoryAxis
+              dependentAxis
+              key={3}
+              offsetX={350}
+              label={this.props.label2}
+              style={{
+                axis: { stroke: 'red' },
+                axisLabel: { fill: 'red', padding: -50},
+                ticks: { padding: -25 },
+                tickLabels: { fill: 'red', textAnchor: 'start' }
+              }}              
+              tickFormat={(t) => `${t*maxYaxisValueLine*100}%`}
+            />
+          }          
           <VictoryStack>
             {              
               dataStackedBar.map(
@@ -178,7 +148,8 @@ StackedBarChart.propTypes = {
   minY2: PropTypes.number,
   maxY2: PropTypes.number,  
   label: PropTypes.string.isRequired,
-  label2: PropTypes.string
+  label2: PropTypes.string,
+  Y2Percentage: PropTypes.bool
 }
 
 export default StackedBarChart;
