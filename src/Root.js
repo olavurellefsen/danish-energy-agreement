@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
 import 'typeface-roboto'
 import { injectGlobal } from 'styled-components'
@@ -7,9 +7,9 @@ import { injectGlobal } from 'styled-components'
 export default class Root extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router>
         <App />
-      </BrowserRouter>
+      </Router>
     );
   }
 }

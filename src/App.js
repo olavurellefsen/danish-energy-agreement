@@ -7,8 +7,6 @@ import ReactGA from 'react-ga'
 import LeftMenu from './LeftMenu'
 import Charts from './Charts'
 import About from './pages/About'
-import Challenges from './pages/Challenges'
-import Settings from './pages/Settings'
 import scenarioCombinations from './data/scenarioCombinations'
 import HamburgerIcon from './utils/HamburgerIcon'
 
@@ -116,8 +114,6 @@ class App extends React.Component {
               closeWelcome={this.UpdateScenarioSelection}
             />}/>
             <Route path='/about' component={About} />
-            <Route path='/challenges' component={Challenges} />
-            <Route path='/settings' component={Settings} />
           </MainSwitch>
         </Flex>
       </Flex>

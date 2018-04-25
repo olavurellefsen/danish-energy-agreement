@@ -75,7 +75,7 @@ const MenuRoutes  = styled.div`
   flex-direction: column;
   align-items: center;
 `
-const MenuItem  = styled.div`
+const MenuItem  = styled(Link)`
   font-weight: bold;
   font-size: 1em;
   margin: 0;

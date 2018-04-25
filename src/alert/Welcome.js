@@ -18,11 +18,14 @@ const AlertContainer = styled.div`
   flex-direction: row;
 `
 
-const AlertBody = styled.p`
+const AlertBody = styled.div`
   font-size: 1em;
   margin: 0px;
   align-self: center;
   flex: 1;
+`
+
+const AlertBodyParagraph = styled.p`
 `
 
 const CloseWindowIcon = styled.div`
@@ -38,8 +41,16 @@ const CloseWindowIcon = styled.div`
 const Welcome = (props) => (
   <AlertContainer>
     <AlertBody>
-      DEMO DATA - BEMÆRK VENLIGST AT DETTE IKKE ER DEN ENDELIGE UDGAVE - Med dette værktøj kan du udforske forskellige scenarier i forbindelse med energiaftalen 2018.
-      Vælg et scenarie i venstre menu og se resultatet i graferne nedenfor.
+      <AlertBodyParagraph>
+        Med dette værktøj kan du udforske forskellige scenarier i forbindelse med Energiaftalen 2018.
+        Vælg et scenario i venstre menu og se resultatet i graferne nedenfor.
+      </AlertBodyParagraph>
+      <AlertBodyParagraph>
+        De viste scenarier er baseret på beregninger i energisystemmodellen TIMES-DK. Scenario
+        beskrivelserne og resultater er baseret på DTU’s fortolkning af regeringens udspil,
+        udmeldinger fra andre partier samt egne scenarier. Scenarierne vil løbende blive opdateret
+        når nye ting dukker op.
+      </AlertBodyParagraph>
     </AlertBody>
     <CloseWindowIcon onClick={(event) => props.closeWelcome(event, 'showWelcome', false)}>
       <Octicon name='x' />
