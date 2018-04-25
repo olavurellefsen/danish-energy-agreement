@@ -58,19 +58,24 @@ class StackedBarChart extends React.Component {
     const dataLine = line.scenarios;
 
     const periods = ["2015", "2020", "2025", "2030", "2035", "2040", "2045", "2050"];
-    let periodSums = getStackedValues(dataStackedBar, periods);
-    let maxYaxisValueStacked = getMaxYaxisValue(periodSums);
-    let minYaxisValueStacked = 0;
+    //let periodSums = getStackedValues(dataStackedBar, periods);
+    //let maxYaxisValueStacked = getMaxYaxisValue(periodSums);
+    //let minYaxisValueStacked = 0;
 
-    periodSums = getNegativeStackedValues(dataStackedBar, periods);
-    minYaxisValueStacked = getMinYaxisValue(periodSums);
+    //periodSums = getNegativeStackedValues(dataStackedBar, periods);
+    //minYaxisValueStacked = getMinYaxisValue(periodSums);
+
+    let minYaxisValueStacked = this.props.minY;
+    let maxYaxisValueStacked = this.props.maxY;
 
     let maxYaxisValueLine = 1;
     let minYaxisValueLine = 0;
     if(combinedChart===true) {
-      let lineValues = dataLine[scenario][chartType][0].values;
-      maxYaxisValueLine = getMaxYaxisValue(lineValues);
-      minYaxisValueLine = getMinYaxisValue(lineValues);
+    //  let lineValues = dataLine[scenario][chartType][0].values;
+    //  maxYaxisValueLine = getMaxYaxisValue(lineValues);
+    //  minYaxisValueLine = getMinYaxisValue(lineValues);
+      maxYaxisValueLine = this.props.maxY2;
+      minYaxisValueLine = this.props.minY2;
     }
 
     let yDomain = [0, 1];
@@ -104,17 +109,13 @@ class StackedBarChart extends React.Component {
             key={0}
             tickValues={[1, 2, 3, 4, 5, 6, 7, 8]}
             tickFormat={periods}
-            offsetY={50}
-          />         
+          />
           <VictoryAxis
             dependentAxis
             key={2}
             offsetX={80}
             tickFormat={(t) => (t*maxYaxisValueStacked)}
             label={this.props.label}
-            style={{
-              axisLabel: {padding: 55}
-            }}
           />
           {(combinedChart===true) &&
             <VictoryAxis
@@ -172,6 +173,10 @@ StackedBarChart.propTypes = {
   selectedScenario: PropTypes.number.isRequired,
   chartType: PropTypes.string.isRequired,
   combinedChart: PropTypes.bool.isRequired,
+  minY: PropTypes.number.isRequired,
+  maxY: PropTypes.number.isRequired,
+  minY2: PropTypes.number,
+  maxY2: PropTypes.number,  
   label: PropTypes.string.isRequired,
   label2: PropTypes.string
 }

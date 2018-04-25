@@ -68,7 +68,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      scenarioSelection: 0,
+      scenarioSelection: 3,
       mobileOpen: false,
       showWelcome: true,
       showMobileMenu: false
