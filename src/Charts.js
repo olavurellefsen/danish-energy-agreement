@@ -33,8 +33,8 @@ const Charts = (props) => {
         <StackedBarChart chartType='Fjernvarme produktion' selectedScenario={selectedScenario} combinedChart={false} label="Kt" />
         <StackedBarChart chartType='Husholdningers varmeforbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" />
         <StackedBarChart chartType='Industriens energiforbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" />
-        <StackedBarChart chartType='Transport sektorens energiforbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" />
-        <StackedBarChart chartType='Transport - bilbestanden' selectedScenario={selectedScenario} combinedChart={false} label="" />
+        <StackedBarChart chartType='Transportsektorens energiforbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" />
+        <StackedBarChart chartType='Transport - bil-bestand' selectedScenario={selectedScenario} combinedChart={false} label="" />
         <StackedBarChart chartType='Miljø og energi afgifter' selectedScenario={selectedScenario} combinedChart={false} label="" />
         <StackedBarChart chartType='System omkostninger' selectedScenario={selectedScenario} combinedChart={false} label="MKr" />
       </Flex>
