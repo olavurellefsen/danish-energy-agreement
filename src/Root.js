@@ -19,9 +19,8 @@ injectGlobal`
   body, #root, #root>div {
     font-family: Roboto;
     font-size: 1em;
-    margin: 10px;
+    margin: 0px;
     width: 100%;
-    height: 100%;
-    
+    height: 100%;    
   }
 `

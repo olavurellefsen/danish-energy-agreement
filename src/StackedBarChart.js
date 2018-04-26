@@ -51,8 +51,8 @@ class StackedBarChart extends React.Component {
       <div>
         <VictoryChart
           domainPadding={20}
-          width={400}
-          height={400}
+          width={380}
+          height={380}
           padding={{left: 80, right: 50, top: 50, bottom: 50}}
           theme={VictoryTheme.material}
           domain={{ y: yDomain }}
@@ -76,7 +76,7 @@ class StackedBarChart extends React.Component {
             <VictoryAxis
               dependentAxis
               key={3}
-              offsetX={350}
+              offsetX={330}
               label={this.props.label2}
               style={{
                 axis: { stroke: 'red' },
@@ -91,7 +91,7 @@ class StackedBarChart extends React.Component {
             <VictoryAxis
               dependentAxis
               key={3}
-              offsetX={350}
+              offsetX={330}
               label={this.props.label2}
               style={{
                 axis: { stroke: 'red' },
