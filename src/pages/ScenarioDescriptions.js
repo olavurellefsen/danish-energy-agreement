@@ -177,7 +177,16 @@ export default () => (
         <li>El-indenrigsfly i 2040</li>
         <li>Minimum 1.5 mia. til forskning</li>
       </ul>
+    </AboutBody>
+    <AboutHeader2>Forudsætninger</AboutHeader2>
+    <AboutBody>
+      Her kommer beregningsforudsætningerne.
+    </AboutBody>
+    <AboutBody>
+      
     </AboutBody>    
-    <AboutBody><Link to='/'>Tilbage til forsiden</Link></AboutBody>
+    <AboutBody>
+      <Link to='/'>Tilbage til forsiden</Link>
+    </AboutBody>
   </AboutContainer>
 )
