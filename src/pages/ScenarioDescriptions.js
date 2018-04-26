@@ -27,21 +27,46 @@ const AboutBody = styled.div`
 export default () => (
   <AboutContainer>
     <AboutHeader>Scenariebeskrivelser</AboutHeader>
-    <AboutHeader2>DTU Frozen policy</AboutHeader2>
+    <AboutHeader2>DTU Frozen Policy scenario</AboutHeader2>
     <AboutBody>
-      Frozen policy scenariet er lignende Energistyrelsens basisfremskrivning et energi scenarie med fastlåst politik frem
-      til 2050. Det antages at der stilles lokationer til udbygning af havvindmøller i både øst og vest Danmark, samt
-      udbuddet af EL og Hybrid biler i 2025 et tæt sammenligneligt med i dags udbud af benzin biler. Desuden er der i
-      modellen taget højde for omkostninger til udbygning af infrastruktur til el- og gasbiler.
+      Er et frozen policy scenario i stil med Energistyrelsens basisfremskrivning. 
+      Det indeholder alle allerede besluttede politikker samt samme brændselspriser 
+      som anvendes af Energistyrelsen. Dvs. et energiscenarie med fastlåst politik 
+      frem til 2050. Det antages, at der udpeges områder til udbygning af havvindmøller 
+      i både øst og vest Danmark, samt at udbuddet af EL og Hybrid biler i 2025 er 
+      på niveau med i dagens udbud af benzin biler – dette kræver formentlig en 
+      klar udmelding fra regeringen om at de ser elbiler som den fremtidige 
+      løsning i Danmark, ellers vil bil-producenterne sandsynligvis ikke bringe 
+      nok el- og hybridbiler på markedet i Danmark. Der i modellen taget højde 
+      for omkostninger til udbygning af infrastruktur til el- og gasbiler og 
+      modellen bygger automatisk denne infrastruktur og dermed er det implicit 
+      antaget at der er politisk opbakning til en sådan udbygning. 
     </AboutBody>
     <AboutBody>
-      Der er i modellen antaget en maximal udbygning af 4400 MW landvind, 50000 MW havvind, 3000 MW bølgeenergi, 12000 MW
-      tag solceller og 3000 MW mark solcelle anlæg svarende til et areal på ca. halvdelen af Langeland.
+      Der er i modellen antaget en maksimal udbygning af 4400 MW landvind, 50000 MW havvind,
+      3000 MW bølgeenergi, 12000 MW tag solceller og 3000 MW mark solcelleanlæg -  det sidste
+      svarende til et areal på ca. halvdelen af Langeland. 
     </AboutBody>
-    <AboutHeader2>DTU International skibsfart</AboutHeader2>
     <AboutBody>
-      Scenariet inkluderer international bunkering fra shipping industrien, foruden de samme antagelser som i Base scenariet.
+      De følgende scenarier bygger alle oven på DTU Basis scenario: 
+    </AboutBody>    
+    <AboutHeader2>DTU International skibsfart scenario</AboutHeader2>
+    <AboutBody>
+      Scenariet inkluderer international bunkering fra shipping industrien,
+      foruden de samme antagelser som i Basis scenariet. Dvs. det inkluderer
+      den danske del af den internationale skibstrafik og tilhørende
+      energiforbrug og emissioner.
     </AboutBody>
+    <AboutHeader2>DTU Fossilfri 2050</AboutHeader2>
+    <AboutBody>
+      Her er modellen bundet til at udledning af CO2 fra fossile brændsler skal
+      være nul i 2050 undtagen den del, som kommer fra affaldsforbrænding.
+    </AboutBody>
+    <AboutHeader2>DTU Fossilfri 2040</AboutHeader2>
+    <AboutBody>
+      Her er modellen bundet til at udledning af CO2 fra fossile brændsler skal
+      være nul i 2040 undtagen den del, som kommer fra affaldsforbrænding.
+    </AboutBody>        
     <AboutHeader2>Regeringens forslag til en energiaftale</AboutHeader2>
     <AboutBody>
       Målsætninger:
