@@ -3,22 +3,23 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const ScenarioDivider = styled.div`
-  height: 18px;
+  height: 5px;
   `
 const ScenarioHeader = styled.div`
-  padding: 0 12px 5px 15px;
-  margin: 0;
+  font-size: ${props => (props.narrowVersion ? '0.9em' : '1em')};
+  padding: ${props => (props.narrowVersion ? '5px' : '0 12px 0 15px')};
+  margin: 0px 0px 5px 0px;
   width: 100%;
   height: 26px;
   display: flex;
   align-items: center;
   `
 const ScenarioOption =styled.div`
+  font-size: ${props => (props.narrowVersion ? '0.7em' : '0.9em')};
   display: flex;
   align-items: center;
-  height: 26px;
-  line-height: 26px;
-  padding: 0 12px 0 15px;
+  height: ${props => (props.narrowVersion ? '12px' : '26px')};
+  padding: ${props => (props.narrowVersion ? '5px' : '0 12px 0 15px')};
   position: relative;
   width: 100%;
   border-radius: 0;
@@ -45,7 +46,7 @@ class ScenarioSelectionList extends React.Component {
   }
 
   render() {
-    const { dimensionOptions, dimensionTitle } = this.props
+    const { dimensionOptions, dimensionTitle, narrowVersion } = this.props
     let stringValue=this.state.value.toString();
     let scenarioOptions = dimensionOptions.map(option =>
       {
@@ -56,8 +57,10 @@ class ScenarioSelectionList extends React.Component {
             value={optionValue}
             selected={optionValue===stringValue}
             onClick={(event) => this.handleChange(event, optionValue)}
+            narrowVersion={narrowVersion}
           >
-            {option.short_description}
+            {narrowVersion===false && option.short_description}
+            {narrowVersion===true && option.ultra_short_description}
           </ScenarioOption>
 
         )
@@ -65,7 +68,7 @@ class ScenarioSelectionList extends React.Component {
     return (
       <div style={{display:'flex', flexWrap: 'wrap'}}>
         <ScenarioDivider/>
-        <ScenarioHeader>{dimensionTitle}</ScenarioHeader>
+        <ScenarioHeader narrowVersion={narrowVersion}>{dimensionTitle}</ScenarioHeader>
           {scenarioOptions}
       </div>
     )
@@ -78,6 +81,7 @@ ScenarioSelectionList.propTypes = {
   selectedValue: PropTypes.any.isRequired,
   dimensionOptions: PropTypes.array.isRequired,
   dimensionTitle: PropTypes.string.isRequired,
+  narrowVersion: PropTypes.bool.isRequired
 }
 
 export default ScenarioSelectionList;
