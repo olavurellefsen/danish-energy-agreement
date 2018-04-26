@@ -81,19 +81,19 @@ export default () => (
       <li>800 MW vindmøllepark implementeret i 2025</li> 
       <li>Reduktion af elvarme afgiften med 25 øre/kWh</li> 
       <li>Reduktion af elafgiften med 30 øre/kWh</li> 
-      <li>0.5 mia. kr i årlig reserve efter 2025 for at nå målsætningen (vist som 1400 MW havvindmøller)</li> 
+      <li>0.5 mia. kr i årlig reserve efter 2025 for at nå målsætningen (her modelleret som 1400 MW havvindmøller)</li> 
       <li>10 øre/kWh støtte til sol og landvind til 2025</li> 
-      <li>Forlængelse af biomasse støtten for eksisterende anlæg til 2030.</li>
+      <li>Forlængelse af biomassestøtten for eksisterende anlæg til 2030.</li>
       </ul>
     </AboutBody>
     <AboutBody>
       Politikker endnu ikke implementeret i modellen: 
       <ul>
-      <li>Støtte ordning til industrielle og husholdningers energibesparelse</li>
+      <li>Støtteordning til industri og husholdningers energibesparelser</li>
       <li>Reduktion af elafgift til liberale erhverv</li>
       </ul>
     </AboutBody>
-    <AboutHeader2>Radikale Venstres forslag til en energiaftale</AboutHeader2>
+    <AboutHeader2>Radikale Venstre's forslag til en energiaftale</AboutHeader2>
     <AboutBody>
       Målsætninger:
       <ul>
@@ -101,13 +101,13 @@ export default () => (
       <li>60 % VE i 2030</li>
       <li>16 % effektivisering i 2030</li>
       <li>80 % varmepumper i decentrale fjernvarme områder og væsentlig dele af centrale områder</li>
-      <li>Fossilfri el og varme sektor</li>
+      <li>Fossilfri el og varme sektor i 2030</li>
       </ul>
       </AboutBody>
       <AboutBody>
       Politikker:
       <ul>
-      <li>Fossilt forbud i el og varme sektoren</li>
+      <li>Fossilt forbud i el og varme sektoren fra 2030</li>
       <li>6000 MW VE</li>
       <ul> 
         <li>3000 MW havvind bygget i 2024, 2026 og 2028</li>
@@ -129,6 +129,7 @@ export default () => (
       Målsætninger:
       <ul>
         <li>Fossilfrit Danmark i 2035</li>
+        <li>Energieffektivisering i bygninger på 40 procent i 2030</li>
         <li>Reduktion af drivhusgasudledninger</li>
         <ul>
           <li>Mindst 60 % i 2025</li>
@@ -166,14 +167,13 @@ export default () => (
       <ul>
         <li>Støtte på 50 mio. kr til bølgeenergi</li>
         <li>Netto måleordning til solceller med net ydelse på 12 øre/kWh</li>
-        <li>Energieffektivisering af bygningen på 40 procent i 2030</li>
         <li>Den faste biomasse (til el og varme) skal Maks fylde 10-20 procent i 2030</li>
         <li>Afgift på fast biomasse i fjernvarmeanlæg og private ovne</li>
         <li>En milliard til implementering af varmepumper</li>
         <li>Ingen parkeringsafgifter og pris for at køre over Storebælt for elbiler</li>
         <li>Støtte til cykelstier på 200 mio. kr årligt</li>
         <li>Tillempelse af den tysk miljø ordning for lastbiler, men med dækning af alle veje</li>
-        <li>Klimaafgift på flyrejser 80 kr/flyvning</li>
+        <li>Klimaafgift på flyrejser 80 kr./flyvning</li>
         <li>El-indenrigsfly i 2040</li>
         <li>Minimum 1.5 mia. til forskning</li>
       </ul>
