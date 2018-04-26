@@ -87,7 +87,7 @@ export default () => (
       </ul>
     </AboutBody>
     <AboutBody>
-      Ikke implementeret politikker 
+      Politikker endnu ikke implementeret i modellen: 
       <ul>
       <li>Støtte ordning til industrielle og husholdningers energibesparelse</li>
       <li>Reduktion af elafgift til liberale erhverv</li>
@@ -117,7 +117,7 @@ export default () => (
       </ul>
     </AboutBody>
     <AboutBody>
-      Ikke implementeret politikker
+      Politikker endnu ikke implementeret i modellen:
       <ul>
       <li>10 øre/kWh minimums pris på el</li>
       <li>Afgift på biomasse til varmeanlæg med over 700 fuldlasttimer</li>
@@ -162,7 +162,7 @@ export default () => (
       </ul>
     </AboutBody>
     <AboutBody>
-      Ikke implementeret politikker 
+    Politikker endnu ikke implementeret i modellen:
       <ul>
         <li>Støtte på 50 mio. kr til bølgeenergi</li>
         <li>Netto måleordning til solceller med net ydelse på 12 øre/kWh</li>
