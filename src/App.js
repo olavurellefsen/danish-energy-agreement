@@ -13,7 +13,22 @@ import HamburgerIcon from './utils/HamburgerIcon'
 
 ReactGA.initialize('UA-117950963-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
-
+const Page = styled.div`
+    height: 100%;
+    margin: 0px;  /*removes default style*/
+    display: flex;  /*enables flex content for its children*/
+    box-sizing: border-box;
+`
+const Column = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`
+const Bottom = styled.div` 
+  flex-grow: 1;  /*ensures that the container will take up the full height of the parent container*/
+  overflow-y: auto;  /*adds scroll to this container*/
+  overflow-x: hidden;
+`
 const MainSwitch = styled(Switch)`
   display: flex;
   flex: 1;
@@ -90,9 +105,9 @@ class App extends React.Component {
     })
   }
 
-  render() {
+  render() { 
     return (
-      <Flex direction='column'>
+      <Page>
         <MobileHeaderMenu>
           <HamburgerWrapper onClick={() => {this.setState({showMobileMenu: !this.state.showMobileMenu})}}>
             <HamburgerIcon />
@@ -102,23 +117,29 @@ class App extends React.Component {
           </MobileHeaderItem>
           <MobileLogo src='./images/dtulogo_white.png' alt='logo'/>            
         </MobileHeaderMenu>
-        <Flex direction='row'>
-          <LeftMenu 
-            scenarioSelection={this.state}
-            scenarioCombinations={this.scenarioCombinations}
-            updateScenarioSelection={this.UpdateScenarioSelection}
-            showMobileMenu={this.state.showMobileMenu}
-          />
-          <MainSwitch>
-            <Route exact path='/' render={()=><Charts 
+        <Column>
+          <Bottom>
+            <LeftMenu 
               scenarioSelection={this.state}
-              closeWelcome={this.UpdateScenarioSelection}
-            />}/>
-            <Route path='/about' component={About} />
-            <Route path='/beskrivelser' component={ScenarioDescriptions} />
-          </MainSwitch>
-        </Flex>
-      </Flex>
+              scenarioCombinations={this.scenarioCombinations}
+              updateScenarioSelection={this.UpdateScenarioSelection}
+              showMobileMenu={this.state.showMobileMenu}
+            />
+          </Bottom>
+        </Column>
+        <Column>
+          <Bottom>
+            <MainSwitch>
+              <Route exact path='/' render={()=><Charts 
+                scenarioSelection={this.state}
+                closeWelcome={this.UpdateScenarioSelection}
+              />}/>
+              <Route path='/about' component={About} />
+              <Route path='/beskrivelser' component={ScenarioDescriptions} />
+            </MainSwitch>
+          </Bottom>
+        </Column>
+      </Page>
     );
   }
 }

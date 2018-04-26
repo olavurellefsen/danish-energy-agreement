@@ -15,11 +15,13 @@ export default class Root extends Component {
 }
 
 injectGlobal`
-  body {
+  html {height: 100%}
+  body, #root, #root>div {
     font-family: Roboto;
     font-size: 1em;
-    margin: 0px;
+    margin: 10px;
     width: 100%;
     height: 100%;
+    
   }
 `
