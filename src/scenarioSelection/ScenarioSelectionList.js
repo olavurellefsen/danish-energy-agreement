@@ -14,7 +14,7 @@ const ScenarioHeader = styled.div`
   display: flex;
   align-items: center;
   `
-const ScenarioOption =styled.div`
+const ScenarioOption = styled.div`
   font-size: ${props => (props.narrowVersion ? '0.7em' : '0.9em')};
   display: flex;
   align-items: center;

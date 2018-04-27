@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Route, withRouter, Switch } from 'react-router-dom'
 import ReactGA from 'react-ga'
 import LeftMenu from './LeftMenu'
-import LeftMenuMobile from './LeftMenu.1'
+import LeftMenuMobile from './LeftMenu.mobile'
 import Charts from './Charts'
 import About from './pages/About'
 import ScenarioDescriptions from './pages/ScenarioDescriptions'
@@ -14,8 +14,8 @@ ReactGA.initialize('UA-117950963-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 const Page = styled.div`
     height: 100%;
-    margin: 0px;  /*removes default style*/
-    display: flex;  /*enables flex content for its children*/
+    margin: 0px; 
+    display: flex;
     box-sizing: border-box;
 `
 const Column = styled.div`
@@ -23,7 +23,7 @@ const Column = styled.div`
   display: flex;
   flex-direction: column;
 `
-const Bottom = styled.div` 
+const Content = styled.div` 
   flex-grow: 1;  /*ensures that the container will take up the full height of the parent container*/
   overflow-y: auto;  /*adds scroll to this container*/
   overflow-x: hidden;
@@ -66,7 +66,7 @@ class App extends React.Component {
     return (
         <Page>
           <Column>
-            <Bottom>
+            <Content>
               <LeftMenu 
                 scenarioSelection={this.state}
                 scenarioCombinations={this.scenarioCombinations}
@@ -79,10 +79,10 @@ class App extends React.Component {
                 updateScenarioSelection={this.UpdateScenarioSelection}
                 showMobileMenu={this.state.showMobileMenu}
               />
-            </Bottom>
+            </Content>
           </Column>
           <Column>
-            <Bottom>
+            <Content>
               <MainSwitch>
                 <Route exact path='/' render={()=><Charts 
                   scenarioSelection={this.state}
@@ -91,7 +91,7 @@ class App extends React.Component {
                 <Route path='/about' component={About} />
                 <Route path='/beskrivelser' component={ScenarioDescriptions} />
               </MainSwitch>
-            </Bottom>
+            </Content>
           </Column>
         </Page>
     );

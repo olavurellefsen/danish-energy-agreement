@@ -17,13 +17,13 @@ const MenuLayout = styled.div`
     background: rgb(50, 50, 50);
     visibility: visible;
   `}
-`
+  `
 const AppLogo  = styled.img`
   width: 45px;
   height: 67px;
   margin: 5px;
   border: 0;
-`
+  `
 const MenuHeader =  styled.div`
   padding: 5px;
   margin: 0;
@@ -31,13 +31,13 @@ const MenuHeader =  styled.div`
   display: flex;
   flex-direction: column;
   align-items: top;
-`
+  `
 const MenuSeparatorLine  = styled.hr`
   margin: 0.25em 12px 0.25em 5px;
   border-color: #555;
   border-width: 1px;
   width: 100hh;
-`
+  `
 const MenuRoutes  = styled.div`
   padding: 5px;
   margin: 0;
@@ -45,7 +45,7 @@ const MenuRoutes  = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+  `
 const MenuItem  = styled(Link)`
   font-size: 0.7em;
   margin: 0;
@@ -60,12 +60,12 @@ const MenuItem  = styled(Link)`
     text-decoration: underline;
     cursor: pointer;
   }
-`
+  `
 const ScenarioSelection  = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-`
+  `
 const MenuFooter  = styled.div`
   padding: 5px;
   margin: 0;
@@ -73,20 +73,20 @@ const MenuFooter  = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+  `
 const CopyrightNotice = styled.div`
   font-size: 0.7em;
   padding: 5px;
   margin: 0;
   width: 100%;
-`
+  `
 const ExternalLink = styled.a`
   color: white;
   text-decoration: none;
   :hover {
     text-decoration: underline;
   }
-`
+  `
 
 class ScenarioSelectionMenu extends React.Component {
 

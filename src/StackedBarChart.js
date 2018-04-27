@@ -11,7 +11,7 @@ const ChartHeader = styled(VictoryLabel)`
   font-family: inherit;
   font-size: 18px;
   font-weight: bold;
-`;
+  `;
 
 class StackedBarChart extends React.Component {
   render() {
@@ -23,20 +23,17 @@ class StackedBarChart extends React.Component {
 
     const periods = ["2015", "2020", "2025", "2030", "2035", "2040", "2045", "2050"];
 
-    let minYaxisValueStacked = this.props.minY;
-    let maxYaxisValueStacked = this.props.maxY;
-
-    let maxYaxisValueLine = 1;
-    let minYaxisValueLine = 0;
+    let maxY2 = 1;
+    let minY2 = 0;
     if(combinedChart===true) {
-      maxYaxisValueLine = this.props.maxY2;
-      minYaxisValueLine = this.props.minY2;
+      maxY2 = this.props.maxY2;
+      minY2 = this.props.minY2;
     }
 
     let yDomain = [0, 1];
-    if(minYaxisValueStacked<0 || minYaxisValueLine<0) {
-      let stackedRatio = minYaxisValueStacked/maxYaxisValueStacked;
-      let lineRatio = minYaxisValueLine/maxYaxisValueLine;
+    if(this.props.minY<0 || minY2<0) {
+      let stackedRatio = this.props.minY/this.props.maxY;
+      let lineRatio = minY2/maxY2;
       yDomain = stackedRatio<lineRatio ? [stackedRatio,1] : [lineRatio,1];
     }
 
@@ -68,12 +65,14 @@ class StackedBarChart extends React.Component {
           />
           <VictoryAxis
             dependentAxis
+            axisLabelComponent={<VictoryLabel dx={120}/>}
             key={2}
             offsetX={80}
-            tickFormat={(t) => (t*maxYaxisValueStacked)}
+            tickFormat={(t) => (t*this.props.maxY)}
+            tickValues={[0, 0.25, 0.5, 0.75]}
             label={this.props.label}
           />
-          {(combinedChart===true && this.props.Y2Percentage===false) &&
+          {combinedChart===true  &&
             <VictoryAxis
               dependentAxis
               key={3}
@@ -85,25 +84,10 @@ class StackedBarChart extends React.Component {
                 ticks: { padding: -25 },
                 tickLabels: { fill: 'red', textAnchor: 'start' }
               }}              
-              tickFormat={(t) => (t*maxYaxisValueLine)}
+              tickFormat={(t) => `${this.props.Y2Percentage===false ? (t*maxY2) : (t*maxY2*100)+'%'}`}
+              tickValues={[0, 0.25, 0.5, 0.75, 1.0]}
             />
-          }
-          {(combinedChart===true&& this.props.Y2Percentage===true) &&
-            <VictoryAxis
-              dependentAxis
-              key={3}
-              offsetX={330}
-              label={this.props.label2}
-              style={{
-                axis: { stroke: 'red' },
-                axisLabel: { fill: 'red', padding: -50},
-                ticks: { padding: -25 },
-                tickLabels: { fill: 'red', textAnchor: 'start' }
-              }}              
-              tickFormat={(t) => `${t*maxYaxisValueLine*100}%`}
-            />
-          }
-          
+          }          
           <VictoryLegend x={90} y={50}
             orientation="horizontal"
             gutter={-40}
@@ -134,7 +118,7 @@ class StackedBarChart extends React.Component {
                       )
                     )}
                     x='period'
-                    y={(datum) => datum['total'] / maxYaxisValueStacked}
+                    y={(datum) => datum['total'] / this.props.maxY}
                     labelComponent={<VictoryTooltip/>}
                     style={{
                       data: {fill: colors[i]}
@@ -149,7 +133,7 @@ class StackedBarChart extends React.Component {
               data={dataLine[scenario][chartType][0].values}
               x='period'
               style={{ data: { stroke: 'red' } }}
-              y={(datum) => datum['total'] / maxYaxisValueLine}
+              y={(datum) => datum['total'] / maxY2}
               animate={{ duration: 500 }}
             />
           }
