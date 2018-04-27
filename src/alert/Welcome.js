@@ -17,17 +17,14 @@ const AlertContainer = styled.div`
   justify-content: space-between;
   flex-direction: row;
 `
-
 const AlertBody = styled.div`
   font-size: 1em;
   margin: 0px;
   align-self: center;
   flex: 1;
 `
-
 const AlertBodyParagraph = styled.p`
 `
-
 const CloseWindowIcon = styled.div`
   margin: 0px;
   border: 0;

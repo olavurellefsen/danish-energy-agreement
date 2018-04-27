@@ -15,7 +15,9 @@ export default class Root extends Component {
 }
 
 injectGlobal`
-  html {height: 100%}
+  html {
+    height: 100%
+  }
   body, #root, #root>div {
     font-family: Roboto;
     font-size: 1em;
