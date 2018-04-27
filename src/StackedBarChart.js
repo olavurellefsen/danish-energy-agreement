@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {VictoryChart, VictoryLabel, VictoryStack, VictoryTheme, VictoryAxis, VictoryBar, VictoryLine, VictoryTooltip} from 'victory';
+import {VictoryChart, VictoryLabel, VictoryLegend, VictoryStack, VictoryTheme, VictoryAxis, VictoryBar, VictoryLine, VictoryTooltip} from 'victory';
 import stackedBar from './data/stackedBar';
 import line from './data/line';
 
@@ -41,6 +41,7 @@ class StackedBarChart extends React.Component {
     }
 
     const colors = [
+      "#5cbae6", "#b6d957", "#fac364", "#8cd3ff", "#d998cb", "#f2d249", "#93b9c6", "#ccc5a8",   
       "#ffcc00", "#ff9900", "#ff6600", "#ff0000", "#990000", "#ff0099", "#cc3399",
       "#990066", "#660066", "#660099", "#3366cc", "#33ccff", "#99cc33", "#66cc00",
       "#aad199", "#45535c", "#471442", "#612e30", "#7a713c", "#09e682", "#160154", "#fc53ec",
@@ -57,7 +58,7 @@ class StackedBarChart extends React.Component {
           theme={VictoryTheme.material}
           domain={{ y: yDomain }}
         >
-          <ChartHeader x={50} y={24}
+          <ChartHeader x={90} y={24}
             text={chartType}
           />
           <VictoryAxis
@@ -101,7 +102,26 @@ class StackedBarChart extends React.Component {
               }}              
               tickFormat={(t) => `${t*maxYaxisValueLine*100}%`}
             />
-          }          
+          }
+          
+          <VictoryLegend x={90} y={50}
+            orientation="horizontal"
+            gutter={-40}
+            rowGutter={-5}
+            symbolSpacer={4}
+            itemsPerRow={3}
+            style={{
+              border: "0px",
+              title: {fontSize: 14, leftPadding: -10 }
+            }}
+            colorScale = {colors}
+            data={dataStackedBar.map(
+              (chartGroup, i) => (
+                { name: chartGroup.group.concat("        ").substr(0,16), fill: colors[i] }
+              )
+            )}
+            labelComponent={<VictoryLabel style={{fontSize: '9px'}}/>}
+          />
           <VictoryStack>
             {              
               dataStackedBar.map(
