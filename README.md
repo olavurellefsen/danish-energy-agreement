@@ -1,11 +1,9 @@
 Danish Energy Agreement 2018
 ============================
 
-This tool is developed by Tokni based on DTU Management Engineering research.
+This tool is developed by Tokni based data and charts from DTU Management Engineering's work with the TIMES-DK energy system model.
 
 ## Installation
-
-Below you will find some information on how to perform common tasks.
 
 Initial setup:
 
@@ -15,9 +13,16 @@ Local version:
 
 - npm start
 
+Unit tests:
+
+- npm test
+
 Deployment version:
 
 - npm run build
 
+The public version is available at https://energiaftalen.tokni.com and is updated via Amazon Web Services CodePipeline after each commit to the master branch.
+
 ## Usage
 
+After installation the tool can be accessed from the browser (http://localhost:3000). Select one of the scenarios and the charts update accordingly.
