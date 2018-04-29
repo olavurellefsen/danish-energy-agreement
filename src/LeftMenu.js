@@ -120,25 +120,21 @@ class ScenarioSelectionMenu extends React.Component {
 
   render() {
     return (
-      <MenuLayout showMobileMenu={this.props.showMobileMenu}>
+      <MenuLayout>
         <MenuHeader>
           <MenuHeaderLeft>
-            {(this.props.showMobileMenu===false) &&            
-              <MenuTitle to='/'>
-                Energi-
-                aftalen
-              </MenuTitle>
-            }
+            <MenuTitle to='/'>
+              Energi-
+              aftalen
+            </MenuTitle>
             <MenuRoutes>
               <MenuItem to='/about'>Om værktøjet</MenuItem>
               <MenuItem to='/beskrivelser'>Beskrivelser af scenarier</MenuItem>
             </MenuRoutes>
           </MenuHeaderLeft>
-          {(this.props.showMobileMenu===false) &&
-            <MenuHeaderRight>
-              <AppLogo src='./images/dtulogo_white.png' alt='logo'/>
-            </MenuHeaderRight>
-          }
+          <MenuHeaderRight>
+            <AppLogo src='./images/dtulogo_white.png' alt='logo'/>
+          </MenuHeaderRight>
         </MenuHeader>
         <MenuSeparatorLine />        
         <ScenarioSelection>
@@ -165,8 +161,7 @@ class ScenarioSelectionMenu extends React.Component {
 ScenarioSelectionMenu.propTypes = {
   updateScenarioSelection: PropTypes.func.isRequired,
   scenarioSelection: PropTypes.object.isRequired,
-  scenarioCombinations: PropTypes.object.isRequired,
-  showMobileMenu: PropTypes.bool.isRequired
+  scenarioCombinations: PropTypes.object.isRequired
 }
 
 export default ScenarioSelectionMenu;

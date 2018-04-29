@@ -95,7 +95,6 @@ class StackedBarChart extends React.Component {
             symbolSpacer={4}
             itemsPerRow={3}
             style={{
-              border: "0px",
               title: {fontSize: 14, leftPadding: -10 }
             }}
             colorScale = {colors}
