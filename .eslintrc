@@ -2,5 +2,8 @@
   "extends": "react-app",
   "rules": {
     "react/prop-types": 2
+  },
+  "globals": {
+    "shallow": true
   }
 }
