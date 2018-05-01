@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Welcome from './alert/Welcome'
+import Welcome from '../alert/Welcome'
 import StackedBarChart from './StackedBarChart'
 
 const MainArea = styled.div`

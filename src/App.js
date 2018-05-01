@@ -3,15 +3,16 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Route, withRouter, Switch } from 'react-router-dom'
 import ReactGA from 'react-ga'
-import LeftMenu from './LeftMenu'
-import LeftMenuMobile from './LeftMenu.mobile'
-import Charts from './Charts'
+import LeftMenu from './leftMenu/LeftMenu'
+import LeftMenuMobile from './leftMenu/LeftMenu.mobile'
+import Charts from './charts/Charts'
 import About from './pages/About'
 import ScenarioDescriptions from './pages/ScenarioDescriptions'
 import scenarioCombinations from './data/scenarioCombinations'
 
 ReactGA.initialize('UA-117950963-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
+
 const Page = styled.div`
     height: 100%;
     margin: 0px; 
@@ -35,31 +36,28 @@ const MainSwitch = styled(Switch)`
   align-content: flex-start;
 `
 
-class App extends React.Component {
+export const changeScenario = (name, value) => ({
+  [name]: value
+});
+
+export class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       scenarioSelection: 3,
-      mobileOpen: false,
       showWelcome: true,
-      showMobileMenu: false
     }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
   }
 
   static propTypes = {
-    history: PropTypes.object.isRequired,
+    history: PropTypes.object,
   }
 
   UpdateScenarioSelection = (e, name, value) => {
     e.preventDefault()
-    this.setState({
-      [name]: Number(value),
-    })
+    this.setState(changeScenario(name, value));
     this.props.history.push('/')
-    this.setState({
-      showMobileMenu: false
-    })
   }
 
   render() { 
@@ -71,13 +69,11 @@ class App extends React.Component {
                 scenarioSelection={this.state}
                 scenarioCombinations={this.scenarioCombinations}
                 updateScenarioSelection={this.UpdateScenarioSelection}
-                showMobileMenu={this.state.showMobileMenu}
               />
               <LeftMenuMobile
                 scenarioSelection={this.state}
                 scenarioCombinations={this.scenarioCombinations}
                 updateScenarioSelection={this.UpdateScenarioSelection}
-                showMobileMenu={this.state.showMobileMenu}
               />
             </Content>
           </Column>

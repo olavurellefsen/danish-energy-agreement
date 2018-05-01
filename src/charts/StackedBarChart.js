@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {VictoryChart, VictoryLabel, VictoryLegend, VictoryStack, VictoryTheme, VictoryAxis, VictoryBar, VictoryLine, VictoryTooltip} from 'victory';
-import stackedBar from './data/stackedBar';
-import line from './data/line';
+import stackedBar from '../data/stackedBar';
+import line from '../data/line';
 
 const ChartHeader = styled(VictoryLabel)`
   text-anchor: start;
@@ -95,7 +95,6 @@ class StackedBarChart extends React.Component {
             symbolSpacer={4}
             itemsPerRow={3}
             style={{
-              border: "0px",
               title: {fontSize: 14, leftPadding: -10 }
             }}
             colorScale = {colors}
