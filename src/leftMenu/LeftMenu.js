@@ -12,7 +12,7 @@ const MenuLayout = styled.div`
     min-height: 100vh;
     flex-direction: column;
     flex-shrink: 0;
-    width: 200px;
+    width: 220px;
     color: white;
     background: rgb(50, 50, 50);
     visibility: visible;
@@ -51,7 +51,7 @@ const AppLogo  = styled.img`
 const MenuTitle  = styled(Link)`
   font-weight: bold;
   font-size: 1.25em;
-  padding: 0px 12px 5px 15px;
+  padding: 0px 0px 5px 15px;
   margin: 0;
   width: 100%;
   display: flex;
@@ -124,12 +124,13 @@ class ScenarioSelectionMenu extends React.Component {
         <MenuHeader>
           <MenuHeaderLeft>
             <MenuTitle to='/'>
-              Energi-
-              aftalen
+              Energiaftalen
             </MenuTitle>
             <MenuRoutes>
               <MenuItem to='/about'>Om værktøjet</MenuItem>
               <MenuItem to='/beskrivelser'>Beskrivelser af scenarier</MenuItem>
+              <MenuItem to='/anbefalinger'>DTU's anbefalinger</MenuItem>
+              <MenuItem to='/forudsaetninger'>Forudsætninger</MenuItem>
             </MenuRoutes>
           </MenuHeaderLeft>
           <MenuHeaderRight>

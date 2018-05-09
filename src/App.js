@@ -8,6 +8,8 @@ import LeftMenuMobile from './leftMenu/LeftMenu.mobile'
 import Charts from './charts/Charts'
 import About from './pages/About'
 import ScenarioDescriptions from './pages/ScenarioDescriptions'
+import Recommendations from './pages/Recommendations'
+import Prerequisites from './pages/Prerequisites'
 import scenarioCombinations from './data/scenarioCombinations'
 
 ReactGA.initialize('UA-117950963-1');
@@ -86,6 +88,8 @@ export class App extends React.Component {
                 />}/>
                 <Route path='/about' component={About} />
                 <Route path='/beskrivelser' component={ScenarioDescriptions} />
+                <Route path='/anbefalinger' component={Recommendations} />
+                <Route path='/forudsaetninger' component={Prerequisites} />
               </MainSwitch>
             </Content>
           </Column>
