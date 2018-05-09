@@ -32,6 +32,13 @@ const AboutBody = styled.p`
     font-size: 0.7em;
   `}  
   `
+const AboutTable = styled.table`
+  max-width: 752px;
+  ${breakpoint('mobile','desktop')`
+    max-width: 752px;
+  `}  
+  `
+
 export default () => (
   <AboutContainer>
     <AboutHeader>Forudsætninger</AboutHeader>
@@ -54,7 +61,7 @@ export default () => (
       Brændselspriserne, der anvendes i DTU’s TIMES-DK er baseret på Energistyrelses basisfremskrivning fra 2018.
     </AboutBody>
     <AboutBody>
-      <img src="Fuelprice.png" width="752" height="452">
+      <img src="images/fuel_price.png" alt="Fuel price" width="752" height="452" />
     </AboutBody>
     <AboutHeader2>Priser på biler</AboutHeader2>
     <AboutBody>
@@ -63,7 +70,7 @@ export default () => (
       afgiftssystem i Danmark, hælder det til en lille fordel til de eldrevne biler efter 2020.
     </AboutBody>
     <AboutBody>
-      <img src="FutureCarPrice.png" width="752" height="452">
+      <img src="images/future_car_price.png" alt="Future car price" width="752" height="452" />
     </AboutBody> 
     <AboutBody>
       Købsprisen på hybridbiler forventes allerede at falde til under prisen af benzin og diesel biler i 2020, 
@@ -85,12 +92,12 @@ export default () => (
       udmeldingerne fra bilproducenterne: 
     </AboutBody>
     <AboutBody>
-      <table style=width:752>
+      <AboutTable>
       <caption>Tabel med bilproducenternes udmeldinger vedrørende fremtidige bilmodeller</caption>
         <tr>
           <th>Bilfirma</th>
           <th>Bilmodeller</th>
-          <th>Målsætninger<th/>
+          <th>Målsætninger</th>
         </tr>
         <tr>
           <td>Volkswagen Group</td>
@@ -132,7 +139,7 @@ export default () => (
           <td>Alle modeller i el eller hybrid version i 2025</td>
           <td>salg af 5.5 milioner EV og PHEV i 2030, svare til over 50 % af alle solgte biler i 2017</td>
         </tr>
-      </table>  
+      </AboutTable>  
     </AboutBody>      
     <AboutHeader2>Diverse antagelser vedr. el- og varmesektoren</AboutHeader2>
     <AboutBody>
@@ -158,7 +165,7 @@ export default () => (
     <AboutHeader2>Potentiale for vedvarende energi i Danmark anvendt som grænser i modellen, herunder delt 
     i brændselsfri og biomasse potentialer.</AboutHeader2>
     <AboutBody>
-      <table style=width:752>
+      <AboutTable>
       <caption>Brændselsfri VE potentialer</caption>
         <tr>
           <th>Teknologi</th>
@@ -196,7 +203,7 @@ export default () => (
           <td>Geotermi</td>
           <td>630</td>
         </tr>
-      </table>
+      </AboutTable>
     </AboutBody>
     <AboutBody>
       Landvind er begrænset 4400 MW grundet de seneste års kritik af udbygning. El-produktion på 
@@ -204,7 +211,7 @@ export default () => (
       system.
     </AboutBody>
     <AboutBody>
-      <table style=width:752>
+      <AboutTable>
       <caption>Nationale biomasse potentialer</caption>
         <tr>
           <th>Energikilde</th>
@@ -254,7 +261,7 @@ export default () => (
           <td>Totalt potentiale</td>
           <td>185.8</td>
         </tr>
-      </table>      
+      </AboutTable>      
     </AboutBody>
     <AboutBody>
       Den totale mænge nationale biomasse til rådighed svarer til ca. 185 PJ med de nuværende 
