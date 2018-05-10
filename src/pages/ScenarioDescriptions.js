@@ -26,11 +26,19 @@ const AboutHeader2 = styled.h2`
   font-weight: bold;
   `
 const AboutBody = styled.p`
+  padding: 0px;
+  margin: 0px;
   font-size: 1em;
   ${breakpoint('mobile','desktop')`
     font-size: 0.7em;
   `}  
   `
+const AboutList = styled.ul`
+font-size: 1em;
+${breakpoint('mobile','desktop')`
+  font-size: 0.7em;
+`}  
+`
 
 export default () => (
   <AboutContainer>
@@ -79,13 +87,13 @@ export default () => (
     <AboutBody>
       Målsætninger:
     </AboutBody>
-    <ul>
+    <AboutList>
       <li>-	Mindst 50 % VE andel i 2030</li>
-    </ul>
+    </AboutList>
     <AboutBody>
       Politikker:
     </AboutBody>
-    <ul>
+    <AboutList>
       <li>Ingen kul i elforsyningen fra 2030</li> 
       <li>800 MW vindmøllepark implementeret i 2025</li> 
       <li>Reduktion af elvarme afgiften med 25 øre/kWh</li> 
@@ -93,69 +101,69 @@ export default () => (
       <li>0.5 mia. kr i årlig reserve efter 2025 for at nå målsætningen (her modelleret som 1400 MW havvindmøller)</li> 
       <li>10 øre/kWh støtte til sol og landvind til 2025</li> 
       <li>Forlængelse af biomassestøtten for eksisterende anlæg til 2030.</li>
-    </ul>
+    </AboutList>
     <AboutBody>
       Politikker endnu ikke implementeret i modellen: 
     </AboutBody>
-    <ul>
+    <AboutList>
       <li>Støtteordning til industri og husholdningers energibesparelser</li>
       <li>Reduktion af elafgift til liberale erhverv</li>
-    </ul>    
+    </AboutList>    
     <AboutHeader2>Radikale Venstre's forslag til en energiaftale</AboutHeader2>
     <AboutBody>
       Målsætninger:
     </AboutBody>
-    <ul>
+    <AboutList>
       <li>Mindst 50 % VE andel i 2030</li>
       <li>60 % VE i 2030</li>
       <li>16 % effektivisering i 2030</li>
       <li>80 % varmepumper i decentrale fjernvarme områder og væsentlig dele af centrale områder</li>
       <li>Fossilfri el og varme sektor i 2030</li>
-    </ul>
+    </AboutList>
     <AboutBody>
       Politikker:
     </AboutBody>
-    <ul>
+    <AboutList>
       <li>Fossilt forbud i el og varme sektoren fra 2030</li>
       <li>6000 MW VE</li>
-      <ul> 
+      <AboutList> 
         <li>3000 MW havvind bygget i 2024, 2026 og 2028</li>
         <li>300 MW årlig udbygning af sol og landvind</li>
-      </ul>
+      </AboutList>
       <li>Elafgift til opvarmning sænkes med 25 øre/kWh</li>
-    </ul>
+    </AboutList>
     <AboutBody>
       Politikker endnu ikke implementeret i modellen:
     </AboutBody>
-    <ul>
+    <AboutList>
       <li>10 øre/kWh minimums pris på el</li>
       <li>Afgift på biomasse til varmeanlæg med over 700 fuldlasttimer</li>
       <li>Støtte til biogas</li>
-    </ul>
+    </AboutList>
     <AboutHeader2>Alternativets forslag til en energiaftale</AboutHeader2>
     <AboutBody>
       Målsætninger:
     </AboutBody>
-    <ul>
+    <AboutList>
       <li>Fossilfrit Danmark i 2035</li>
       <li>Energieffektivisering i bygninger på 40 procent i 2030</li>
       <li>Reduktion af drivhusgasudledninger</li>
-      <ul>
+      <AboutList>
         <li>Mindst 60 % i 2025</li>
         <li>Mindst 80 % i 2030</li>
         <li>Mindst 95 % i 2035</li>
         <li>Mindst 100 % i 2040</li>
-      </ul>
-    </ul>
+      </AboutList>
+    </AboutList>
     <AboutBody>
       Politikker:
     </AboutBody>
-    <ul>
+    <AboutList>
       <li>10.000 MW VE udbygning mod 2030</li>
-      <ul> 
+      <AboutList> 
         <li>5000 MW havvindmøller</li>
         <li>5000 MW landvind og solceller</li>
-      </ul>
+      </AboutList>
       <li>1 generations biobrændsler udfases fra 2025</li>
       <li>Minimum CO2 kvote pris på 40 Euro og 100 Euro i henholdsvis 2025 og 2030</li>
       <li>Elafgift til opvarmning sænkes med 20 øre/kWh</li>
@@ -169,11 +177,11 @@ export default () => (
       <li>Afgiftsstigning for biler under fradragsgrænsen til 6000 kr.</li>
       <li>Offentlig transport fossilfri i 2025</li>
       <li>Stigning af benzin og diesel afgifter til 6 og 4.32 kr/l</li>
-    </ul>
+    </AboutList>
     <AboutBody>
       Politikker endnu ikke implementeret i modellen:
     </AboutBody>
-    <ul>
+    <AboutList>
       <li>Støtte på 50 mio. kr til bølgeenergi</li>
       <li>Netto måleordning til solceller med net ydelse på 12 øre/kWh</li>
       <li>Den faste biomasse (til el og varme) skal Maks fylde 10-20 procent i 2030</li>
@@ -185,7 +193,7 @@ export default () => (
       <li>Klimaafgift på flyrejser 80 kr./flyvning</li>
       <li>El-indenrigsfly i 2040</li>
       <li>Minimum 1.5 mia. til forskning</li>
-    </ul>    
+    </AboutList>    
     <AboutBody>
       <Link to='/'>Tilbage til forsiden</Link>
     </AboutBody>

@@ -27,6 +27,7 @@ const AboutHeader2 = styled.h2`
   font-weight: bold;
   `
 const AboutBody = styled.p`
+  margin-bottom: 5px;
   font-size: 1em;
   ${breakpoint('mobile','desktop')`
     font-size: 0.7em;
@@ -39,7 +40,21 @@ const AboutTable = styled.table`
     font-size: 0.7em;
   `}  
   `
-  const AboutImage = styled.img`
+const TableCaption = styled.caption`
+  margin-top: 20px;
+  padding-bottom: 12px;
+  font-weight: bold;
+  font-style: italic;
+  `
+const TableHeader = styled.th`
+    text-align: left;
+  `  
+const TableData = styled.td`
+  padding: 5px;
+  background-color: lightgrey;
+  border-color: white;
+  `
+const AboutImage = styled.img`
   max-width: 752px;
   ${breakpoint('mobile','desktop')`
     max-width: 250px;
@@ -100,52 +115,52 @@ export default () => (
       udmeldingerne fra bilproducenterne: 
     </AboutBody>
     <AboutTable>
-      <caption>Tabel med bilproducenternes udmeldinger vedrørende fremtidige bilmodeller</caption>
+      <TableCaption>Bilproducenternes udmeldinger vedrørende fremtidige bilmodeller</TableCaption>
       <tbody>
         <tr>
-          <th>Bilfirma</th>
-          <th>Bilmodeller</th>
-          <th>Målsætninger</th>
+          <TableHeader>Bilfirma</TableHeader>
+          <TableHeader>Bilmodeller</TableHeader>
+          <TableHeader>Målsætninger</TableHeader>
         </tr>
         <tr>
-          <td>Volkswagen Group</td>
-          <td>50 EV, 30 PHEV og 220 Hybrid modeller i 2025 og alle modeller (300) findes i EV eller PHEV version i 2030</td>
-          <td>25 % Af salg i 2025 er EV eller PHEV (2-3 millioner biler)</td>
+          <TableData>Volkswagen Group</TableData>
+          <TableData>50 EV, 30 PHEV og 220 Hybrid modeller i 2025 og alle modeller (300) findes i EV eller PHEV version i 2030</TableData>
+          <TableData>25 % Af salg i 2025 er EV eller PHEV (2-3 millioner biler)</TableData>
         </tr>
         <tr>
-          <td>PSA Group (Peugeot, Opel, Citroén)</td>
-          <td>Alle bilmodeller i EV eller PHEV version i 2025</td>
-          <td></td>
+          <TableData>PSA Group (Peugeot, Opel, Citroén)</TableData>
+          <TableData>Alle bilmodeller i EV eller PHEV version i 2025</TableData>
+          <TableData></TableData>
         </tr>
         <tr>
-          <td>Volvo</td>
-          <td>Alle nye moodeller er PHEV eller EV fra 2019</td>
-          <td></td>
+          <TableData>Volvo</TableData>
+          <TableData>Alle nye moodeller er PHEV eller EV fra 2019</TableData>
+          <TableData></TableData>
         </tr>
         <tr>
-          <td>Ford</td>
-          <td>16 EV og 24 PHEV i 2022 (udtalelsen blev ændret fra 2025 efter blot 6 måneder)</td>
-          <td>70 % af salg til Kina vil være hybrid, PHEV eller EV i 2025</td>
+          <TableData>Ford</TableData>
+          <TableData>16 EV og 24 PHEV i 2022 (udtalelsen blev ændret fra 2025 efter blot 6 måneder)</TableData>
+          <TableData>70 % af salg til Kina vil være hybrid, PHEV eller EV i 2025</TableData>
         </tr>
         <tr>
-          <td>Jaguar, Aston Martin og Land Rover</td>
-          <td>Alle nye modeller er PHEV eller EV fra 2020</td>
-          <td></td>
+          <TableData>Jaguar, Aston Martin og Land Rover</TableData>
+          <TableData>Alle nye modeller er PHEV eller EV fra 2020</TableData>
+          <TableData></TableData>
         </tr>
         <tr>
-          <td>GM</td>
-          <td>20 EV i 2023 og alle modeller er i EV eller PHEV i 2025</td>
-          <td></td>
+          <TableData>GM</TableData>
+          <TableData>20 EV i 2023 og alle modeller er i EV eller PHEV i 2025</TableData>
+          <TableData></TableData>
         </tr>
         <tr>
-          <td>Hyundai</td>
-          <td>14 EV i 2025 og 60 % af modellerne findes i el eller hybrid version i 2021</td>
-          <td></td>
+          <TableData>Hyundai</TableData>
+          <TableData>14 EV i 2025 og 60 % af modellerne findes i el eller hybrid version i 2021</TableData>
+          <TableData></TableData>
         </tr>
         <tr>
-          <td>Toyota</td>
-          <td>Alle modeller i el eller hybrid version i 2025</td>
-          <td>salg af 5.5 milioner EV og PHEV i 2030, svare til over 50 % af alle solgte biler i 2017</td>
+          <TableData>Toyota</TableData>
+          <TableData>Alle modeller i el eller hybrid version i 2025</TableData>
+          <TableData>salg af 5.5 milioner EV og PHEV i 2030, svare til over 50 % af alle solgte biler i 2017</TableData>
         </tr>
       </tbody>
     </AboutTable>  
@@ -173,43 +188,43 @@ export default () => (
     <AboutHeader2>Potentiale for vedvarende energi i Danmark anvendt som grænser i modellen, herunder delt 
     i brændselsfri og biomasse potentialer.</AboutHeader2>
     <AboutTable>
-      <caption>Brændselsfri VE potentialer</caption>
+      <TableCaption>Brændselsfri VE potentialer</TableCaption>
       <tbody>
         <tr>
-          <th>Teknologi</th>
-          <th>MW kapacitet</th>
+          <TableHeader>Teknologi</TableHeader>
+          <TableHeader>MW kapacitet</TableHeader>
         </tr>
         <tr>
-          <td>Landvind</td>
-          <td>4400</td>
+          <TableData>Landvind</TableData>
+          <TableData>4400</TableData>
         </tr>
         <tr>
-          <td>Havvind</td>
-          <td>50000</td>
+          <TableData>Havvind</TableData>
+          <TableData>50000</TableData>
         </tr>
         <tr>
-          <td>Husstands solceller</td>
-          <td>9500</td>
+          <TableData>Husstands solceller</TableData>
+          <TableData>9500</TableData>
         </tr>
         <tr>
-          <td>Industriens tag solceller</td>
-          <td>8100</td>
+          <TableData>Industriens tag solceller</TableData>
+          <TableData>8100</TableData>
         </tr>
         <tr>
-          <td>Landbaseret solceller</td>
-          <td>3000</td>
+          <TableData>Landbaseret solceller</TableData>
+          <TableData>3000</TableData>
         </tr>
         <tr>
-          <td>Bølge energi</td>
-          <td>3175</td>
+          <TableData>Bølge energi</TableData>
+          <TableData>3175</TableData>
         </tr>
         <tr>
-          <td>Solvarme</td>
-          <td>7400</td>
+          <TableData>Solvarme</TableData>
+          <TableData>7400</TableData>
         </tr>
         <tr>
-          <td>Geotermi</td>
-          <td>630</td>
+          <TableData>Geotermi</TableData>
+          <TableData>630</TableData>
         </tr>
       </tbody>
     </AboutTable>
@@ -219,55 +234,55 @@ export default () => (
       system.
     </AboutBody>
     <AboutTable>
-      <caption>Nationale biomasse potentialer</caption>
+      <TableCaption>Nationale biomasse potentialer</TableCaption>
       <tbody>
         <tr>
-          <th>Energikilde</th>
-          <th>PJ per år</th>
+          <TableHeader>Energikilde</TableHeader>
+          <TableHeader>PJ per år</TableHeader>
         </tr>
         <tr>
-          <td>Affald</td>
-          <td>32.6</td>
+          <TableData>Affald</TableData>
+          <TableData>32.6</TableData>
         </tr>
         <tr>
-          <td>Træflis</td>
-          <td>40</td>
+          <TableData>Træflis</TableData>
+          <TableData>40</TableData>
         </tr>
         <tr>
-          <td>Brænde</td>
-          <td>24</td>
+          <TableData>Brænde</TableData>
+          <TableData>24</TableData>
         </tr>
         <tr>
-          <td>Energiroer</td>
-          <td>15</td>
+          <TableData>Energiroer</TableData>
+          <TableData>15</TableData>
         </tr>
         <tr>
-          <td>Rapsfrø</td>
-          <td>15</td>
+          <TableData>Rapsfrø</TableData>
+          <TableData>15</TableData>
         </tr>
         <tr>
-          <td>Træpiller</td>
-          <td>0</td>
+          <TableData>Træpiller</TableData>
+          <TableData>0</TableData>
         </tr>
         <tr>
-          <td>Gylle</td>
-          <td>13.8</td>
+          <TableData>Gylle</TableData>
+          <TableData>13.8</TableData>
         </tr>
         <tr>
-          <td>Halm</td>
-          <td>68</td>
+          <TableData>Halm</TableData>
+          <TableData>68</TableData>
         </tr>
         <tr>
-          <td>Græsarter</td>
-          <td>6.7</td>
+          <TableData>Græsarter</TableData>
+          <TableData>6.7</TableData>
         </tr>
         <tr>
-          <td>Energimajs</td>
-          <td>3.6</td>
+          <TableData>Energimajs</TableData>
+          <TableData>3.6</TableData>
         </tr>
         <tr>
-          <td>Totalt potentiale</td>
-          <td>185.8</td>
+          <TableData>Totalt potentiale</TableData>
+          <TableData>185.8</TableData>
         </tr>
       </tbody>
     </AboutTable>
