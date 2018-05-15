@@ -31,7 +31,7 @@ const Charts = (props) => {
         <StackedBarChart chartType='Industriens energiforbrug' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Energibesparelser (PJ)" minY={0} maxY={400} minY2={0} maxY2={60} Y2Percentage={false} />
         <StackedBarChart chartType='Transportsektorens energiforbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" minY={0} maxY={350} />
         <StackedBarChart chartType='Transport - bil-bestand' selectedScenario={selectedScenario} combinedChart={false} label="1000 stk" minY={0} maxY={3000} />
-        <StackedBarChart chartType='Miljø- og energi-afgifter' selectedScenario={selectedScenario} combinedChart={false} label="Mkr" minY={-10000} maxY={120000} />
+        <StackedBarChart chartType='Miljø- og energi-afgifter' selectedScenario={selectedScenario} combinedChart={false} label="mia. kr" minY={-10000} maxY={120000} />
         <StackedBarChart chartType='Systemomkostninger' selectedScenario={selectedScenario} combinedChart={false} label="MKr" minY={0} maxY={180000} />
       </Flex>
     </MainArea>
