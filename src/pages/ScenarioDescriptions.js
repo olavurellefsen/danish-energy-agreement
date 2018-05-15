@@ -78,6 +78,11 @@ export default () => (
       Her er modellen bundet til at udledning af CO2 fra fossile brændsler skal
       være nul i 2050 undtagen den del, som kommer fra affaldsforbrænding.
     </AboutBody>
+    <AboutHeader2>DTU Fossilfri 2040</AboutHeader2>
+    <AboutBody>
+      Her er modellen bundet til at udledning af CO2 fra fossile brændsler skal
+      være nul i 2040 undtagen den del, som kommer fra affaldsforbrænding.
+    </AboutBody>        
     <AboutHeader2>Regeringens forslag til en energiaftale</AboutHeader2>
     <AboutBody>
       Målsætninger:
@@ -189,35 +194,6 @@ export default () => (
       <li>El-indenrigsfly i 2040</li>
       <li>Minimum 1.5 mia. til forskning</li>
     </AboutList>    
-    <AboutHeader2>Socialdemokratiets forslag til en energiaftale</AboutHeader2>
-    <AboutBody>
-      Målsætnigner:
-    </AboutBody>
-    <AboutList>
-      <li>Fossil fri 2045</li>
-      <li>55 % VE andel 2030</li>
-      <li>Ingen fossil afbrænding i el sektoren fra 2030</li>
-      <li>500.000 PHEV/EV/Brint biler i 2030</li>
-    </AboutList>
-    <AboutBody>
-      Politikker:
-    </AboutBody>
-    <AboutList>
-      <li>3 havvindmølleparker inden 2030 med total kapacitet på 2750 MW, tender 2019, 2022 og 2024 med opsætning efter 5 år.</li>
-      <li>Forlængelse af afgiftsfritagelsen for el til transport (5 år)</li>
-      <li>Registreringsafgift til elbiler udskydes (forsættes med 20 % beskatning til 2021)
-      <li>Permanent nedsættelse af elvarmeafgift (antages magen til regeringens udspil)</li>
-      <li>Årlig udbygning af 250 MW landvind/solceller fra 2020-2030</li>
-      <li>Stop salg af dieselbiler i 2030</li>
-    </AboutList>
-    <AboutBody>
-      Politikker endnu ikke implementeret i modellen:
-    </AboutBody>
-    <AboutList>
-      <li>Ny energispareordning</li>
-      <li>Afgiftsændring for dieselbiler i dag</li>
-      <li>Staten finansierer tilslutningsbidrag til lyhnopladning</li>
-    </AboutList>
     <AboutBody>
       <Link to='/'>Tilbage til forsiden</Link>
     </AboutBody>
