@@ -192,7 +192,7 @@ export default () => (
     </AboutList>  
     <AboutHeader2>Socialdemokratiets forslag til en energiaftale</AboutHeader2>
     <AboutBody>
-      Målsætnigner:
+      Målsætninger:
     </AboutBody>
     <AboutList>
       <li>Fossil fri 2045</li>
@@ -222,8 +222,5 @@ export default () => (
      <AboutBody>
        <Link to='/'>Tilbage til forsiden</Link>
      </AboutBody>
-    <AboutBody>
-      <Link to='/'>Tilbage til forsiden</Link>
-    </AboutBody>
   </AboutContainer>
 )
