@@ -206,7 +206,7 @@ export default () => (
     <AboutList>
       <li>3 havvindmølleparker inden 2030 med total kapacitet på 2750 MW, tender 2019, 2022 og 2024 med opsætning efter 5 år.</li>
       <li>Forlængelse af afgiftsfritagelsen for el til transport (5 år)</li>
-      <li>Registreringsafgift til elbiler udskydes (forsættes med 20 % beskatning til 2021)
+      <li>Registreringsafgift til elbiler udskydes (forsættes med 20 % beskatning til 2021)</li>
       <li>Permanent nedsættelse af elvarmeafgift (antages magen til regeringens udspil)</li>
       <li>Årlig udbygning af 250 MW landvind/solceller fra 2020-2030</li>
       <li>Stop salg af dieselbiler i 2030</li>
