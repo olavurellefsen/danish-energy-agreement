@@ -46,7 +46,8 @@ export class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      scenarioSelection: "DTU_Frozen_policy_scenarie",
+      scenarioSelection: "DTU_Regeringen",
+      scenarioSelection2: "",
       showWelcome: true,
     }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
@@ -57,9 +58,29 @@ export class App extends React.Component {
   }
 
   UpdateScenarioSelection = (e, name, value) => {
-    e.preventDefault()
-    this.setState(changeScenario(name, value));
-    this.props.history.push('/')
+    e.preventDefault();
+    if(this.state.scenarioSelection2!=="") {
+      if(value===this.state.scenarioSelection) {
+        this.setState(changeScenario("scenarioSelection", this.state.scenarioSelection2));
+        this.setState(changeScenario("scenarioSelection2", ""));
+      } else {
+        if(value===this.state.scenarioSelection2) {
+          this.setState(changeScenario("scenarioSelection2", ""));
+        } else {
+          this.setState(changeScenario("scenarioSelection2", value));
+        }
+      }
+    } else {
+      if(value!==this.state.scenarioSelection) {
+        this.setState(changeScenario("scenarioSelection2", value));
+      }      
+    }
+    this.props.history.push('/');
+  }
+
+  CloseWelcomeWidget = () => {
+    this.setState({showWelcome: false});
+    this.props.history.push('/');
   }
 
   render() { 
@@ -84,7 +105,7 @@ export class App extends React.Component {
               <MainSwitch>
                 <Route exact path='/' render={()=><Charts 
                   scenarioSelection={this.state}
-                  closeWelcome={this.UpdateScenarioSelection}
+                  closeWelcome={this.CloseWelcomeWidget}
                 />}/>
                 <Route path='/about' component={About} />
                 <Route path='/beskrivelser' component={ScenarioDescriptions} />

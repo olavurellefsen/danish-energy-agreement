@@ -23,31 +23,28 @@ const ScenarioOption = styled.div`
   position: relative;
   width: 100%;
   border-radius: 0;
-  background-color: ${props => (props.selected ? '#b50404' : 'inherit')};
-  color: ${props => (props.selected ? 'white' : 'rgb(184,176,183)')};
+  background-color: ${props => (props.selected ? '#b50404' : (props.selected2 ? 'green' : 'inherit'))};
+  color: ${props => (props.selected ? 'white' : (props.selected2 ? 'white' : 'rgb(184,176,183)'))};
   &:hover {
     cursor: pointer;
-    background-color: ${props => (props.selected ? '#b50404' : '#555')};
+    background-color: ${props => (props.selected ? '#b50404' : (props.selected2 ? 'green' : '#555'))};
     > * {
       display: block;
-      font-weight: ${props => (props.selected ? 'bold' : 'normal')};
+      font-weight: ${props => (props.selected ? 'bold' : (props.selected2 ? 'bold' : 'normal'))};
     }
   }
   `
 
 class ScenarioSelectionList extends React.Component {
-  state = {
-    value: this.props.selectedValue,
-  }
 
   handleChange = (event, value) => {
-    this.setState({ value })
     this.props.updateScenarioSelection(event, this.props.name, value)
   }
 
   render() {
     const { dimensionOptions, dimensionTitle, narrowVersion } = this.props
-    let stringValue=this.state.value.toString();
+    let stringValue=this.props.selectedValue.toString();
+    let stringValue2=this.props.selectedValue2.toString();
     let scenarioOptions = dimensionOptions.map(option =>
       {
         let optionValue=option.name;
@@ -56,6 +53,7 @@ class ScenarioSelectionList extends React.Component {
             key={option.id}
             value={optionValue}
             selected={optionValue===stringValue}
+            selected2={optionValue===stringValue2}
             onClick={(event) => this.handleChange(event, optionValue)}
             narrowVersion={narrowVersion}
           >
@@ -79,6 +77,7 @@ ScenarioSelectionList.propTypes = {
   updateScenarioSelection: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   selectedValue: PropTypes.any.isRequired,
+  selectedValue2: PropTypes.any.isRequired,
   dimensionOptions: PropTypes.array.isRequired,
   dimensionTitle: PropTypes.string.isRequired,
   narrowVersion: PropTypes.bool.isRequired

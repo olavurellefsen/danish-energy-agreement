@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {VictoryChart, VictoryLabel, VictoryLegend, VictoryStack, VictoryTheme, VictoryAxis, VictoryBar, VictoryLine, VictoryTooltip} from 'victory';
+import {VictoryChart, VictoryLabel, VictoryLegend, VictoryGroup, VictoryStack, VictoryTheme, VictoryAxis, VictoryBar, VictoryLine, VictoryTooltip} from 'victory';
 import stackedBar from '../data/stackedBar';
 import line from '../data/line';
 
@@ -16,11 +16,10 @@ const ChartHeader = styled(VictoryLabel)`
 class StackedBarChart extends React.Component {
   render() {
     const scenario = this.props.selectedScenario;
+    const scenario2 = this.props.selectedScenario2;
     const chartName = this.props.chartName;
     const chartTitle = this.props.chartTitle;
     const combinedChart = this.props.combinedChart;
-    const dataStackedBar =stackedBar.data.scenarios.find(o => o.scenario === scenario).indicators.find(o => o.indicator === chartName).indicatorGroups;
-
     const periods = [2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050];
 
     let maxY2 = 1;
@@ -43,6 +42,14 @@ class StackedBarChart extends React.Component {
       "#990066", "#660066", "#660099", "#3366cc", "#33ccff", "#99cc33", "#66cc00",
       "#aad199", "#45535c", "#471442", "#612e30", "#7a713c", "#09e682", "#160154", "#fc53ec",
       "#454023", "#4b7060", "#4221a6", "#f2aceb", "#ede095", "#0395f7", "#7346fa", "#82627f"
+    ];
+
+    const colors2 = [
+      "#2cbae6", "#96d957", "#cac364", "#5cd3ff", "#a998cb", "#c2d249", "#63b9c6", "#9cc5a8",   
+      "#cfcc00", "#cf9900", "#cf6600", "#cf0000", "#690000", "#cf0099", "#9c3399",
+      "#690066", "#360066", "#360099", "#0366cc", "#03ccff", "#69cc33", "#36cc00",
+      "#7ad199", "#15535c", "#171442", "#312e30", "#4a713c", "#39e682", "#460154", "#cc53ec",
+      "#154023", "#1b7060", "#1221a6", "#c2aceb", "#bde095", "#3395f7", "#4346fa", "#52627f"
     ];
 
     return (
@@ -79,10 +86,10 @@ class StackedBarChart extends React.Component {
               offsetX={330}
               label={this.props.label2}
               style={{
-                axis: { stroke: 'red' },
-                axisLabel: { fill: 'red', padding: -50},
+                axis: { stroke: 'gray' },
+                axisLabel: { fill: 'gray', padding: -50},
                 ticks: { padding: -25 },
-                tickLabels: { fill: 'red', textAnchor: 'start' }
+                tickLabels: { fill: 'gray', textAnchor: 'start' }
               }}              
               tickFormat={(t) => `${this.props.Y2Percentage===false ? (t*maxY2) : (t*maxY2*100)+'%'}`}
               tickValues={[0, 0.25, 0.5, 0.75, 1.0]}
@@ -98,43 +105,84 @@ class StackedBarChart extends React.Component {
               title: {fontSize: 14, leftPadding: -10 }
             }}
             colorScale = {colors}
-            data={dataStackedBar.map(
+            data={stackedBar.data.scenarios.find(o => o.scenario === scenario).indicators.find(o => o.indicator === chartName).indicatorGroups.map(
               (chartGroup, i) => (
                 { name: chartGroup.indicatorGroup.concat("        ").substr(0,16), fill: colors[i] }
               )
             )}
             labelComponent={<VictoryLabel style={{fontSize: '9px'}}/>}
           />
-          <VictoryStack>
-            {              
-              dataStackedBar.map(
-                (chartGroup, i) => (
-                  <VictoryBar 
-                    key={chartGroup.indicatorGroup}
-                    data={chartGroup.indicatorGroupValues.map(
-                      chartGroupValue => (
-                        {...chartGroupValue, label: chartGroup.indicatorGroup + ': ' + (chartGroupValue.total/this.props.divideValues).toFixed(2) }
-                      )
-                    )}
-                    x='year'
-                    y={(datum) => datum['total'] / this.props.maxY}
-                    labelComponent={<VictoryTooltip/>}
-                    style={{
-                      data: {fill: colors[i]}
-                    }}
-                  />
+          <VictoryGroup offset={10} style={{ data: { width: 10}}}>
+            <VictoryStack>
+              {              
+                stackedBar.data.scenarios.find(o => o.scenario === scenario).indicators.find(o => o.indicator === chartName).indicatorGroups.map(
+                  (chartGroup, i) => (
+                    <VictoryBar 
+                      key={chartGroup.indicatorGroup}
+                      data={chartGroup.indicatorGroupValues.map(
+                        chartGroupValue => (
+                          {...chartGroupValue, 
+                            label: scenario + ': ' + chartGroup.indicatorGroup + ': ' +
+                            (chartGroupValue.total/this.props.divideValues).toFixed(2) }
+                        )
+                      )}
+                      x='year'
+                      y={(datum) => datum['total'] / this.props.maxY}
+                      labelComponent={<VictoryTooltip/>}
+                      style={{
+                        data: {fill: colors[i]}
+                      }}
+                    />
+                  )
                 )
-              )
+              }
+            </VictoryStack>
+            {(scenario2!=="") &&
+              <VictoryStack>
+                {              
+                  stackedBar.data.scenarios.find(o => o.scenario === scenario2).indicators.find(o => o.indicator === chartName).indicatorGroups.map(
+                    (chartGroup, i) => (
+                      <VictoryBar 
+                        key={chartGroup.indicatorGroup}
+                        data={chartGroup.indicatorGroupValues.map(
+                          chartGroupValue => (
+                            {...chartGroupValue, 
+                              label: scenario2 + ': ' + chartGroup.indicatorGroup +
+                              ': ' + (chartGroupValue.total/this.props.divideValues).toFixed(2) }
+                          )
+                        )}
+                        x='year'
+                        y={(datum) => datum['total'] / this.props.maxY}
+                        labelComponent={<VictoryTooltip/>}
+                        style={{
+                          data: {fill: colors2[i]}
+                        }}
+                      />
+                    )
+                  )
+                }
+              </VictoryStack>
             }
-          </VictoryStack>
+          </VictoryGroup> 
           {(combinedChart===true) &&
-            <VictoryLine
-              data={line.data.scenarios.find(o => o.scenario === scenario).indicators.find(o => o.indicator === chartName).indicatorGroups[0].indicatorGroupValues}
-              x='year'
-              style={{ data: { stroke: 'red' } }}
-              y={(datum) => datum['total'] / maxY2}
-              animate={{ duration: 500 }}
-            />
+            <VictoryGroup>
+              <VictoryLine
+                data={line.data.scenarios.find(o => o.scenario === scenario).indicators.find(o => o.indicator === chartName).indicatorGroups[0].indicatorGroupValues}
+                x='year'
+                style={{ data: { stroke: 'red' } }}
+                y={(datum) => datum['total'] / maxY2}
+                animate={{ duration: 500 }}
+              />
+              {(scenario2!=="") &&
+                <VictoryLine
+                  data={line.data.scenarios.find(o => o.scenario === scenario2).indicators.find(o => o.indicator === chartName).indicatorGroups[0].indicatorGroupValues}
+                  x='year'
+                  style={{ data: { stroke: 'green' } }}
+                  y={(datum) => datum['total'] / maxY2}
+                  animate={{ duration: 500 }}
+                />
+              }
+            </VictoryGroup>
           }
           </VictoryChart>
       </div>
@@ -148,6 +196,7 @@ StackedBarChart.defaultProps = {
 
 StackedBarChart.propTypes = {
   selectedScenario: PropTypes.string.isRequired,
+  selectedScenario2: PropTypes.string,
   chartName: PropTypes.string.isRequired,
   chartTitle: PropTypes.string.isRequired,
   combinedChart: PropTypes.bool.isRequired,
