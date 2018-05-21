@@ -21,18 +21,18 @@ const Charts = (props) => {
     <MainArea>
       {(props.scenarioSelection.showWelcome===true) && <Welcome closeWelcome={props.closeWelcome} />}
       <Flex>
-        <StackedBarChart chartType='CO2 emissioner og VE andel' selectedScenario={selectedScenario} combinedChart={true} label="Kt" minY={-5000} maxY={40000} minY2={0} maxY2={1} label2="Vedvarende energi andel" Y2Percentage={true} />
-        <StackedBarChart chartType='Biobrændsels forbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" minY={0} maxY={400} />
-        <StackedBarChart chartType='El produktion' selectedScenario={selectedScenario} combinedChart={false} label="PJ" minY={0} maxY={400} />
-        <StackedBarChart chartType='El kapacitet' selectedScenario={selectedScenario} combinedChart={false} label="MW" minY={0} maxY={40000} />
-        <StackedBarChart chartType='El netto eksport' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Netto eksport (PJ)" minY={-100} maxY={160}  minY2={-100} maxY2={160} Y2Percentage={false} />
-        <StackedBarChart chartType='Fjernvarme produktion' selectedScenario={selectedScenario} combinedChart={false} label="PJ" minY={0} maxY={200} />
-        <StackedBarChart chartType='Husholdningers varmeforbrug' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Energibesparelser (PJ)" minY={0} maxY={160} minY2={0} maxY2={24} Y2Percentage={false} />
-        <StackedBarChart chartType='Industriens energiforbrug' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Energibesparelser (PJ)" minY={0} maxY={400} minY2={0} maxY2={60} Y2Percentage={false} />
-        <StackedBarChart chartType='Transportsektorens energiforbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" minY={0} maxY={350} />
-        <StackedBarChart chartType='Transport - bil-bestand' selectedScenario={selectedScenario} combinedChart={false} label="1000 stk" minY={0} maxY={3000} />
-        <StackedBarChart chartType='Miljø og energi afgifter' selectedScenario={selectedScenario} combinedChart={false} label="Mkr" minY={-10000} maxY={120000} />
-        <StackedBarChart chartType='System omkostninger' selectedScenario={selectedScenario} combinedChart={false} label="MKr" minY={0} maxY={180000} />
+        <StackedBarChart chartName='_CO2 emissioner og VE andel' chartTitle='CO2-emissioner og VE-andel' selectedScenario={selectedScenario} combinedChart={true} label="Kt" minY={-5000} maxY={40000} minY2={0} maxY2={1} label2="Vedvarende energi andel" Y2Percentage={true} />
+        <StackedBarChart chartName='_Biobrændsels forbrug' chartTitle='Biobrændsels-forbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" minY={0} maxY={400} />
+        <StackedBarChart chartName='_Elproduktion' chartTitle='El-produktion' selectedScenario={selectedScenario} combinedChart={false} label="PJ" minY={0} maxY={400} />
+        <StackedBarChart chartName='_Elkapacitet' chartTitle='El-kapacitet' selectedScenario={selectedScenario} combinedChart={false} label="MW" minY={0} maxY={40000} />
+        <StackedBarChart chartName='_El netto eksport' chartTitle='El-netto-eksport' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Netto eksport (PJ)" minY={-100} maxY={160}  minY2={-100} maxY2={160} Y2Percentage={false} />
+        <StackedBarChart chartName='_Fjernvarmeproduktion' chartTitle='Fjernvarme-produktion' selectedScenario={selectedScenario} combinedChart={false} label="PJ" minY={0} maxY={200} />
+        <StackedBarChart chartName='_Husholdningers varmeforbrug' chartTitle='Husholdningers varmeforbrug' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Energibesparelser (PJ)" minY={0} maxY={160} minY2={0} maxY2={24} Y2Percentage={false} />
+        <StackedBarChart chartName='_Industriens energiforbrug' chartTitle='Industriens energiforbrug' selectedScenario={selectedScenario} combinedChart={true} label="PJ" label2="Energibesparelser (PJ)" minY={0} maxY={400} minY2={0} maxY2={60} Y2Percentage={false} />
+        <StackedBarChart chartName='_Transport sektorens energifor' chartTitle='Transportsektorens energiforbrug' selectedScenario={selectedScenario} combinedChart={false} label="PJ" minY={0} maxY={350} />
+        <StackedBarChart chartName='_Transport - bil bestanden' chartTitle='Transport - bil-bestand' selectedScenario={selectedScenario} combinedChart={false} label="1000 stk" minY={0} maxY={3000} />
+        <StackedBarChart chartName='_Miljø og energi afgifter' chartTitle='Miljø- og energi-afgifter' selectedScenario={selectedScenario} combinedChart={false} label="mia.kr" divideValues={1000} minY={-10000} maxY={120000} />
+        <StackedBarChart chartName='_Systemomkostninger' chartTitle='Systemomkostninger' selectedScenario={selectedScenario} combinedChart={false} label="mia.Kr" divideValues={1000} minY={0} maxY={180000} />
       </Flex>
     </MainArea>
   );
@@ -43,5 +43,4 @@ Charts.propTypes = {
   closeWelcome: PropTypes.func.isRequired
 }
 
-
-export default Charts
+export default Charts;
