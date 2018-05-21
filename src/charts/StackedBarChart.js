@@ -16,12 +16,12 @@ const ChartHeader = styled(VictoryLabel)`
 class StackedBarChart extends React.Component {
   render() {
     const scenario = this.props.selectedScenario;
-    const chartType = this.props.chartType;
+    const chartName = this.props.chartName;
+    const chartTitle = this.props.chartTitle;
     const combinedChart = this.props.combinedChart;
-    const dataStackedBar = stackedBar.scenarios[scenario][chartType];
-    const dataLine = line.scenarios;
+    const dataStackedBar =stackedBar.data.scenarios.find(o => o.scenario === scenario).indicators.find(o => o.indicator === chartName).indicatorGroups;
 
-    const periods = ["2015", "2020", "2025", "2030", "2035", "2040", "2045", "2050"];
+    const periods = [2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050];
 
     let maxY2 = 1;
     let minY2 = 0;
@@ -56,11 +56,11 @@ class StackedBarChart extends React.Component {
           domain={{ y: yDomain }}
         >
           <ChartHeader x={90} y={24}
-            text={chartType}
+            text={chartTitle}
           />
           <VictoryAxis
             key={0}
-            tickValues={[1, 2, 3, 4, 5, 6, 7, 8]}
+            tickValues={periods}
             tickFormat={periods}
           />
           <VictoryAxis
@@ -68,7 +68,7 @@ class StackedBarChart extends React.Component {
             axisLabelComponent={<VictoryLabel dx={120}/>}
             key={2}
             offsetX={80}
-            tickFormat={(t) => (t*this.props.maxY)}
+            tickFormat={(t) => (t*this.props.maxY/this.props.divideValues)}
             tickValues={[0, 0.25, 0.5, 0.75]}
             label={this.props.label}
           />
@@ -100,7 +100,7 @@ class StackedBarChart extends React.Component {
             colorScale = {colors}
             data={dataStackedBar.map(
               (chartGroup, i) => (
-                { name: chartGroup.group.concat("        ").substr(0,16), fill: colors[i] }
+                { name: chartGroup.indicatorGroup.concat("        ").substr(0,16), fill: colors[i] }
               )
             )}
             labelComponent={<VictoryLabel style={{fontSize: '9px'}}/>}
@@ -110,13 +110,13 @@ class StackedBarChart extends React.Component {
               dataStackedBar.map(
                 (chartGroup, i) => (
                   <VictoryBar 
-                    key={chartGroup.group}
-                    data={chartGroup.values.map(
+                    key={chartGroup.indicatorGroup}
+                    data={chartGroup.indicatorGroupValues.map(
                       chartGroupValue => (
-                        {...chartGroupValue, label: chartGroup.group + ': ' + chartGroupValue.total.toFixed(2) }
+                        {...chartGroupValue, label: chartGroup.indicatorGroup + ': ' + (chartGroupValue.total/this.props.divideValues).toFixed(2) }
                       )
                     )}
-                    x='period'
+                    x='year'
                     y={(datum) => datum['total'] / this.props.maxY}
                     labelComponent={<VictoryTooltip/>}
                     style={{
@@ -129,8 +129,8 @@ class StackedBarChart extends React.Component {
           </VictoryStack>
           {(combinedChart===true) &&
             <VictoryLine
-              data={dataLine[scenario][chartType][0].values}
-              x='period'
+              data={line.data.scenarios.find(o => o.scenario === scenario).indicators.find(o => o.indicator === chartName).indicatorGroups[0].indicatorGroupValues}
+              x='year'
               style={{ data: { stroke: 'red' } }}
               y={(datum) => datum['total'] / maxY2}
               animate={{ duration: 500 }}
@@ -142,15 +142,21 @@ class StackedBarChart extends React.Component {
   }
 }
 
+StackedBarChart.defaultProps = {
+  divideValues: 1
+}
+
 StackedBarChart.propTypes = {
-  selectedScenario: PropTypes.number.isRequired,
-  chartType: PropTypes.string.isRequired,
+  selectedScenario: PropTypes.string.isRequired,
+  chartName: PropTypes.string.isRequired,
+  chartTitle: PropTypes.string.isRequired,
   combinedChart: PropTypes.bool.isRequired,
   minY: PropTypes.number.isRequired,
   maxY: PropTypes.number.isRequired,
   minY2: PropTypes.number,
   maxY2: PropTypes.number,  
   label: PropTypes.string.isRequired,
+  divideValues: PropTypes.number,
   label2: PropTypes.string,
   Y2Percentage: PropTypes.bool
 }

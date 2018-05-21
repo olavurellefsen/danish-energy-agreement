@@ -50,7 +50,7 @@ class ScenarioSelectionList extends React.Component {
     let stringValue=this.state.value.toString();
     let scenarioOptions = dimensionOptions.map(option =>
       {
-        let optionValue=option.id.toString()
+        let optionValue=option.name;
         return(
           <ScenarioOption
             key={option.id}

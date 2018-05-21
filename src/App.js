@@ -46,7 +46,7 @@ export class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      scenarioSelection: 3,
+      scenarioSelection: "DTU_Frozen_policy_scenarie",
       showWelcome: true,
     }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
