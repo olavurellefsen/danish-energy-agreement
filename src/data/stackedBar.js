@@ -457,43 +457,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Bio CO2 ",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 285.992848411
-                  },
-                  {
-                    "year": 2020,
-                    "total": 224.855991422
-                  },
-                  {
-                    "year": 2025,
-                    "total": 0
-                  },
-                  {
-                    "year": 2030,
-                    "total": 0
-                  },
-                  {
-                    "year": 2035,
-                    "total": 0
-                  },
-                  {
-                    "year": 2040,
-                    "total": 0
-                  },
-                  {
-                    "year": 2045,
-                    "total": 0
-                  },
-                  {
-                    "year": 2050,
-                    "total": 0
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "El og varme sektorens CO2",
                 "indicatorGroupValues": [
                   {
@@ -5476,43 +5439,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 1360.1767394
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Bio CO2 ",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 285.992851611
-                  },
-                  {
-                    "year": 2020,
-                    "total": 49.869754282
-                  },
-                  {
-                    "year": 2025,
-                    "total": 955.070659219
-                  },
-                  {
-                    "year": 2030,
-                    "total": 1412.65550919
-                  },
-                  {
-                    "year": 2035,
-                    "total": 1721.204729534
-                  },
-                  {
-                    "year": 2040,
-                    "total": 1267.032525561
-                  },
-                  {
-                    "year": 2045,
-                    "total": 2817.371409378
-                  },
-                  {
-                    "year": 2050,
-                    "total": 3776.426711758
                   }
                 ]
               },
@@ -10503,43 +10429,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Bio CO2 ",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 285.992848411
-                  },
-                  {
-                    "year": 2020,
-                    "total": 49.869754169
-                  },
-                  {
-                    "year": 2025,
-                    "total": 955.070659219
-                  },
-                  {
-                    "year": 2030,
-                    "total": 1454.59469829
-                  },
-                  {
-                    "year": 2035,
-                    "total": 1735.98191001
-                  },
-                  {
-                    "year": 2040,
-                    "total": 1267.032515261
-                  },
-                  {
-                    "year": 2045,
-                    "total": 686.765566846
-                  },
-                  {
-                    "year": 2050,
-                    "total": 567.7422952
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "El og varme sektorens CO2",
                 "indicatorGroupValues": [
                   {
@@ -15522,43 +15411,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 1360.17673934
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Bio CO2 ",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 477.032970867
-                  },
-                  {
-                    "year": 2020,
-                    "total": 316.739637031
-                  },
-                  {
-                    "year": 2025,
-                    "total": 955.070659219
-                  },
-                  {
-                    "year": 2030,
-                    "total": 1767.715643377
-                  },
-                  {
-                    "year": 2035,
-                    "total": 1735.98186794
-                  },
-                  {
-                    "year": 2040,
-                    "total": 1267.032509311
-                  },
-                  {
-                    "year": 2045,
-                    "total": 686.765566846
-                  },
-                  {
-                    "year": 2050,
-                    "total": 567.7422952
                   }
                 ]
               },
@@ -20549,43 +20401,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Bio CO2 ",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 285.992848411
-                  },
-                  {
-                    "year": 2020,
-                    "total": 49.874466942
-                  },
-                  {
-                    "year": 2025,
-                    "total": 955.070659219
-                  },
-                  {
-                    "year": 2030,
-                    "total": 1417.49836764
-                  },
-                  {
-                    "year": 2035,
-                    "total": 1728.89457862
-                  },
-                  {
-                    "year": 2040,
-                    "total": 1267.032535961
-                  },
-                  {
-                    "year": 2045,
-                    "total": 686.765573309
-                  },
-                  {
-                    "year": 2050,
-                    "total": 567.7422952
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "El og varme sektorens CO2",
                 "indicatorGroupValues": [
                   {
@@ -25572,43 +25387,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Bio CO2 ",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 285.992851611
-                  },
-                  {
-                    "year": 2020,
-                    "total": 49.869754282
-                  },
-                  {
-                    "year": 2025,
-                    "total": 948.625918519
-                  },
-                  {
-                    "year": 2030,
-                    "total": 1414.67339522
-                  },
-                  {
-                    "year": 2035,
-                    "total": 1729.674742784
-                  },
-                  {
-                    "year": 2040,
-                    "total": 1267.032525561
-                  },
-                  {
-                    "year": 2045,
-                    "total": 686.765569678
-                  },
-                  {
-                    "year": 2050,
-                    "total": 567.7422952
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "El og varme sektorens CO2",
                 "indicatorGroupValues": [
                   {
@@ -30591,43 +30369,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 1360.17673923
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Bio CO2 ",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 285.992843911
-                  },
-                  {
-                    "year": 2020,
-                    "total": 52.243981459
-                  },
-                  {
-                    "year": 2025,
-                    "total": 885.699419329
-                  },
-                  {
-                    "year": 2030,
-                    "total": 1551.76483416
-                  },
-                  {
-                    "year": 2035,
-                    "total": 1880.327853437
-                  },
-                  {
-                    "year": 2040,
-                    "total": 1308.31523043
-                  },
-                  {
-                    "year": 2045,
-                    "total": 694.023161926
-                  },
-                  {
-                    "year": 2050,
-                    "total": 567.7422952
                   }
                 ]
               },
