@@ -8,39 +8,39 @@ export default {
             "indicator": "_CO2 emissioner og VE andel",
             "indicatorGroups": [
               {
-                "indicatorGroup": "VE Andel",
+                "indicatorGroup": "VE andel",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0.279548065
+                    "total": 0.268831926
                   },
                   {
                     "year": 2020,
-                    "total": 0.339177823
+                    "total": 0.340534544
                   },
                   {
                     "year": 2025,
-                    "total": 0.374623507
+                    "total": 0.355352933
                   },
                   {
                     "year": 2030,
-                    "total": 0.582129954
+                    "total": 0.60083734
                   },
                   {
                     "year": 2035,
-                    "total": 0.663090681
+                    "total": 0.686838341
                   },
                   {
                     "year": 2040,
-                    "total": 0.741684412
+                    "total": 0.758622227
                   },
                   {
                     "year": 2045,
-                    "total": 0.760592054
+                    "total": 0.782190019
                   },
                   {
                     "year": 2050,
-                    "total": 0.775045316
+                    "total": 0.798061444
                   }
                 ]
               }
@@ -181,39 +181,39 @@ export default {
             "indicator": "_CO2 emissioner og VE andel",
             "indicatorGroups": [
               {
-                "indicatorGroup": "VE Andel",
+                "indicatorGroup": "VE andel",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0.279548056
+                    "total": 0.271628008
                   },
                   {
                     "year": 2020,
-                    "total": 0.333371389
+                    "total": 0.325768837
                   },
                   {
                     "year": 2025,
-                    "total": 0.421471691
+                    "total": 0.395292364
                   },
                   {
                     "year": 2030,
-                    "total": 0.509841984
+                    "total": 0.488770921
                   },
                   {
                     "year": 2035,
-                    "total": 0.649313394
+                    "total": 0.634059221
                   },
                   {
                     "year": 2040,
-                    "total": 0.771040217
+                    "total": 0.767536406
                   },
                   {
                     "year": 2045,
-                    "total": 0.864580767
+                    "total": 0.870746711
                   },
                   {
                     "year": 2050,
-                    "total": 0.979723416
+                    "total": 0.981442981
                   }
                 ]
               }
@@ -354,39 +354,39 @@ export default {
             "indicator": "_CO2 emissioner og VE andel",
             "indicatorGroups": [
               {
-                "indicatorGroup": "VE Andel",
+                "indicatorGroup": "VE andel",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0.279548057
+                    "total": 0.271628008
                   },
                   {
                     "year": 2020,
-                    "total": 0.333371389
+                    "total": 0.325768837
                   },
                   {
                     "year": 2025,
-                    "total": 0.421454751
+                    "total": 0.395279502
                   },
                   {
                     "year": 2030,
-                    "total": 0.511645784
+                    "total": 0.49070332
                   },
                   {
                     "year": 2035,
-                    "total": 0.649497417
+                    "total": 0.634278052
                   },
                   {
                     "year": 2040,
-                    "total": 0.770682656
+                    "total": 0.767188621
                   },
                   {
                     "year": 2045,
-                    "total": 0.815730945
+                    "total": 0.82493335
                   },
                   {
                     "year": 2050,
-                    "total": 0.834962331
+                    "total": 0.850957574
                   }
                 ]
               }
@@ -527,39 +527,39 @@ export default {
             "indicator": "_CO2 emissioner og VE andel",
             "indicatorGroups": [
               {
-                "indicatorGroup": "VE Andel",
+                "indicatorGroup": "VE andel",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0.249360758
+                    "total": 0.240357891
                   },
                   {
                     "year": 2020,
-                    "total": 0.2986669
+                    "total": 0.291328745
                   },
                   {
                     "year": 2025,
-                    "total": 0.362995729
+                    "total": 0.338317161
                   },
                   {
                     "year": 2030,
-                    "total": 0.441893775
+                    "total": 0.421338554
                   },
                   {
                     "year": 2035,
-                    "total": 0.562713229
+                    "total": 0.546352049
                   },
                   {
                     "year": 2040,
-                    "total": 0.674416371
+                    "total": 0.670150146
                   },
                   {
                     "year": 2045,
-                    "total": 0.731094174
+                    "total": 0.743218448
                   },
                   {
                     "year": 2050,
-                    "total": 0.756329678
+                    "total": 0.77791903
                   }
                 ]
               }
@@ -700,39 +700,39 @@ export default {
             "indicator": "_CO2 emissioner og VE andel",
             "indicatorGroups": [
               {
-                "indicatorGroup": "VE Andel",
+                "indicatorGroup": "VE andel",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0.279549219
+                    "total": 0.271628291
                   },
                   {
                     "year": 2020,
-                    "total": 0.334248962
+                    "total": 0.326789674
                   },
                   {
                     "year": 2025,
-                    "total": 0.443097679
+                    "total": 0.417494167
                   },
                   {
                     "year": 2030,
-                    "total": 0.586228668
+                    "total": 0.581486144
                   },
                   {
                     "year": 2035,
-                    "total": 0.676702053
+                    "total": 0.673005096
                   },
                   {
                     "year": 2040,
-                    "total": 0.787330338
+                    "total": 0.787785893
                   },
                   {
                     "year": 2045,
-                    "total": 0.81733978
+                    "total": 0.827848693
                   },
                   {
                     "year": 2050,
-                    "total": 0.834767145
+                    "total": 0.850798276
                   }
                 ]
               }
@@ -873,39 +873,39 @@ export default {
             "indicator": "_CO2 emissioner og VE andel",
             "indicatorGroups": [
               {
-                "indicatorGroup": "VE Andel",
+                "indicatorGroup": "VE andel",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0.279549219
+                    "total": 0.271628291
                   },
                   {
                     "year": 2020,
-                    "total": 0.333668962
+                    "total": 0.325616592
                   },
                   {
                     "year": 2025,
-                    "total": 0.430058881
+                    "total": 0.404050575
                   },
                   {
                     "year": 2030,
-                    "total": 0.570634542
+                    "total": 0.551749731
                   },
                   {
                     "year": 2035,
-                    "total": 0.665606049
+                    "total": 0.650582178
                   },
                   {
                     "year": 2040,
-                    "total": 0.781922492
+                    "total": 0.777446235
                   },
                   {
                     "year": 2045,
-                    "total": 0.815885927
+                    "total": 0.825265406
                   },
                   {
                     "year": 2050,
-                    "total": 0.834903567
+                    "total": 0.850909305
                   }
                 ]
               }
@@ -1046,39 +1046,39 @@ export default {
             "indicator": "_CO2 emissioner og VE andel",
             "indicatorGroups": [
               {
-                "indicatorGroup": "VE Andel",
+                "indicatorGroup": "VE andel",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0.279548081
+                    "total": 0.271628164
                   },
                   {
                     "year": 2020,
-                    "total": 0.335958501
+                    "total": 0.326238677
                   },
                   {
                     "year": 2025,
-                    "total": 0.424275906
+                    "total": 0.398082668
                   },
                   {
                     "year": 2030,
-                    "total": 0.58086451
+                    "total": 0.566946579
                   },
                   {
                     "year": 2035,
-                    "total": 0.68104748
+                    "total": 0.669920267
                   },
                   {
                     "year": 2040,
-                    "total": 0.786767748
+                    "total": 0.783571093
                   },
                   {
                     "year": 2045,
-                    "total": 0.819235758
+                    "total": 0.828345687
                   },
                   {
                     "year": 2050,
-                    "total": 0.834798975
+                    "total": 0.850824155
                   }
                 ]
               }
