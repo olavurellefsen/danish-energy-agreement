@@ -97,8 +97,8 @@ class StackedBarChart extends React.Component {
           }          
           <VictoryLegend x={90} y={50}
             orientation="horizontal"
-            gutter={0 /*-40*/}
-            rowGutter={0 /*-5*/}
+            gutter={-40}
+            rowGutter={-5}
             symbolSpacer={4}
             itemsPerRow={3}
             style={{
