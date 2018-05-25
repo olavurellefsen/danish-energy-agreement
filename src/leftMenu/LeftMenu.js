@@ -131,6 +131,7 @@ class ScenarioSelectionMenu extends React.Component {
               <MenuItem to='/beskrivelser'>Beskrivelser af scenarier</MenuItem>
               <MenuItem to='/anbefalinger'>DTU's anbefalinger</MenuItem>
               <MenuItem to='/forudsaetninger'>Forudsætninger</MenuItem>
+              <MenuItem to='/abonner'>Abonnér på opdateringer</MenuItem>
             </MenuRoutes>
           </MenuHeaderLeft>
           <MenuHeaderRight>
