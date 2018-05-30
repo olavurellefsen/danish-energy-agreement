@@ -97,13 +97,14 @@ export default () => (
       <li>0.5 mia. kr i årlig reserve efter 2025 for at nå målsætningen (her modelleret som 1400 MW havvindmøller)</li> 
       <li>10 øre/kWh støtte til sol og landvind til 2025</li> 
       <li>Forlængelse af biomassestøtten for eksisterende anlæg til 2030.</li>
+      <li>Reduktion af elafgift til liberale erhverv</li>
     </AboutList>
     <AboutBody>
       Politikker endnu ikke implementeret i modellen: 
     </AboutBody>
     <AboutList>
-      <li>Støtteordning til industri og husholdningers energibesparelser</li>
-      <li>Reduktion af elafgift til liberale erhverv</li>
+      <li>Støtteordning til industrielle energibesparelser</li>
+      <li>Informationsstøtte til husholdningers energibesparelser</li>
     </AboutList>    
     <AboutHeader2>Radikale Venstre's forslag til en energiaftale</AboutHeader2>
     <AboutBody>
@@ -115,6 +116,7 @@ export default () => (
       <li>16 % effektivisering i 2030</li>
       <li>80 % varmepumper i decentrale fjernvarme områder og væsentlig dele af centrale områder</li>
       <li>Fossilfri el og varme sektor i 2030</li>
+      <li>1 million el og plug in hybridbiler i 2030</li>
     </AboutList>
     <AboutBody>
       Politikker:
@@ -127,6 +129,7 @@ export default () => (
         <li>300 MW årlig udbygning af sol og landvind</li>
       </AboutList>
       <li>Elafgift til opvarmning sænkes med 25 øre/kWh</li>
+      <li>Årlig støtte på 300 mio. til husholdningers energibesparelser</li>
     </AboutList>
     <AboutBody>
       Politikker endnu ikke implementeret i modellen:
@@ -135,6 +138,7 @@ export default () => (
       <li>10 øre/kWh minimums pris på el</li>
       <li>Afgift på biomasse til varmeanlæg med over 700 fuldlasttimer</li>
       <li>Støtte til biogas</li>
+      <li>Støtteordning til industrielle energibesparelser</li>
     </AboutList>
     <AboutHeader2>Alternativets forslag til en energiaftale</AboutHeader2>
     <AboutBody>
@@ -218,6 +222,8 @@ export default () => (
       <li>Ny energispareordning</li>
       <li>Afgiftsændring for dieselbiler i dag</li>
       <li>Staten finansierer tilslutningsbidrag til lyhnopladning</li>
+      <li>Støtteordning til industrielle energibesparelser</li>
+      <li>Informationsstøtte til husholdningers energibesparelser</li>
     </AboutList>
      <AboutBody>
        <Link to='/'>Tilbage til forsiden</Link>
