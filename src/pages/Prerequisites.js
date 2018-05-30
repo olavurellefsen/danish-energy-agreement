@@ -108,11 +108,17 @@ export default () => (
       rationelle såsom frygten for at løbe tør for strøm i en elbil eller loyalitet over for et bestemt bilmærke. 
       TIMES-DK vælger den billigste kombination af teknologier på tværs af alle sektorer og minimerer dermed de 
       samlede omkostninger i samfundet. Derfor vil modellen så hurtigt som muligt forsøge at skifte til el og 
-      hybridbiler da de er billigst efter 2020. I den nærmeste fremtid antager vi derfor at der er nogle grænser 
-      for hvor hurtigt vi vil skifte til el og hybridbiler. Salget af el og hybrid biler er begrænset til at kunne 
-      udgøre maximalt 39 % i 2020 og stigende mod 50 % i 2030 – de 39 % svarer til gennemsnitssalget i Norge 2017 
-      og de 50 % til salget i dag. Dette vurderes af DTU, som en relativ konservativ begrænsning når man kigger på 
-      udmeldingerne fra bilproducenterne: 
+      hybridbiler da de er billigst efter 2020. For at komme denne forbrugerpræference til gode bruges en bilvalgs 
+      model ved navn "Car Stock Model", der er udviklet med henblik på at analysere forbrugsmønster. Resultater 
+      fra denne model viser tildenser for at mellem og store biler vil skifte mod hybrid og el biler som følger af 
+      den nuværende afgiftstruktur. 
+    </AboutBody>
+    <AboutBody>
+      <AboutImage src="images/Carstock.png" alt="Car Stock" width="752" height="452" />
+    </AboutBody> 
+    <AboutBody>
+      Dette vurderes af DTU, at udviklingen af el og hybrid biler er en relativ konservativ begrænsning når man 
+      kigger på udmeldingerne fra bilproducenterne: 
     </AboutBody>
     <AboutTable>
       <TableCaption>Bilproducenternes udmeldinger vedrørende fremtidige bilmodeller</TableCaption>
