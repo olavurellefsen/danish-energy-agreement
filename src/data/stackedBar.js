@@ -1163,43 +1163,6 @@ export default {
                     "total": -15.305062665
                   }
                 ]
-              },
-              {
-                "indicatorGroup": "Netto Eksport",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": -7.197770549
-                  },
-                  {
-                    "year": 2020,
-                    "total": 3.242708361
-                  },
-                  {
-                    "year": 2025,
-                    "total": -25.85441395
-                  },
-                  {
-                    "year": 2030,
-                    "total": 14.85709078
-                  },
-                  {
-                    "year": 2035,
-                    "total": 26.2950363
-                  },
-                  {
-                    "year": 2040,
-                    "total": 16.12863998
-                  },
-                  {
-                    "year": 2045,
-                    "total": 50.8742838
-                  },
-                  {
-                    "year": 2050,
-                    "total": 84
-                  }
-                ]
               }
             ]
           },
@@ -4311,43 +4274,6 @@ export default {
                     "total": 0
                   }
                 ]
-              },
-              {
-                "indicatorGroup": "Transport Passengers Car - Otto Engine - Blending 4 - Average size - New",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 0
-                  },
-                  {
-                    "year": 2025,
-                    "total": 0
-                  },
-                  {
-                    "year": 2030,
-                    "total": 0
-                  },
-                  {
-                    "year": 2035,
-                    "total": 0
-                  },
-                  {
-                    "year": 2040,
-                    "total": 0
-                  },
-                  {
-                    "year": 2045,
-                    "total": 0
-                  },
-                  {
-                    "year": 2050,
-                    "total": 0
-                  }
-                ]
               }
             ]
           },
@@ -5999,43 +5925,6 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.209565859
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Netto Eksport",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": -7.197528906
-                  },
-                  {
-                    "year": 2020,
-                    "total": -4.64156486
-                  },
-                  {
-                    "year": 2025,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2030,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2035,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2040,
-                    "total": -20.46591697
-                  },
-                  {
-                    "year": 2045,
-                    "total": 35.46196373
-                  },
-                  {
-                    "year": 2050,
-                    "total": 84
                   }
                 ]
               }
@@ -8990,15 +8879,15 @@ export default {
                   },
                   {
                     "year": 2040,
-                    "total": 82.84017999
+                    "total": 172.0368345
                   },
                   {
                     "year": 2045,
-                    "total": 1.332
+                    "total": 92.966468113
                   },
                   {
                     "year": 2050,
-                    "total": 0.047
+                    "total": 107.82727539
                   }
                 ]
               },
@@ -9147,43 +9036,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 0
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Transport Passengers Car - Otto Engine - Blending 4 - Average size - New",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 0
-                  },
-                  {
-                    "year": 2025,
-                    "total": 0
-                  },
-                  {
-                    "year": 2030,
-                    "total": 0
-                  },
-                  {
-                    "year": 2035,
-                    "total": 0
-                  },
-                  {
-                    "year": 2040,
-                    "total": 89.19665451
-                  },
-                  {
-                    "year": 2045,
-                    "total": 91.634468113
-                  },
-                  {
-                    "year": 2050,
-                    "total": 107.78027539
                   }
                 ]
               }
@@ -10837,43 +10689,6 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.248783118
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Netto Eksport",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": -7.198046545
-                  },
-                  {
-                    "year": 2020,
-                    "total": -4.641793444
-                  },
-                  {
-                    "year": 2025,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2030,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2035,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2040,
-                    "total": -23.70325964
-                  },
-                  {
-                    "year": 2045,
-                    "total": 32.69661152
-                  },
-                  {
-                    "year": 2050,
-                    "total": 84
                   }
                 ]
               }
@@ -13836,7 +13651,7 @@ export default {
                   },
                   {
                     "year": 2050,
-                    "total": 0.047
+                    "total": 33.8474405
                   }
                 ]
               },
@@ -13985,43 +13800,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 0
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Transport Passengers Car - Otto Engine - Blending 4 - Average size - New",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 0
-                  },
-                  {
-                    "year": 2025,
-                    "total": 0
-                  },
-                  {
-                    "year": 2030,
-                    "total": 0
-                  },
-                  {
-                    "year": 2035,
-                    "total": 0
-                  },
-                  {
-                    "year": 2040,
-                    "total": 0
-                  },
-                  {
-                    "year": 2045,
-                    "total": 0
-                  },
-                  {
-                    "year": 2050,
-                    "total": 33.8004405
                   }
                 ]
               }
@@ -15675,43 +15453,6 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.470156361
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Netto Eksport",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": -7.19804707
-                  },
-                  {
-                    "year": 2020,
-                    "total": -4.641793456
-                  },
-                  {
-                    "year": 2025,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2030,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2035,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2040,
-                    "total": -25.57504969
-                  },
-                  {
-                    "year": 2045,
-                    "total": 34.64539818
-                  },
-                  {
-                    "year": 2050,
-                    "total": 84
                   }
                 ]
               }
@@ -18825,43 +18566,6 @@ export default {
                     "total": 0
                   }
                 ]
-              },
-              {
-                "indicatorGroup": "Transport Passengers Car - Otto Engine - Blending 4 - Average size - New",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 0
-                  },
-                  {
-                    "year": 2025,
-                    "total": 0
-                  },
-                  {
-                    "year": 2030,
-                    "total": 0
-                  },
-                  {
-                    "year": 2035,
-                    "total": 0
-                  },
-                  {
-                    "year": 2040,
-                    "total": 0
-                  },
-                  {
-                    "year": 2045,
-                    "total": 0
-                  },
-                  {
-                    "year": 2050,
-                    "total": 0
-                  }
-                ]
               }
             ]
           },
@@ -20513,43 +20217,6 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.451951119
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Netto Eksport",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": -8.94641457
-                  },
-                  {
-                    "year": 2020,
-                    "total": -5.07377342
-                  },
-                  {
-                    "year": 2025,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2030,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2035,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2040,
-                    "total": -25.19032349
-                  },
-                  {
-                    "year": 2045,
-                    "total": 34.80136972
-                  },
-                  {
-                    "year": 2050,
-                    "total": 84
                   }
                 ]
               }
@@ -23663,43 +23330,6 @@ export default {
                     "total": 0
                   }
                 ]
-              },
-              {
-                "indicatorGroup": "Transport Passengers Car - Otto Engine - Blending 4 - Average size - New",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 0
-                  },
-                  {
-                    "year": 2025,
-                    "total": 0
-                  },
-                  {
-                    "year": 2030,
-                    "total": 0
-                  },
-                  {
-                    "year": 2035,
-                    "total": 0
-                  },
-                  {
-                    "year": 2040,
-                    "total": 0
-                  },
-                  {
-                    "year": 2045,
-                    "total": 0
-                  },
-                  {
-                    "year": 2050,
-                    "total": 0
-                  }
-                ]
               }
             ]
           },
@@ -25351,43 +24981,6 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.207402225
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Netto Eksport",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": -8.932422434
-                  },
-                  {
-                    "year": 2020,
-                    "total": -5.076257556
-                  },
-                  {
-                    "year": 2025,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2030,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2035,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2040,
-                    "total": -20.39891209
-                  },
-                  {
-                    "year": 2045,
-                    "total": 35.09713279
-                  },
-                  {
-                    "year": 2050,
-                    "total": 84
                   }
                 ]
               }
@@ -28342,15 +27935,15 @@ export default {
                   },
                   {
                     "year": 2040,
-                    "total": 81.70998118
+                    "total": 170.90663637
                   },
                   {
                     "year": 2045,
-                    "total": 1.332
+                    "total": 92.966466876
                   },
                   {
                     "year": 2050,
-                    "total": 0.047
+                    "total": 107.82728207
                   }
                 ]
               },
@@ -28499,43 +28092,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 0
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Transport Passengers Car - Otto Engine - Blending 4 - Average size - New",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 0
-                  },
-                  {
-                    "year": 2025,
-                    "total": 0
-                  },
-                  {
-                    "year": 2030,
-                    "total": 0
-                  },
-                  {
-                    "year": 2035,
-                    "total": 0
-                  },
-                  {
-                    "year": 2040,
-                    "total": 89.19665519
-                  },
-                  {
-                    "year": 2045,
-                    "total": 91.634466876
-                  },
-                  {
-                    "year": 2050,
-                    "total": 107.78028207
                   }
                 ]
               }
@@ -30189,43 +29745,6 @@ export default {
                   {
                     "year": 2050,
                     "total": -14.870430775
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Netto Eksport",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": -7.19813576
-                  },
-                  {
-                    "year": 2020,
-                    "total": -4.641084381
-                  },
-                  {
-                    "year": 2025,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2030,
-                    "total": -46.01267706
-                  },
-                  {
-                    "year": 2035,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2040,
-                    "total": -22.5793046
-                  },
-                  {
-                    "year": 2045,
-                    "total": 36.50119687
-                  },
-                  {
-                    "year": 2050,
-                    "total": 84
                   }
                 ]
               }
@@ -33339,43 +32858,6 @@ export default {
                     "total": 0
                   }
                 ]
-              },
-              {
-                "indicatorGroup": "Transport Passengers Car - Otto Engine - Blending 4 - Average size - New",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 0
-                  },
-                  {
-                    "year": 2025,
-                    "total": 0
-                  },
-                  {
-                    "year": 2030,
-                    "total": 0
-                  },
-                  {
-                    "year": 2035,
-                    "total": 0
-                  },
-                  {
-                    "year": 2040,
-                    "total": 0
-                  },
-                  {
-                    "year": 2045,
-                    "total": 0
-                  },
-                  {
-                    "year": 2050,
-                    "total": 0
-                  }
-                ]
               }
             ]
           },
@@ -35027,43 +34509,6 @@ export default {
                   {
                     "year": 2050,
                     "total": -14.691797462
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Netto Eksport",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": -7.198047165
-                  },
-                  {
-                    "year": 2020,
-                    "total": -5.167855646
-                  },
-                  {
-                    "year": 2025,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2030,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2035,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2040,
-                    "total": -16.6426582
-                  },
-                  {
-                    "year": 2045,
-                    "total": 35.6624088
-                  },
-                  {
-                    "year": 2050,
-                    "total": 84
                   }
                 ]
               }
@@ -38177,43 +37622,6 @@ export default {
                     "total": 0
                   }
                 ]
-              },
-              {
-                "indicatorGroup": "Transport Passengers Car - Otto Engine - Blending 4 - Average size - New",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 0
-                  },
-                  {
-                    "year": 2025,
-                    "total": 0
-                  },
-                  {
-                    "year": 2030,
-                    "total": 0
-                  },
-                  {
-                    "year": 2035,
-                    "total": 0
-                  },
-                  {
-                    "year": 2040,
-                    "total": 0
-                  },
-                  {
-                    "year": 2045,
-                    "total": 0
-                  },
-                  {
-                    "year": 2050,
-                    "total": 0
-                  }
-                ]
               }
             ]
           },
@@ -39865,43 +39273,6 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.135591762
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Netto Eksport",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": -7.197266048
-                  },
-                  {
-                    "year": 2020,
-                    "total": -6.0029366
-                  },
-                  {
-                    "year": 2025,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2030,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2035,
-                    "total": -26.4
-                  },
-                  {
-                    "year": 2040,
-                    "total": -23.78906515
-                  },
-                  {
-                    "year": 2045,
-                    "total": 34.91446036
-                  },
-                  {
-                    "year": 2050,
-                    "total": 84
                   }
                 ]
               }
@@ -42848,23 +42219,23 @@ export default {
                   },
                   {
                     "year": 2030,
-                    "total": 1255.0882778
+                    "total": 1496.119845686
                   },
                   {
                     "year": 2035,
-                    "total": 615.5222565
+                    "total": 1220.086255486
                   },
                   {
                     "year": 2040,
-                    "total": 108.92911381
+                    "total": 1095.54443026
                   },
                   {
                     "year": 2045,
-                    "total": 1.332
+                    "total": 1068.65049984
                   },
                   {
                     "year": 2050,
-                    "total": 0.047
+                    "total": 1042.86623366
                   }
                 ]
               },
@@ -43013,43 +42384,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 0
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Transport Passengers Car - Otto Engine - Blending 4 - Average size - New",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 0
-                  },
-                  {
-                    "year": 2025,
-                    "total": 0
-                  },
-                  {
-                    "year": 2030,
-                    "total": 241.031567886
-                  },
-                  {
-                    "year": 2035,
-                    "total": 604.563998986
-                  },
-                  {
-                    "year": 2040,
-                    "total": 986.61531645
-                  },
-                  {
-                    "year": 2045,
-                    "total": 1067.31849984
-                  },
-                  {
-                    "year": 2050,
-                    "total": 1042.81923366
                   }
                 ]
               }
