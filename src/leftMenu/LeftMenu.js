@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 import { Link } from 'react-router-dom'
 import ScenarioSelectionList from '../scenarioSelection/ScenarioSelectionList'
+import ToggleSwitch from './ToggleSwitch'
 
 const MenuLayout = styled.div`
   display: none;
@@ -94,6 +95,16 @@ const ScenarioSelection  = styled.div`
   flex-direction: column;
   flex-shrink: 0;
 `
+const ToggleDifference = styled.div`
+  padding: 15px;
+  display: flex;
+  justify-content:start;
+  align-content:center;
+`
+const ToggleSwitchText = styled.div`
+  color: ${props => (props.singleMode ? 'gray' : props.selected ? '#2196F3' : 'white')};
+  margin-left: 10px;
+`
 const MenuFooter  = styled.div`
   padding: 15px 12px 5px 15px;
   margin: 0;
@@ -151,6 +162,17 @@ class ScenarioSelectionMenu extends React.Component {
           />
         </ScenarioSelection>
         <MenuSeparatorLine />        
+        <ToggleDifference onClick={(e) => this.props.toggleDifference(e)}>
+          <ToggleSwitch
+            dimmed={this.props.scenarioSelection.scenarioSelection2===""}
+            checked={this.props.scenarioSelection.showDifference}
+          />
+          <ToggleSwitchText
+            singleMode={this.props.scenarioSelection.scenarioSelection2===""}
+            selected={this.props.scenarioSelection.showDifference}
+          >Scenarie difference</ToggleSwitchText>
+        </ToggleDifference>
+        <MenuSeparatorLine />
         <MenuFooter>
           <CopyrightNotice>
             <ExternalLink href='http://www.tokni.com'>Online version fra Tokni</ExternalLink>
@@ -164,7 +186,8 @@ class ScenarioSelectionMenu extends React.Component {
 ScenarioSelectionMenu.propTypes = {
   updateScenarioSelection: PropTypes.func.isRequired,
   scenarioSelection: PropTypes.object.isRequired,
-  scenarioCombinations: PropTypes.object.isRequired
+  scenarioCombinations: PropTypes.object.isRequired,
+  toggleDifference: PropTypes.func.isRequired
 }
 
 export default ScenarioSelectionMenu;

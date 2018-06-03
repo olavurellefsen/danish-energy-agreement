@@ -7,7 +7,7 @@ export default {
       { "id": 6, "name": "DTU_Regeringen", "short_description": "Regeringen", "ultra_short_description": "Regeringen" },
       { "id": 5, "name": "DTU_Radikale_Venstre", "short_description": "Radikale Venstre", "ultra_short_description": "Radikale" },
       { "id": 0, "name": "DTU_Alternativet", "short_description": "Alternativet", "ultra_short_description": "Alternativet" },
-      { "id": 1, "name": "DTU_Socialdemokratiet", "short_description": "Socialdemokratiet", "ultra_short_description": "Socialdemokratiet" }
+      { "id": 1, "name": "DTU_Socialdemokratiet", "short_description": "Socialdemokratiet", "ultra_short_description": "Socialdemo." }
     ]
   }
 };
