@@ -50,6 +50,7 @@ export class App extends React.Component {
       scenarioSelection: "DTU_Regeringen",
       scenarioSelection2: "",
       showWelcome: true,
+      showDifference: false
     }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
   }
@@ -84,6 +85,11 @@ export class App extends React.Component {
     this.props.history.push('/');
   }
 
+  ToggleDifference = (e) => {
+    e.preventDefault();
+    this.setState({showDifference: !this.state.showDifference});
+  }
+
   render() { 
     return (
         <Page>
@@ -93,11 +99,13 @@ export class App extends React.Component {
                 scenarioSelection={this.state}
                 scenarioCombinations={this.scenarioCombinations}
                 updateScenarioSelection={this.UpdateScenarioSelection}
+                toggleDifference={this.ToggleDifference}
               />
               <LeftMenuMobile
                 scenarioSelection={this.state}
                 scenarioCombinations={this.scenarioCombinations}
                 updateScenarioSelection={this.UpdateScenarioSelection}
+                toggleDifference={this.ToggleDifference}
               />
             </Content>
           </Column>
