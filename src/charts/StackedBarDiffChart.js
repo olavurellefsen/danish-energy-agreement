@@ -108,7 +108,7 @@ class StackedBarChart extends React.Component {
             key={2}
             offsetX={80}
             tickFormat={(t) => (t*this.props.maxY/this.props.divideValues)}
-            tickValues={[0, 0.25, 0.5, 0.75]}
+            tickValues={[-0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75]}
             label={this.props.label}
           />
           {combinedChart===true  &&
@@ -124,7 +124,7 @@ class StackedBarChart extends React.Component {
                 tickLabels: { fill: 'gray', textAnchor: 'start' }
               }}              
               tickFormat={(t) => `${this.props.Y2Percentage===false ? (t*maxY2) : (t*maxY2*100)+'%'}`}
-              tickValues={[0, 0.25, 0.5, 0.75, 1.0]}
+              tickValues={[-1.0, -0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75, 1.0]}
             />
           }          
           <VictoryLegend x={90} y={50}
