@@ -18,6 +18,7 @@ const AboutHeader = styled.h1`
   `}
   font-weight: bold;
   `
+  AboutHeader.displayName = 'AboutHeader'
 const AboutHeader2 = styled.h2`
   font-size: 1.5em;
   ${breakpoint('mobile','desktop')`
