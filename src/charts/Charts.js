@@ -8,14 +8,16 @@ import StackedBarDiffChart from './StackedBarDiffChart'
 const MainArea = styled.div`
   flex: 1;
   padding: 20px;
-  `
+  `;
+  MainArea.displayName = 'MainArea';
 const Flex = styled.div`
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   align-content: flex-start;
   flex-direction: ${props => (props.direction==='column' ? 'column' : 'row')};
-  `
+  `;
+  Flex.displayName = 'Flex';
 const Charts = (props) => {
   const selectedScenario = props.scenarioSelection.scenarioSelection;
   const selectedScenario2 = props.scenarioSelection.scenarioSelection2;
