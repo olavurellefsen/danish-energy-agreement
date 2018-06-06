@@ -12,6 +12,7 @@ const ChartHeader = styled(VictoryLabel) `
   font-size: 18px;
   font-weight: bold;
   `;
+  ChartHeader.displayName = 'ChartHeader';
 
 class StackedBarChart extends React.Component {
   render() {
@@ -215,7 +216,8 @@ class StackedBarChart extends React.Component {
 }
 
 StackedBarChart.defaultProps = {
-  divideValues: 1
+  divideValues: 1,
+  selectedScenario2: ""
 }
 
 StackedBarChart.propTypes = {
