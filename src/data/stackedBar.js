@@ -720,23 +720,23 @@ export default {
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0
+                    "total": 680.9090939
                   },
                   {
                     "year": 2020,
-                    "total": 0
+                    "total": -306.760211
                   },
                   {
                     "year": 2025,
-                    "total": 0
+                    "total": 2445.82756
                   },
                   {
                     "year": 2030,
-                    "total": 0
+                    "total": -1405.480787
                   },
                   {
                     "year": 2035,
-                    "total": 0
+                    "total": -2487.510434
                   },
                   {
                     "year": 2040,
@@ -1161,6 +1161,43 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.305062665
+                  }
+                ]
+              },
+              {
+                "indicatorGroup": "Netto Eksport",
+                "indicatorGroupValues": [
+                  {
+                    "year": 2015,
+                    "total": -7.197770549
+                  },
+                  {
+                    "year": 2020,
+                    "total": 3.242708361
+                  },
+                  {
+                    "year": 2025,
+                    "total": -25.85441395
+                  },
+                  {
+                    "year": 2030,
+                    "total": 14.85709078
+                  },
+                  {
+                    "year": 2035,
+                    "total": 26.2950363
+                  },
+                  {
+                    "year": 2040,
+                    "total": 16.12863998
+                  },
+                  {
+                    "year": 2045,
+                    "total": 50.8742838
+                  },
+                  {
+                    "year": 2050,
+                    "total": 84
                   }
                 ]
               }
@@ -5484,23 +5521,23 @@ export default {
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0
+                    "total": 680.8862345
                   },
                   {
                     "year": 2020,
-                    "total": 0
+                    "total": 439.0920358
                   },
                   {
                     "year": 2025,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2030,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2035,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2040,
@@ -5925,6 +5962,43 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.209565859
+                  }
+                ]
+              },
+              {
+                "indicatorGroup": "Netto Eksport",
+                "indicatorGroupValues": [
+                  {
+                    "year": 2015,
+                    "total": -7.197528906
+                  },
+                  {
+                    "year": 2020,
+                    "total": -4.64156486
+                  },
+                  {
+                    "year": 2025,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2030,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2035,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2040,
+                    "total": -20.46591697
+                  },
+                  {
+                    "year": 2045,
+                    "total": 35.46196373
+                  },
+                  {
+                    "year": 2050,
+                    "total": 84
                   }
                 ]
               }
@@ -10248,23 +10322,23 @@ export default {
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0
+                    "total": 680.9352031
                   },
                   {
                     "year": 2020,
-                    "total": 0
+                    "total": 439.1136598
                   },
                   {
                     "year": 2025,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2030,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2035,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2040,
@@ -10689,6 +10763,43 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.248783118
+                  }
+                ]
+              },
+              {
+                "indicatorGroup": "Netto Eksport",
+                "indicatorGroupValues": [
+                  {
+                    "year": 2015,
+                    "total": -7.198046545
+                  },
+                  {
+                    "year": 2020,
+                    "total": -4.641793444
+                  },
+                  {
+                    "year": 2025,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2030,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2035,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2040,
+                    "total": -23.70325964
+                  },
+                  {
+                    "year": 2045,
+                    "total": 32.69661152
+                  },
+                  {
+                    "year": 2050,
+                    "total": 84
                   }
                 ]
               }
@@ -15012,23 +15123,23 @@ export default {
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0
+                    "total": 680.9352528
                   },
                   {
                     "year": 2020,
-                    "total": 0
+                    "total": 439.1136609
                   },
                   {
                     "year": 2025,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2030,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2035,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2040,
@@ -15453,6 +15564,43 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.470156361
+                  }
+                ]
+              },
+              {
+                "indicatorGroup": "Netto Eksport",
+                "indicatorGroupValues": [
+                  {
+                    "year": 2015,
+                    "total": -7.19804707
+                  },
+                  {
+                    "year": 2020,
+                    "total": -4.641793456
+                  },
+                  {
+                    "year": 2025,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2030,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2035,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2040,
+                    "total": -25.57504969
+                  },
+                  {
+                    "year": 2045,
+                    "total": 34.64539818
+                  },
+                  {
+                    "year": 2050,
+                    "total": 84
                   }
                 ]
               }
@@ -19776,23 +19924,23 @@ export default {
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0
+                    "total": 846.3308183
                   },
                   {
                     "year": 2020,
-                    "total": 0
+                    "total": 479.9789655
                   },
                   {
                     "year": 2025,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2030,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2035,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2040,
@@ -20217,6 +20365,43 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.451951119
+                  }
+                ]
+              },
+              {
+                "indicatorGroup": "Netto Eksport",
+                "indicatorGroupValues": [
+                  {
+                    "year": 2015,
+                    "total": -8.94641457
+                  },
+                  {
+                    "year": 2020,
+                    "total": -5.07377342
+                  },
+                  {
+                    "year": 2025,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2030,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2035,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2040,
+                    "total": -25.19032349
+                  },
+                  {
+                    "year": 2045,
+                    "total": 34.80136972
+                  },
+                  {
+                    "year": 2050,
+                    "total": 84
                   }
                 ]
               }
@@ -24540,23 +24725,23 @@ export default {
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0
+                    "total": 845.0071622
                   },
                   {
                     "year": 2020,
-                    "total": 0
+                    "total": 480.2139648
                   },
                   {
                     "year": 2025,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2030,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2035,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2040,
@@ -24981,6 +25166,43 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.207402225
+                  }
+                ]
+              },
+              {
+                "indicatorGroup": "Netto Eksport",
+                "indicatorGroupValues": [
+                  {
+                    "year": 2015,
+                    "total": -8.932422434
+                  },
+                  {
+                    "year": 2020,
+                    "total": -5.076257556
+                  },
+                  {
+                    "year": 2025,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2030,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2035,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2040,
+                    "total": -20.39891209
+                  },
+                  {
+                    "year": 2045,
+                    "total": 35.09713279
+                  },
+                  {
+                    "year": 2050,
+                    "total": 84
                   }
                 ]
               }
@@ -29304,23 +29526,23 @@ export default {
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0
+                    "total": 680.9436429
                   },
                   {
                     "year": 2020,
-                    "total": 0
+                    "total": 439.0465824
                   },
                   {
                     "year": 2025,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2030,
-                    "total": 0
+                    "total": 4352.79925
                   },
                   {
                     "year": 2035,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2040,
@@ -29745,6 +29967,43 @@ export default {
                   {
                     "year": 2050,
                     "total": -14.870430775
+                  }
+                ]
+              },
+              {
+                "indicatorGroup": "Netto Eksport",
+                "indicatorGroupValues": [
+                  {
+                    "year": 2015,
+                    "total": -7.19813576
+                  },
+                  {
+                    "year": 2020,
+                    "total": -4.641084381
+                  },
+                  {
+                    "year": 2025,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2030,
+                    "total": -46.01267706
+                  },
+                  {
+                    "year": 2035,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2040,
+                    "total": -22.5793046
+                  },
+                  {
+                    "year": 2045,
+                    "total": 36.50119687
+                  },
+                  {
+                    "year": 2050,
+                    "total": 84
                   }
                 ]
               }
@@ -34068,23 +34327,23 @@ export default {
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0
+                    "total": 680.9352619
                   },
                   {
                     "year": 2020,
-                    "total": 0
+                    "total": 488.8791441
                   },
                   {
                     "year": 2025,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2030,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2035,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2040,
@@ -34509,6 +34768,43 @@ export default {
                   {
                     "year": 2050,
                     "total": -14.691797462
+                  }
+                ]
+              },
+              {
+                "indicatorGroup": "Netto Eksport",
+                "indicatorGroupValues": [
+                  {
+                    "year": 2015,
+                    "total": -7.198047165
+                  },
+                  {
+                    "year": 2020,
+                    "total": -5.167855646
+                  },
+                  {
+                    "year": 2025,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2030,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2035,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2040,
+                    "total": -16.6426582
+                  },
+                  {
+                    "year": 2045,
+                    "total": 35.6624088
+                  },
+                  {
+                    "year": 2050,
+                    "total": 84
                   }
                 ]
               }
@@ -38832,23 +39128,23 @@ export default {
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
-                    "total": 0
+                    "total": 680.8613682
                   },
                   {
                     "year": 2020,
-                    "total": 0
+                    "total": 567.8778024
                   },
                   {
                     "year": 2025,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2030,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2035,
-                    "total": 0
+                    "total": 2497.44
                   },
                   {
                     "year": 2040,
@@ -39273,6 +39569,43 @@ export default {
                   {
                     "year": 2050,
                     "total": -15.135591762
+                  }
+                ]
+              },
+              {
+                "indicatorGroup": "Netto Eksport",
+                "indicatorGroupValues": [
+                  {
+                    "year": 2015,
+                    "total": -7.197266048
+                  },
+                  {
+                    "year": 2020,
+                    "total": -6.0029366
+                  },
+                  {
+                    "year": 2025,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2030,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2035,
+                    "total": -26.4
+                  },
+                  {
+                    "year": 2040,
+                    "total": -23.78906515
+                  },
+                  {
+                    "year": 2045,
+                    "total": 34.91446036
+                  },
+                  {
+                    "year": 2050,
+                    "total": 84
                   }
                 ]
               }
