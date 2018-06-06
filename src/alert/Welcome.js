@@ -16,15 +16,18 @@ const AlertContainer = styled.div`
   align-content: flex-start;
   justify-content: space-between;
   flex-direction: row;
-`
+  `
+  AlertContainer.displayName = 'AlertContainer'
 const AlertBody = styled.div`
   font-size: 1em;
   margin: 0px;
   align-self: center;
   flex: 1;
-`
+  `
+  AlertBody.displayName = 'AlertBody'
 const AlertBodyParagraph = styled.p`
-`
+  `
+  AlertBodyParagraph.displayName = 'AlertBodyParagraph'
 const CloseWindowIcon = styled.div`
   margin: 0px;
   border: 0;
@@ -33,7 +36,8 @@ const CloseWindowIcon = styled.div`
   :hover {
     cursor: pointer;
   }
-`
+  `
+  CloseWindowIcon.displayName = 'CloseWindowIcon'
 
 const Welcome = (props) => (
   <AlertContainer>
