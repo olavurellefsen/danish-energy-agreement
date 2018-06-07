@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const ScenarioList = styled.div`
   display: flex;
-  flexWrap: wrap;
+  flex-wrap: wrap;
   `;
   ScenarioList.displayName = 'ScenarioList';
 const ScenarioDivider = styled.div`
