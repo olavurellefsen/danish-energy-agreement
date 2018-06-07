@@ -2,9 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+const ScenarioList = styled.div`
+  display: flex;
+  flexWrap: wrap;
+  `;
+  ScenarioList.displayName = 'ScenarioList';
 const ScenarioDivider = styled.div`
   height: 5px;
   `
+  ScenarioDivider.displayName = 'ScenarioDivider';
 const ScenarioHeader = styled.div`
   font-size: ${props => (props.narrowVersion ? '0.9em' : '1em')};
   padding: ${props => (props.narrowVersion ? '5px' : '0 12px 0 15px')};
@@ -13,7 +19,8 @@ const ScenarioHeader = styled.div`
   height: 26px;
   display: flex;
   align-items: center;
-  `
+  `;
+  ScenarioHeader.displayName = 'ScenarioHeader';
 const ScenarioOption = styled.div`
   font-size: ${props => (props.narrowVersion ? '0.7em' : '0.9em')};
   display: flex;
@@ -33,7 +40,8 @@ const ScenarioOption = styled.div`
       font-weight: ${props => (props.selected ? 'bold' : (props.selected2 ? 'bold' : 'normal'))};
     }
   }
-  `
+  `;
+  ScenarioOption.displayName = 'ScenarioOption';
 
 class ScenarioSelectionList extends React.Component {
 
@@ -64,11 +72,11 @@ class ScenarioSelectionList extends React.Component {
         )
       })
     return (
-      <div style={{display:'flex', flexWrap: 'wrap'}}>
+      <ScenarioList>
         <ScenarioDivider/>
         <ScenarioHeader narrowVersion={narrowVersion}>{dimensionTitle}</ScenarioHeader>
           {scenarioOptions}
-      </div>
+      </ScenarioList>
     )
   }
 }

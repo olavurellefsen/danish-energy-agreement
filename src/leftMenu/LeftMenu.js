@@ -18,7 +18,8 @@ const MenuLayout = styled.div`
     background: rgb(50, 50, 50);
     visibility: visible;
   `}
-`
+  `;
+  MenuLayout.displayName = 'MenuLayout';
 const MenuHeader =  styled.div`
   padding: 10px 12px 5px 0px;
   margin: 0;
@@ -26,7 +27,8 @@ const MenuHeader =  styled.div`
   display: flex;
   flex-direction: row;
   align-items: top;
-`
+  `;
+  MenuLayout.displayName = 'MenuLayout';
 const MenuHeaderLeft = styled.div`
   padding: 0 12px 5px 0px;
   margin: 0;
@@ -34,7 +36,8 @@ const MenuHeaderLeft = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
-`
+  `;
+  MenuHeaderLeft.displayName = 'MenuHeaderLeft';
 const MenuHeaderRight = styled.div`
   padding: 0 12px 5px 0px;
   margin: 0;
@@ -42,13 +45,15 @@ const MenuHeaderRight = styled.div`
   display: flex;
   flex-direction: column;
   align-items: right;
-`
+  `;
+  MenuHeaderRight.displayName = 'MenuHeaderRight';
 const AppLogo  = styled.img`
   width: 45px;
   height: 67px;
   margin-left: 5px;
   border: 0;
-`
+  `;
+  AppLogo.displayName = 'AppLogo';
 const MenuTitle  = styled(Link)`
   font-weight: bold;
   font-size: 1.25em;
@@ -59,13 +64,15 @@ const MenuTitle  = styled(Link)`
   align-items: center;
   color: white;
   text-decoration: none;
-`
+  `;
+  MenuTitle.displayName = 'MenuTitle';
 const MenuSeparatorLine  = styled.hr`
   margin: 0.25em 12px 0.25em 15px;
   border-color: #555;
   border-width: 1px;
   width: 100hh;
-`
+  `;
+  MenuSeparatorLine.displayName = 'MenuSeparatorLine';
 const MenuRoutes  = styled.div`
   padding: 10px 12px 15px 15px;
   margin: 0;
@@ -73,7 +80,8 @@ const MenuRoutes  = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+  `;
+  MenuRoutes.displayName = 'MenuRoutes';
 const MenuItem  = styled(Link)`
   font-weight: bold;
   font-size: 1em;
@@ -89,22 +97,26 @@ const MenuItem  = styled(Link)`
     text-decoration: underline;
     cursor: pointer;
   }
-`
+  `;
+  MenuItem.displayName = 'MenuItem';
 const ScenarioSelection  = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-`
+  `;
+  ScenarioSelection.displayName = 'ScenarioSelection';
 const ToggleDifference = styled.div`
   padding: 15px;
   display: flex;
   justify-content:start;
   align-content:center;
-`
+  `;
+  ToggleDifference.displayName = 'ToggleDifference';
 const ToggleSwitchText = styled.div`
   color: ${props => (props.singleMode ? 'gray' : props.selected ? '#2196F3' : 'white')};
   margin-left: 10px;
-`
+  `;
+  ToggleSwitchText.displayName = 'ToggleSwitchText';
 const MenuFooter  = styled.div`
   padding: 15px 12px 5px 15px;
   margin: 0;
@@ -112,20 +124,23 @@ const MenuFooter  = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+  `;
+  MenuFooter.displayName = 'MenuFooter';
 const CopyrightNotice = styled.div`
   padding: 0 12px 5px 15px;
   margin: 0;
   width: 100%;
   heigth: 26px;
-`
+  `;
+  MenuLayout.displayName = 'MenuLayout';
 const ExternalLink = styled.a`
   color: white;
   text-decoration: none;
   :hover {
     text-decoration: underline;
   }
-`
+  `;
+  ExternalLink.displayName = 'ExternalLink';
 
 class ScenarioSelectionMenu extends React.Component {
 
