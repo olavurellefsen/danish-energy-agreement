@@ -283,6 +283,9 @@ export default () => (
     <AboutBody>
       Kulstofbudgettet er beregnet ud fra IPCC´s tal, der også er brugt som grundlag til Parisaftalen.
     </AboutBody>
+    <AboutBody>
+      <AboutImage src="images/Carbon_budget.png" alt="Opdateret dansk carbon budget primo 2018" width="752" height="452" />
+    </AboutBody>
     <AboutHeader2>Klimarådets biomasse rapport</AboutHeader2>
     <AboutBody>
       Et scenarie baseret på Klimarådets rapport om bæredygtig biomasse (Biomassens betydning for grøn 
