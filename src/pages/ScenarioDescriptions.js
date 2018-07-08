@@ -292,6 +292,12 @@ export default () => (
       Kulstofbudgettet er beregnet ud fra IPCC´s tal, der også er brugt som grundlag til Parisaftalen.
     </AboutBody>
     <AboutBody>
+      I de to Carbon budget scenarier er der ikke medtaget afgifter og subsidier. Scenarierne tjener 
+      først og fremmest til sammenligning med de andre scenarier mht. hvor hurtigt CO2 emissionerne 
+      skal reduceres, og hvor hurtigt energisystemet skal omstilles. Modellen er i disse kørsler 
+      blevet tvunget til at overholde carbon budgetterne og er altså ikke politik scenarier som de øvrige.
+    </AboutBody>
+    <AboutBody>
       <AboutImage src="images/Carbon_budget.png" alt="Opdateret dansk carbon budget primo 2018" width="752" height="452" />
     </AboutBody>
     <AboutHeader2>Klimarådets biomasse rapport</AboutHeader2>
