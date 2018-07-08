@@ -8,7 +8,8 @@ const SwitchBoxAround = styled.label`
   display: inline-block;
   width: 36px;
   height: 18px;
-  `
+  `;
+  SwitchBoxAround.displayName = 'SwitchBoxAround';
 const Slider = styled.span`
   position: absolute;
   cursor: pointer;
@@ -30,7 +31,8 @@ const Slider = styled.span`
     transition: .4s;
     border-radius: 50%;
   }
-  `
+  `;
+  Slider.displayName = 'Slider';
 const SwitchInput = styled.input`
   display:none;
   &:checked + span {
@@ -42,7 +44,8 @@ const SwitchInput = styled.input`
   &:checked + span:before {
     transform: translateX(18px);
   }
-  `
+  `;
+  SwitchInput.displayName = 'SwitchInput';
 
 const ToggleSwitch = (props) => (
   <SwitchBoxAround>

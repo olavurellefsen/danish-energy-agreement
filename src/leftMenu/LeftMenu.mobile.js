@@ -18,13 +18,15 @@ const MenuLayout = styled.div`
     background: rgb(50, 50, 50);
     visibility: visible;
   `}
-  `
+  `;
+  MenuLayout.displayName = 'MenuLayout';
 const AppLogo  = styled.img`
   width: 45px;
   height: 67px;
   margin: 5px;
   border: 0;
-  `
+  `;
+  AppLogo.displayName = 'AppLogo';
 const MenuHeader =  styled.div`
   padding: 5px;
   margin: 0;
@@ -32,13 +34,15 @@ const MenuHeader =  styled.div`
   display: flex;
   flex-direction: column;
   align-items: top;
-  `
+  `;
+  MenuHeader.displayName = 'MenuHeader';
 const MenuSeparatorLine  = styled.hr`
   margin: 0.25em 12px 0.25em 5px;
   border-color: #555;
   border-width: 1px;
   width: 100hh;
-  `
+  `;
+  MenuSeparatorLine.displayName = 'MenuSeparatorLine';
 const MenuRoutes  = styled.div`
   padding: 5px;
   margin: 0;
@@ -46,7 +50,8 @@ const MenuRoutes  = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  `
+  `;
+  MenuRoutes.displayName = 'MenuRoutes';
 const MenuItem  = styled(Link)`
   font-size: 0.7em;
   margin: 0;
@@ -61,24 +66,28 @@ const MenuItem  = styled(Link)`
     text-decoration: underline;
     cursor: pointer;
   }
-  `
+  `;
+  MenuItem.displayName = 'MenuItem';
 const ScenarioSelection  = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  `
+  `;
+  ScenarioSelection.displayName = 'ScenarioSelection';
 const ToggleDifference = styled.div`
   padding: 5px;
   display: flex;
   justify-content:start;
   align-content:center;
   flex-direction: column;
-  `
+  `;
+  ToggleDifference.displayName = 'ToggleDifference';
 const ToggleSwitchText = styled.div`
   font-size: 0.7em;
   color: ${props => (props.singleMode ? 'gray' : props.selected ? '#2196F3' : 'white')};
   margin-top: 5px;
-  `  
+  `;
+  ToggleSwitchText.displayName = 'ToggleSwitchText';
 const MenuFooter  = styled.div`
   padding: 5px;
   margin: 0;
@@ -86,20 +95,23 @@ const MenuFooter  = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  `
+  `;
+  MenuFooter.displayName = 'MenuFooter';
 const CopyrightNotice = styled.div`
   font-size: 0.7em;
   padding: 5px;
   margin: 0;
   width: 100%;
-  `
+  `;
+  CopyrightNotice.displayName = 'CopyrightNotice';
 const ExternalLink = styled.a`
   color: white;
   text-decoration: none;
   :hover {
     text-decoration: underline;
   }
-  `
+  `;
+  ExternalLink.displayName = 'ExternalLink';
 
 class ScenarioSelectionMenu extends React.Component {
 

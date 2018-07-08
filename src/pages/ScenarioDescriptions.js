@@ -27,7 +27,7 @@ const AboutHeader2 = styled.h2`
   font-weight: bold;
   `
 const AboutBody = styled.p`
-  padding: 0px;
+  padding: 10px 0px 0px 0px;
   margin: 0px;
   font-size: 1em;
   ${breakpoint('mobile','desktop')`
@@ -35,18 +35,26 @@ const AboutBody = styled.p`
   `}  
   `
 const AboutList = styled.ul`
-font-size: 1em;
-${breakpoint('mobile','desktop')`
-  font-size: 0.7em;
-`}  
-`
+  font-size: 1em;
+  ${breakpoint('mobile','desktop')`
+    font-size: 0.7em;
+  `}  
+  `
+const AboutImage = styled.img`
+  padding: 20px 0px;
+  max-width: 752px;
+  ${breakpoint('mobile','desktop')`
+    max-width: 250px;
+    max-height: 142px;
+  `}  
+  `
 
 export default () => (
   <AboutContainer>
     <AboutHeader>Scenariebeskrivelser</AboutHeader>
     <AboutHeader2>DTU Frozen Policy scenario</AboutHeader2>
     <AboutBody>
-      Er et frozen policy scenario i stil med Energistyrelsens basisfremskrivning. 
+      DTU Frozen Policy scenario er som Energistyrelsens basisfremskrivning. 
       Det indeholder alle allerede besluttede politikker samt samme brændselspriser 
       som anvendes af Energistyrelsen. Dvs. et energiscenarie med fastlåst politik 
       frem til 2050. Det antages, at der udpeges områder til udbygning af havvindmøller 
@@ -65,20 +73,56 @@ export default () => (
       svarende til et areal på ca. halvdelen af Langeland. 
     </AboutBody>
     <AboutBody>
-      De følgende scenarier bygger alle oven på DTU Basis scenario: 
+      De følgende scenarier bygger alle oven på DTU Frozen Policy scenario: 
     </AboutBody>    
-    <AboutHeader2>DTU International skibsfart scenario</AboutHeader2>
+    <AboutHeader2>DTU Frozen Policy inkl. International skibsfart scenario</AboutHeader2>
     <AboutBody>
       Scenariet inkluderer international bunkering fra shipping industrien,
-      foruden de samme antagelser som i Basis scenariet. Dvs. det inkluderer
+      foruden de samme antagelser som i Frozen Policy scenariet. Dvs. det inkluderer
       den danske del af den internationale skibstrafik og tilhørende
-      energiforbrug og emissioner.
+      energiforbrug og emissioner. Det er vigtigt at betragte hele den danske udledning af drivhusgasser 
+      i forbindelse med dansk ansvar i en global klimaaftale.
     </AboutBody>
-    <AboutHeader2>DTU Fossilfri 2050</AboutHeader2>
+    <AboutHeader2>Energiaftalen 2018</AboutHeader2>
     <AboutBody>
-      Her er modellen bundet til at udledning af CO2 fra fossile brændsler skal
-      være nul i 2050 undtagen den del, som kommer fra affaldsforbrænding.
+      Målsætninger:
     </AboutBody>
+      <AboutList>
+        <li>55 % Ve andel i 2030</li>
+        <li>Et grønt baseret elsystem</li>
+        <li>Fjernvarmesektoren højst 10 % af produktionen baseret på fossile brændsler</li>
+      </AboutList>
+    <AboutBody>
+      Politikker:
+    </AboutBody>
+      <AboutList>
+        <li>3 nye havvindmølleparker (estimeret til at blive 3 GW)</li>
+        <li>Landvind begrænses til maksimalt 1850 vindmøller (estimeret til at være 6.2 GW i 2030)</li>
+        <li>4.2 Mia. DKK i teknologi neutral støtte for perioden 2020-2024</li>
+        <li>statsstøtten til biomasse-kraftvarmeanlæg fjernes for nye anlæg fra april 2019. Eksisterende ikke afskrevne
+             anlæg modtager fortsats støtte i resterende levetid dog maksimalt 15/20 år. (Antages at støtte i gennemsnit
+             bliver udbetalt i 7.5 år år yderligt)</li>
+        <li>Støtte til biogas forlænges frem til 2032</li>
+        <li>Afgiftslempelse på elafgift</li>
+          <AboutList>
+            <li>El-varmeafgift sænkes til 15,5 øre/kWh</li>
+            <li>Den almindelige elafgift sænkes med 4 øre/kWh i 2019-2022, 7 øre/kWH i 2023, 8 øre/kWH i 2024 
+            og 14 øre/kWh i 2025 (2018-priser). Som følger af aftalen vil elafgiften således udgøre 77,4 øre/kWh 
+            i 2025 (2018-priser).</li>
+            <li>Elafgiften til liberale erhverv sænkes til proces sats</li>
+          </AboutList>
+        <li>Udfasning af kul i el-produktion i 2030</li>
+      </AboutList>
+    <AboutBody>
+      Politikker endnu ikke implementereet i modellen:
+    </AboutBody>
+      <AboutList>
+        <li>500 mio. årligt til energibesparelser i industrien i perioden 2020-2024</li>
+        <AboutList>
+          <li>200 mio. er øremærker til energibesparelser i bygninger</li>
+        </AboutList>
+        <li>Fuld genopbygning af Thyra-anlæggene i Nordsøen, sikre at de resterende resourcer hentes op fra undergrunden.</li>
+     </AboutList>
     <AboutHeader2>Regeringens forslag til en energiaftale</AboutHeader2>
     <AboutBody>
       Målsætninger:
@@ -226,6 +270,38 @@ export default () => (
       <li>Støtteordning til industrielle energibesparelser</li>
       <li>Informationsstøtte til husholdningers energibesparelser</li>
     </AboutList>
+    <AboutHeader2>Carbon budget 2 graders temperatur stigning</AboutHeader2>
+    <AboutBody>
+      Et scenarie, der viser den maksimale grænse for CO2 Danmark kan udlede såfremt man vil holde 
+      sig med 66% sikkerhed inden for en 2 graders temperatur stigning frem mod 2050. Danmarks andel 
+      af det globale kulstofbudget, som kan udledes til atmosfæren er beregnet via en fordelingsnøgle 
+      der vægter befolkningstal og historiske emissioner med hver 50%. 
+    </AboutBody>
+    <AboutBody>
+      Kulstofbudgettet er beregnet ud fra IPCC´s tal, der også er brugt som grundlag til Parisaftalen.
+    </AboutBody>
+    <AboutHeader2>Carbon budget, der opfylder Parisaftalen</AboutHeader2>
+    <AboutBody>
+      Dette scenarie viser den maksimale grænse for CO2 Danmark kan udlede såfremt man vil holde sig 
+      med 66 % sikkerhed inden for en 1.5 graders temperatur stigning frem mod 2050. Grænsen for 
+      Danmarks CO2-udledning blev overskrevet i slutningen af 2017, hvorfor det kun kan lade sig gøre 
+      for Danmark at opfylde sin del af Paris-aftalen såfremt Carbon Capture and Storage (CCS) 
+      teknologier bliver implementeret i fremtiden.
+    </AboutBody>
+    <AboutBody>
+      Kulstofbudgettet er beregnet ud fra IPCC´s tal, der også er brugt som grundlag til Parisaftalen.
+    </AboutBody>
+    <AboutBody>
+      <AboutImage src="images/Carbon_budget.png" alt="Opdateret dansk carbon budget primo 2018" width="752" height="452" />
+    </AboutBody>
+    <AboutHeader2>Klimarådets biomasse rapport</AboutHeader2>
+    <AboutBody>
+      Et scenarie baseret på Klimarådets rapport om bæredygtig biomasse (Biomassens betydning for grøn 
+      omstilling), hvori alle energiafgifter omlægges til en CO2 baseret afgiftsstruktur. Prisen per 
+      ton CO2 antages at være 857 kr/tCO2, efter rapports beskrivelse. CO2-prisen er modelleret, som en 
+      minimums afgift for kvote markedet. Desuden anvendes en fælles elafgift på 65 kr/GJ, som 
+      foreskrevet i rapporten. 
+    </AboutBody>
      <AboutBody>
        <Link to='/'>Tilbage til forsiden</Link>
      </AboutBody>

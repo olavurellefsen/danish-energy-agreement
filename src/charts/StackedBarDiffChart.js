@@ -22,6 +22,14 @@ class StackedBarChart extends React.Component {
     const chartTitle = this.props.chartTitle;
     const combinedChart = this.props.combinedChart;
     const periods = [2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050];
+    let gutter, rowGutter;
+    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
+      gutter=0;
+      rowGutter=0;
+    } else {
+      gutter=-40;
+      rowGutter=-5;
+    }    
 
     let maxY2 = 1;
     let minY2 = 0;
@@ -130,8 +138,8 @@ class StackedBarChart extends React.Component {
           }          
           <VictoryLegend x={90} y={50}
             orientation="horizontal"
-            gutter={-40}
-            rowGutter={-5}
+            gutter={gutter}
+            rowGutter={rowGutter}
             symbolSpacer={4}
             itemsPerRow={3}
             style={{
