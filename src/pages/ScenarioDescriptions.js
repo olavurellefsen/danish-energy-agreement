@@ -27,7 +27,7 @@ const AboutHeader2 = styled.h2`
   font-weight: bold;
   `
 const AboutBody = styled.p`
-  padding: 0px;
+  padding: 10px 0px 0px 0px;
   margin: 0px;
   font-size: 1em;
   ${breakpoint('mobile','desktop')`
@@ -35,11 +35,19 @@ const AboutBody = styled.p`
   `}  
   `
 const AboutList = styled.ul`
-font-size: 1em;
-${breakpoint('mobile','desktop')`
-  font-size: 0.7em;
-`}  
-`
+  font-size: 1em;
+  ${breakpoint('mobile','desktop')`
+    font-size: 0.7em;
+  `}  
+  `
+const AboutImage = styled.img`
+  padding: 20px 0px;
+  max-width: 752px;
+  ${breakpoint('mobile','desktop')`
+    max-width: 250px;
+    max-height: 142px;
+  `}  
+  `
 
 export default () => (
   <AboutContainer>
@@ -264,7 +272,7 @@ export default () => (
     </AboutList>
     <AboutHeader2>Carbon budget 2 graders temperatur stigning</AboutHeader2>
     <AboutBody>
-      Et scenarie, der viser den maksimale grænse for CO2- Danmark kan udlede såfremt man vil holde 
+      Et scenarie, der viser den maksimale grænse for CO2 Danmark kan udlede såfremt man vil holde 
       sig med 66% sikkerhed inden for en 2 graders temperatur stigning frem mod 2050. Danmarks andel 
       af det globale kulstofbudget, som kan udledes til atmosfæren er beregnet via en fordelingsnøgle 
       der vægter befolkningstal og historiske emissioner med hver 50%. 
