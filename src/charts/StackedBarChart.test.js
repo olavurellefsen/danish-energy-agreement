@@ -3,7 +3,7 @@ import StackedBarChart from './StackedBarChart';
 
 it('renders the chart title', () => {
   const selectedScenario = "DTU_Regeringen";
-  const chartName = "_CO2 emissioner og VE andel";
+  const chartName = "_CO2 emissioner";
   const chartTitle = "Dummy Title";
   const combinedChart = false;
   const minY = 0;
