@@ -4,7 +4,7 @@ import StackedBarDiffChart from './StackedBarDiffChart';
 it('renders the chart title', () => {
   const selectedScenario = "DTU_Regeringen";
   const selectedScenario2 = "DTU_Fossilfri_2050";
-  const chartName = "_CO2 emissioner og VE andel";
+  const chartName = "_CO2 emissioner";
   const chartTitle = "Dummy Title";
   const combinedChart = false;
   const minY = 0;
