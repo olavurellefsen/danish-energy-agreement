@@ -642,7 +642,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -2332,43 +2332,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.27372211
-                  },
-                  {
-                    "year": 2030,
-                    "total": 17.39968813
-                  },
-                  {
-                    "year": 2035,
-                    "total": 17.55213429
-                  },
-                  {
-                    "year": 2040,
-                    "total": 17.55213429
-                  },
-                  {
-                    "year": 2045,
-                    "total": 17.55213429
-                  },
-                  {
-                    "year": 2050,
-                    "total": 17.55213429
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -2777,43 +2740,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 17.84981324
-                  },
-                  {
-                    "year": 2025,
-                    "total": 24.75484518
-                  },
-                  {
-                    "year": 2030,
-                    "total": 30.83207036
-                  },
-                  {
-                    "year": 2035,
-                    "total": 36.21972421
-                  },
-                  {
-                    "year": 2040,
-                    "total": 43.418336
-                  },
-                  {
-                    "year": 2045,
-                    "total": 51.46131736
-                  },
-                  {
-                    "year": 2050,
-                    "total": 58.77205758
                   }
                 ]
               },
@@ -5369,7 +5295,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -7059,43 +6985,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.23437788
-                  },
-                  {
-                    "year": 2030,
-                    "total": 15.55988411
-                  },
-                  {
-                    "year": 2035,
-                    "total": 15.55988411
-                  },
-                  {
-                    "year": 2040,
-                    "total": 16.05237788
-                  },
-                  {
-                    "year": 2045,
-                    "total": 16.05237788
-                  },
-                  {
-                    "year": 2050,
-                    "total": 16.05237788
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -7504,43 +7393,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 16.76338067
-                  },
-                  {
-                    "year": 2025,
-                    "total": 23.47087761
-                  },
-                  {
-                    "year": 2030,
-                    "total": 29.02550557
-                  },
-                  {
-                    "year": 2035,
-                    "total": 34.3028506
-                  },
-                  {
-                    "year": 2040,
-                    "total": 40.90443285
-                  },
-                  {
-                    "year": 2045,
-                    "total": 49.49827431
-                  },
-                  {
-                    "year": 2050,
-                    "total": 54.40744998
                   }
                 ]
               },
@@ -10096,7 +9948,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -11786,43 +11638,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.23437788
-                  },
-                  {
-                    "year": 2030,
-                    "total": 15.85722
-                  },
-                  {
-                    "year": 2035,
-                    "total": 15.85722
-                  },
-                  {
-                    "year": 2040,
-                    "total": 16.23237788
-                  },
-                  {
-                    "year": 2045,
-                    "total": 16.23237788
-                  },
-                  {
-                    "year": 2050,
-                    "total": 16.23237788
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -12231,43 +12046,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 17.36136997
-                  },
-                  {
-                    "year": 2025,
-                    "total": 23.02610042
-                  },
-                  {
-                    "year": 2030,
-                    "total": 28.97975652
-                  },
-                  {
-                    "year": 2035,
-                    "total": 38.37162927
-                  },
-                  {
-                    "year": 2040,
-                    "total": 45.57269383
-                  },
-                  {
-                    "year": 2045,
-                    "total": 54.76988075
-                  },
-                  {
-                    "year": 2050,
-                    "total": 66.24799242
                   }
                 ]
               },
@@ -14823,7 +14601,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -16513,43 +16291,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.23437788
-                  },
-                  {
-                    "year": 2030,
-                    "total": 15.69443917
-                  },
-                  {
-                    "year": 2035,
-                    "total": 15.69443917
-                  },
-                  {
-                    "year": 2040,
-                    "total": 16.05237788
-                  },
-                  {
-                    "year": 2045,
-                    "total": 16.05237788
-                  },
-                  {
-                    "year": 2050,
-                    "total": 16.05237788
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -16958,43 +16699,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 16.74563437
-                  },
-                  {
-                    "year": 2025,
-                    "total": 23.7991167
-                  },
-                  {
-                    "year": 2030,
-                    "total": 29.03913944
-                  },
-                  {
-                    "year": 2035,
-                    "total": 34.18449532
-                  },
-                  {
-                    "year": 2040,
-                    "total": 41.51295244
-                  },
-                  {
-                    "year": 2045,
-                    "total": 49.47213023
-                  },
-                  {
-                    "year": 2050,
-                    "total": 54.26990549
                   }
                 ]
               },
@@ -19550,7 +19254,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -21240,43 +20944,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.23437788
-                  },
-                  {
-                    "year": 2030,
-                    "total": 15.95374136
-                  },
-                  {
-                    "year": 2035,
-                    "total": 15.95374136
-                  },
-                  {
-                    "year": 2040,
-                    "total": 16.23237788
-                  },
-                  {
-                    "year": 2045,
-                    "total": 16.23237788
-                  },
-                  {
-                    "year": 2050,
-                    "total": 16.23237788
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -21685,43 +21352,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 17.43418365
-                  },
-                  {
-                    "year": 2025,
-                    "total": 22.9746674
-                  },
-                  {
-                    "year": 2030,
-                    "total": 29.66052851
-                  },
-                  {
-                    "year": 2035,
-                    "total": 38.93877809
-                  },
-                  {
-                    "year": 2040,
-                    "total": 44.78536136
-                  },
-                  {
-                    "year": 2045,
-                    "total": 53.64198098
-                  },
-                  {
-                    "year": 2050,
-                    "total": 61.09591072
                   }
                 ]
               },
@@ -24277,7 +23907,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -25967,43 +25597,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.27372211
-                  },
-                  {
-                    "year": 2030,
-                    "total": 16.94433361
-                  },
-                  {
-                    "year": 2035,
-                    "total": 17.03435285
-                  },
-                  {
-                    "year": 2040,
-                    "total": 17.43402896
-                  },
-                  {
-                    "year": 2045,
-                    "total": 17.43402896
-                  },
-                  {
-                    "year": 2050,
-                    "total": 17.43402896
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -26412,43 +26005,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 17.44599376
-                  },
-                  {
-                    "year": 2025,
-                    "total": 23.93109396
-                  },
-                  {
-                    "year": 2030,
-                    "total": 29.26436317
-                  },
-                  {
-                    "year": 2035,
-                    "total": 35.34256558
-                  },
-                  {
-                    "year": 2040,
-                    "total": 42.99196302
-                  },
-                  {
-                    "year": 2045,
-                    "total": 51.81143722
-                  },
-                  {
-                    "year": 2050,
-                    "total": 57.62927099
                   }
                 ]
               },
@@ -29004,7 +28560,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -30694,43 +30250,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.27372211
-                  },
-                  {
-                    "year": 2030,
-                    "total": 17.62498939
-                  },
-                  {
-                    "year": 2035,
-                    "total": 17.89202997
-                  },
-                  {
-                    "year": 2040,
-                    "total": 18.60491236
-                  },
-                  {
-                    "year": 2045,
-                    "total": 19.080679
-                  },
-                  {
-                    "year": 2050,
-                    "total": 19.080679
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -31139,43 +30658,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 17.51626932
-                  },
-                  {
-                    "year": 2025,
-                    "total": 24.81997814
-                  },
-                  {
-                    "year": 2030,
-                    "total": 30.96541915
-                  },
-                  {
-                    "year": 2035,
-                    "total": 36.93388452
-                  },
-                  {
-                    "year": 2040,
-                    "total": 44.51042305
-                  },
-                  {
-                    "year": 2045,
-                    "total": 51.94427328
-                  },
-                  {
-                    "year": 2050,
-                    "total": 59.46363607
                   }
                 ]
               },
@@ -33731,7 +33213,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -35421,43 +34903,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.27372211
-                  },
-                  {
-                    "year": 2030,
-                    "total": 17.62498939
-                  },
-                  {
-                    "year": 2035,
-                    "total": 18.08637242
-                  },
-                  {
-                    "year": 2040,
-                    "total": 18.49171649
-                  },
-                  {
-                    "year": 2045,
-                    "total": 18.9245177
-                  },
-                  {
-                    "year": 2050,
-                    "total": 18.9245177
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -35866,43 +35311,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 17.84299915
-                  },
-                  {
-                    "year": 2025,
-                    "total": 24.70077401
-                  },
-                  {
-                    "year": 2030,
-                    "total": 31.0034617
-                  },
-                  {
-                    "year": 2035,
-                    "total": 37.05855356
-                  },
-                  {
-                    "year": 2040,
-                    "total": 44.73595002
-                  },
-                  {
-                    "year": 2045,
-                    "total": 52.20214868
-                  },
-                  {
-                    "year": 2050,
-                    "total": 59.3624021
                   }
                 ]
               },
@@ -38458,7 +37866,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -40148,43 +39556,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.27372211
-                  },
-                  {
-                    "year": 2030,
-                    "total": 17.62498939
-                  },
-                  {
-                    "year": 2035,
-                    "total": 18.07980614
-                  },
-                  {
-                    "year": 2040,
-                    "total": 18.49209469
-                  },
-                  {
-                    "year": 2045,
-                    "total": 18.9245177
-                  },
-                  {
-                    "year": 2050,
-                    "total": 18.9245177
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -40593,43 +39964,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 17.84299915
-                  },
-                  {
-                    "year": 2025,
-                    "total": 24.70090059
-                  },
-                  {
-                    "year": 2030,
-                    "total": 31.0034617
-                  },
-                  {
-                    "year": 2035,
-                    "total": 37.05855356
-                  },
-                  {
-                    "year": 2040,
-                    "total": 44.73585942
-                  },
-                  {
-                    "year": 2045,
-                    "total": 52.2021127
-                  },
-                  {
-                    "year": 2050,
-                    "total": 59.3624021
                   }
                 ]
               },
@@ -43185,7 +42519,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -44875,43 +44209,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.27372211
-                  },
-                  {
-                    "year": 2030,
-                    "total": 18.93257068
-                  },
-                  {
-                    "year": 2035,
-                    "total": 19.46078992
-                  },
-                  {
-                    "year": 2040,
-                    "total": 19.87756431
-                  },
-                  {
-                    "year": 2045,
-                    "total": 20.32438434
-                  },
-                  {
-                    "year": 2050,
-                    "total": 20.32438434
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -45320,43 +44617,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 17.84981324
-                  },
-                  {
-                    "year": 2025,
-                    "total": 24.94981584
-                  },
-                  {
-                    "year": 2030,
-                    "total": 31.2922892
-                  },
-                  {
-                    "year": 2035,
-                    "total": 37.03527326
-                  },
-                  {
-                    "year": 2040,
-                    "total": 44.46480395
-                  },
-                  {
-                    "year": 2045,
-                    "total": 51.98028167
-                  },
-                  {
-                    "year": 2050,
-                    "total": 58.89934133
                   }
                 ]
               },
@@ -47912,7 +47172,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -49602,43 +48862,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.27372211
-                  },
-                  {
-                    "year": 2030,
-                    "total": 17.62498939
-                  },
-                  {
-                    "year": 2035,
-                    "total": 18.2211441
-                  },
-                  {
-                    "year": 2040,
-                    "total": 18.63424928
-                  },
-                  {
-                    "year": 2045,
-                    "total": 19.06561573
-                  },
-                  {
-                    "year": 2050,
-                    "total": 19.06561573
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -50047,43 +49270,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 17.52433091
-                  },
-                  {
-                    "year": 2025,
-                    "total": 24.6928757
-                  },
-                  {
-                    "year": 2030,
-                    "total": 31.75510298
-                  },
-                  {
-                    "year": 2035,
-                    "total": 37.47941972
-                  },
-                  {
-                    "year": 2040,
-                    "total": 44.98550559
-                  },
-                  {
-                    "year": 2045,
-                    "total": 52.44000677
-                  },
-                  {
-                    "year": 2050,
-                    "total": 59.19685347
                   }
                 ]
               },
@@ -52639,7 +51825,7 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Netto Import",
+                "indicatorGroup": "Netto import",
                 "indicatorGroupValues": [
                   {
                     "year": 2015,
@@ -54329,43 +53515,6 @@ export default {
                 ]
               },
               {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 4.956024964
-                  },
-                  {
-                    "year": 2020,
-                    "total": 9.614873534
-                  },
-                  {
-                    "year": 2025,
-                    "total": 14.27372211
-                  },
-                  {
-                    "year": 2030,
-                    "total": 17.62498939
-                  },
-                  {
-                    "year": 2035,
-                    "total": 18.23260709
-                  },
-                  {
-                    "year": 2040,
-                    "total": 18.50612288
-                  },
-                  {
-                    "year": 2045,
-                    "total": 18.93647549
-                  },
-                  {
-                    "year": 2050,
-                    "total": 18.93647549
-                  }
-                ]
-              },
-              {
                 "indicatorGroup": "Gas",
                 "indicatorGroupValues": [
                   {
@@ -54774,43 +53923,6 @@ export default {
                   {
                     "year": 2050,
                     "total": 47.03996229
-                  }
-                ]
-              },
-              {
-                "indicatorGroup": "Energibesparelser",
-                "indicatorGroupValues": [
-                  {
-                    "year": 2015,
-                    "total": 0
-                  },
-                  {
-                    "year": 2020,
-                    "total": 17.84981324
-                  },
-                  {
-                    "year": 2025,
-                    "total": 24.94378346
-                  },
-                  {
-                    "year": 2030,
-                    "total": 31.77133552
-                  },
-                  {
-                    "year": 2035,
-                    "total": 37.33501161
-                  },
-                  {
-                    "year": 2040,
-                    "total": 44.8232009
-                  },
-                  {
-                    "year": 2045,
-                    "total": 52.2898975
-                  },
-                  {
-                    "year": 2050,
-                    "total": 59.20746638
                   }
                 ]
               },
