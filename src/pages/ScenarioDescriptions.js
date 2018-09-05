@@ -280,6 +280,10 @@ export default () => (
     <AboutBody>
       Kulstofbudgettet er beregnet ud fra IPCC´s tal, der også er brugt som grundlag til Parisaftalen.
     </AboutBody>
+    <AboutHeader2>Carbon budget 2 graders temperatur stigning med en begrænset biomasse import</AboutHeader2>
+    <AboutBody>
+       Carbon budget scenarie med en 2 graders temperatur stigning, hvortil biomasse importen falder til 0 i 2050. Dermed sikres at Danmark kan blive uafhængige af importeret energivare.
+    </AboutBody>
     <AboutHeader2>Carbon budget, der opfylder Parisaftalen</AboutHeader2>
     <AboutBody>
       Dette scenarie viser den maksimale grænse for CO2 Danmark kan udlede såfremt man vil holde sig 
@@ -291,8 +295,12 @@ export default () => (
     <AboutBody>
       Kulstofbudgettet er beregnet ud fra IPCC´s tal, der også er brugt som grundlag til Parisaftalen.
     </AboutBody>
+    <AboutHeader2>Carbon budget, der opfylder Parisaftalen med en begrænset biomasse import</AboutHeader2>
     <AboutBody>
-      I de to Carbon budget scenarier er der ikke medtaget afgifter og subsidier. Scenarierne tjener 
+       Carbon budget scenarie med opfyldelse af Paris aftalen, hvortil biomasse importen falder til 0 i 2050. Dermed sikres at Danmark kan blive uafhængige af importeret energivare.
+    </AboutBody>
+    <AboutBody>
+      I de fire Carbon budget scenarier er der ikke medtaget afgifter og subsidier. Scenarierne tjener 
       først og fremmest til sammenligning med de andre scenarier mht. hvor hurtigt CO2 emissionerne 
       skal reduceres, og hvor hurtigt energisystemet skal omstilles. Modellen er i disse kørsler 
       blevet tvunget til at overholde carbon budgetterne og er altså ikke politik scenarier som de øvrige.
