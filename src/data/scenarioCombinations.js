@@ -1,7 +1,7 @@
 export default {
   scenarioCombinations : {
     scenarioOptions : [
-      { "id": 0, "name": "DTU_Frozen_Policy_scenarie", "short_description": "DTU Frozen policy", "ultra_short_description": "Frozen" },
+      { "id": 0, "name": "DTU_Frozen_policy_scenarie", "short_description": "DTU Frozen policy", "ultra_short_description": "Frozen" },
       { "id": 8, "name": "DTU_International_bunkering", "short_description": "DTU International skibsfart", "ultra_short_description": "Skibsfart" },
       { "id": 2, "name": "DTU_EA_2018", "short_description": "Energiaftalen 2018", "ultra_short_description": "EA2018" },
       { "id": 3, "name": "DTU_Regeringen", "short_description": "Regeringen", "ultra_short_description": "Regeringen" },
