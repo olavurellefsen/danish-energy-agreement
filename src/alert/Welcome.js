@@ -38,10 +38,18 @@ const CloseWindowIcon = styled.div`
   }
   `
   CloseWindowIcon.displayName = 'CloseWindowIcon'
+const BodyLink = styled.a`
+  color: inherit;
+  text-decoration: underline;
+  `
+  BodyLink.displayName = 'BodyLink'
 
 const Welcome = (props) => (
   <AlertContainer>
     <AlertBody>
+      <AlertBodyParagraph>
+        <b>SE OGSÅ VÆRKTØJET <BodyLink href="https://klimaaftalen.tokni.com">KLIMAAFTALEN</BodyLink>.</b>
+      </AlertBodyParagraph>
       <AlertBodyParagraph>
         Med dette værktøj kan du udforske forskellige scenarier i forbindelse med Energiaftalen 2018.
         Vælg et scenario i venstre menu og se resultatet i graferne nedenfor.
