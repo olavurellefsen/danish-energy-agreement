@@ -49,8 +49,8 @@ const SwitchInput = styled.input`
 
 const ToggleSwitch = (props) => (
   <SwitchBoxAround>
-    <SwitchInput type='checkbox' checked={props.checked} dimmed={props.dimmed} />
-    <Slider class='slider'></Slider>
+    <SwitchInput type='checkbox' checked={props.checked} dimmed={props.dimmed} onChange={()=>{}} />
+    <Slider className='slider'></Slider>
   </SwitchBoxAround>
 )
 
